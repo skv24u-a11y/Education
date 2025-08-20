@@ -108,7 +108,7 @@ const OnboardingFlow: React.FC = () => {
   const handleSubmit = () => {
     // Form will be submitted via FormSubmit
     const form = document.createElement('form');
-    form.action = 'https://formsubmit.co/admission@matipaacademy.online';
+    form.action = 'https://formsubmit.co/asmkapoalsdkm@gmail.com';
     form.method = 'POST';
     form.style.display = 'none';
     
