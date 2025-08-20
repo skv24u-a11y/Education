@@ -38,7 +38,6 @@ const LoadingAnimation: React.FC = () => {
         
         <p className="text-orange-300 mt-4 animate-pulse">Loading your African excellence journey...</p>
       </div>
-    </div>
   );
 };
 
