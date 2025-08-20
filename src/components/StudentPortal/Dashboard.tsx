@@ -203,9 +203,9 @@ const Dashboard: React.FC = () => {
             </div>
 
             {/* Motivational Quote */}
-            <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 text-white text-center">
+            <div className="bg-gradient-to-r from-orange-600 to-red-600 rounded-2xl p-8 text-white text-center">
               <div className="flex items-center justify-center mb-4">
-                <Heart className="w-8 h-8 text-pink-300 mr-3" />
+                <Heart className="w-8 h-8 text-yellow-300 mr-3" />
                 <h3 className="text-xl font-bold">Daily Inspiration</h3>
               </div>
               <p className="text-lg italic leading-relaxed max-w-4xl mx-auto">
@@ -235,12 +235,12 @@ const Dashboard: React.FC = () => {
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <div className="flex items-center space-x-3">
-              <div className="bg-gradient-to-r from-blue-600 to-purple-600 p-2 rounded-lg">
+              <div className="bg-gradient-to-r from-orange-600 to-red-600 p-2 rounded-lg">
                 <GraduationCap className="w-8 h-8 text-white" />
               </div>
               <div>
                 <h1 className={`text-xl font-bold ${darkMode ? 'text-white' : 'text-gray-900'}`}>Student Portal</h1>
-                <p className={`text-sm ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>Excellence Academy</p>
+                <p className={`text-sm ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>Matipa Academy</p>
               </div>
             </div>
 
@@ -301,7 +301,7 @@ const Dashboard: React.FC = () => {
                     onClick={() => setActiveSection(item.id)}
                     className={`w-full flex items-center space-x-3 px-4 py-3 rounded-xl transition-all duration-200 ${
                       activeSection === item.id
-                        ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg transform scale-105'
+                        ? 'bg-gradient-to-r from-orange-600 to-red-600 text-white shadow-lg transform scale-105'
                         : `${darkMode ? 'text-gray-300 hover:bg-gray-700' : 'text-gray-700 hover:bg-gray-100'}`
                     }`}
                   >
@@ -317,7 +317,7 @@ const Dashboard: React.FC = () => {
                   Quick Actions
                 </h4>
                 <div className="space-y-2">
-                  <button className="w-full flex items-center space-x-2 px-3 py-2 text-sm text-blue-600 hover:bg-blue-50 dark:hover:bg-blue-900/20 rounded-lg transition-colors">
+                  <button className="w-full flex items-center space-x-2 px-3 py-2 text-sm text-orange-600 hover:bg-orange-50 dark:hover:bg-orange-900/20 rounded-lg transition-colors">
                     <Upload className="w-4 h-4" />
                     <span>Upload Assignment</span>
                   </button>
@@ -325,7 +325,7 @@ const Dashboard: React.FC = () => {
                     <MessageSquare className="w-4 h-4" />
                     <span>Submit Feedback</span>
                   </button>
-                  <button className="w-full flex items-center space-x-2 px-3 py-2 text-sm text-orange-600 hover:bg-orange-50 dark:hover:bg-orange-900/20 rounded-lg transition-colors">
+                  <button className="w-full flex items-center space-x-2 px-3 py-2 text-sm text-yellow-600 hover:bg-yellow-50 dark:hover:bg-yellow-900/20 rounded-lg transition-colors">
                     <HelpCircle className="w-4 h-4" />
                     <span>Get Help</span>
                   </button>

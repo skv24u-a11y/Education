@@ -3,7 +3,7 @@ import { GraduationCap, BookOpen, Users, Laptop } from 'lucide-react';
 
 const LoadingAnimation: React.FC = () => {
   return (
-    <div className="fixed inset-0 bg-gradient-to-br from-blue-600 via-purple-700 to-indigo-800 flex items-center justify-center z-50">
+    <div className="fixed inset-0 bg-gradient-to-br from-orange-600 via-red-700 to-yellow-800 flex items-center justify-center z-50">
       <div className="text-center">
         {/* Animated 3D Graduation Cap */}
         <div className="relative mb-8">
@@ -22,22 +22,22 @@ const LoadingAnimation: React.FC = () => {
         {/* Floating Educational Icons */}
         <div className="flex justify-center space-x-8 mb-8">
           <div className="animate-bounce" style={{ animationDelay: '0ms' }}>
-            <BookOpen className="w-10 h-10 text-blue-300" />
+            <BookOpen className="w-10 h-10 text-orange-300" />
           </div>
           <div className="animate-bounce" style={{ animationDelay: '200ms' }}>
-            <Users className="w-10 h-10 text-green-300" />
+            <Users className="w-10 h-10 text-yellow-300" />
           </div>
           <div className="animate-bounce" style={{ animationDelay: '400ms' }}>
-            <Laptop className="w-10 h-10 text-purple-300" />
+            <Laptop className="w-10 h-10 text-red-300" />
           </div>
         </div>
         
         <h2 className="text-4xl font-bold text-white mb-4">Student Portal</h2>
-        <p className="text-blue-200 text-xl mb-8">Preparing your digital campus experience...</p>
+        <p className="text-orange-200 text-xl mb-8">Preparing your African digital campus experience...</p>
         
         {/* Animated Progress Bar */}
         <div className="w-80 bg-white/20 rounded-full h-3 mx-auto mb-6">
-          <div className="bg-gradient-to-r from-yellow-400 via-green-400 to-blue-400 h-3 rounded-full animate-pulse"></div>
+          <div className="bg-gradient-to-r from-yellow-400 via-orange-400 to-red-400 h-3 rounded-full animate-pulse"></div>
         </div>
         
         {/* Loading Text Animation */}
@@ -48,6 +48,7 @@ const LoadingAnimation: React.FC = () => {
         </div>
         
         <p className="text-blue-300 mt-4 animate-pulse">Loading your academic dashboard...</p>
+        <p className="text-orange-300 mt-4 animate-pulse">Loading your academic dashboard...</p>
       </div>
     </div>
   );
