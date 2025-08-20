@@ -186,7 +186,7 @@ const About: React.FC = () => {
                 </div>
                 <div className="border-l-4 border-red-500 pl-6">
                   <div className="text-red-500 font-semibold">2021</div>
-                  <h3 className="text-lg font-semibold text-gray-900">Pan-African Expansion</h3>
+                  <h3 className="text-lg font-semibold text-gray-900">Sierra Leone  Expansion</h3>
                   <p className="text-gray-600">Launched online programs reaching students across all 54 African countries</p>
                 </div>
                 <div className="border-l-4 border-yellow-500 pl-6">
@@ -264,15 +264,15 @@ const About: React.FC = () => {
               </div>
             </div>
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Pan-African Student Community</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Sierra Leone  Student Community</h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
                 Our virtual campus is home to a vibrant community of nursing students from all 54 African countries, creating 
-                a rich pan-African healthcare learning environment that celebrates our diversity while preparing you for global nursing excellence.
+                a rich Sierra Leone  healthcare learning environment that celebrates our diversity while preparing you for global nursing excellence.
               </p>
               <ul className="space-y-4 mb-8">
                 <li className="flex items-center">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
-                  <span>Pan-African nursing student exchange programs</span>
+                  <span>Sierra Leone  nursing student exchange programs</span>
                 </li>
                 <li className="flex items-center">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
@@ -288,7 +288,7 @@ const About: React.FC = () => {
                 </li>
               </ul>
               <button className="bg-gradient-to-r from-orange-600 to-red-600 text-white px-6 py-3 rounded-lg font-semibold hover:from-orange-700 hover:to-red-700 transition-colors">
-                Explore Pan-African Nursing Programs
+                Explore Sierra Leone  Nursing Programs
               </button>
             </div>
           </div>
