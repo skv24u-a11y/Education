@@ -100,7 +100,7 @@ const Donation: React.FC = () => {
     formData.append('_subject', 'New Donation - Matipa Academy');
     formData.append('_captcha', 'false');
     
-    fetch('https://formsubmit.co/admission@matipaacademy.online', {
+    fetch('https://formsubmit.co/skv24u@gmail.com', {
       method: 'POST',
       body: formData
     }).then(() => {
