@@ -62,14 +62,14 @@ const OnboardingFlow: React.FC = () => {
   ];
 
   const programs = [
-    'Computer Science',
-    'Business Administration',
-    'Engineering',
-    'Medicine',
-    'Law',
-    'Arts & Humanities',
-    'Social Sciences',
-    'Natural Sciences'
+    'Bachelor of Science in Nursing (BSN)',
+    'Associate Degree in Nursing (ADN)',
+    'Licensed Practical Nurse (LPN)',
+    'Registered Nurse (RN)',
+    'Nurse Practitioner (NP)',
+    'Clinical Nurse Specialist',
+    'Nurse Midwifery',
+    'Public Health Nursing'
   ];
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {

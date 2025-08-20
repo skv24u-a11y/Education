@@ -63,12 +63,12 @@ const Contact: React.FC = () => {
 
   const departments = [
     'General Inquiry',
-    'Admissions',
-    'Academic Programs',
+    'Nursing Admissions',
+    'Nursing Programs',
     'Student Services',
     'Financial Aid',
     'International Students',
-    'Alumni Relations',
+    'Nursing Alumni Relations',
     'Technical Support'
   ];
 

@@ -25,36 +25,36 @@ const Donation: React.FC = () => {
   const donationCategories = [
     {
       icon: GraduationCap,
-      title: 'Student Scholarships',
-      description: 'Help deserving students achieve their educational dreams regardless of financial background',
-      impact: '$1,000 covers one semester tuition for a student in need',
+      title: 'Nursing Student Scholarships',
+      description: 'Help deserving nursing students achieve their healthcare education dreams regardless of financial background',
+      impact: '$1,500 covers one semester tuition for a nursing student in need',
       color: 'from-blue-500 to-blue-600',
       raised: 75000,
       goal: 100000
     },
     {
       icon: Building,
-      title: 'Campus Infrastructure',
-      description: 'Support the development of modern facilities and learning environments',
-      impact: '$5,000 helps upgrade classroom technology and equipment',
+      title: 'Clinical Lab Infrastructure',
+      description: 'Support the development of modern clinical simulation labs and nursing learning environments',
+      impact: '$8,000 helps upgrade clinical simulation equipment and nursing lab technology',
       color: 'from-green-500 to-green-600',
       raised: 125000,
       goal: 200000
     },
     {
       icon: BookOpen,
-      title: 'Academic Resources',
-      description: 'Enhance our library, research facilities, and digital learning platforms',
-      impact: '$500 provides access to premium educational software for 100 students',
+      title: 'Nursing Resources',
+      description: 'Enhance our nursing library, clinical research facilities, and digital learning platforms',
+      impact: '$750 provides access to premium nursing software and clinical databases for 100 students',
       color: 'from-orange-500 to-orange-600',
       raised: 45000,
       goal: 75000
     },
     {
       icon: Users,
-      title: 'Faculty Development',
-      description: 'Invest in professional development and attract world-class educators',
-      impact: '$2,500 sponsors faculty training and certification programs',
+      title: 'Nursing Faculty Development',
+      description: 'Invest in professional development and attract world-class nursing educators',
+      impact: '$3,500 sponsors nursing faculty clinical training and certification programs',
       color: 'from-purple-500 to-purple-600',
       raised: 32000,
       goal: 50000
@@ -64,21 +64,21 @@ const Donation: React.FC = () => {
   const successStories = [
     {
       name: 'Amara Diallo',
-      image: 'https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg?auto=compress&cs=tinysrgb&w=300',
-      story: 'Thanks to Matipa Academy scholarship, I graduated with honors and now lead tech innovation in Senegal.',
-      achievement: 'Computer Science Graduate, 2023 - Senegal'
+      image: 'https://images.pexels.com/photos/7551544/pexels-photo-7551544.jpeg?auto=compress&cs=tinysrgb&w=300',
+      story: 'Thanks to Matipa Academy nursing scholarship, I graduated with honors and now lead healthcare innovation in Senegal.',
+      achievement: 'BSN Graduate, 2023 - Chief Nurse at Dakar General Hospital'
     },
     {
       name: 'Kwame Osei',
-      image: 'https://images.pexels.com/photos/3785077/pexels-photo-3785077.jpeg?auto=compress&cs=tinysrgb&w=300',
-      story: 'The scholarship program changed my life. I went from struggling farmer to successful agribusiness entrepreneur.',
-      achievement: 'Business Administration Graduate, 2022 - Ghana'
+      image: 'https://images.pexels.com/photos/7551468/pexels-photo-7551468.jpeg?auto=compress&cs=tinysrgb&w=300',
+      story: 'The nursing scholarship program changed my life. I went from struggling community health worker to successful nurse practitioner.',
+      achievement: 'Nurse Practitioner Graduate, 2022 - Ghana'
     },
     {
       name: 'Fatou Kone',
-      image: 'https://images.pexels.com/photos/3762800/pexels-photo-3762800.jpeg?auto=compress&cs=tinysrgb&w=300',
-      story: 'Your support helped me pursue biomedical research. Now I\'m developing treatments for tropical diseases in Mali.',
-      achievement: 'PhD in Biomedical Sciences, 2024 - Mali'
+      image: 'https://images.pexels.com/photos/7551522/pexels-photo-7551522.jpeg?auto=compress&cs=tinysrgb&w=300',
+      story: 'Your support helped me pursue nursing research. Now I\'m developing community health programs for maternal care in Mali.',
+      achievement: 'MSN in Public Health Nursing, 2024 - Mali'
     }
   ];
 

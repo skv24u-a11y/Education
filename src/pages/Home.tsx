@@ -12,61 +12,62 @@ import {
   Clock,
   CheckCircle,
   TrendingUp,
-  UserPlus
+  UserPlus,
+  Heart
 } from 'lucide-react';
 
 const Home: React.FC = () => {
   const features = [
     {
-      icon: BookOpen,
-      title: 'World-Class Education',
-      description: 'Comprehensive curriculum designed by industry experts'
+      icon: Heart,
+      title: 'Clinical Excellence',
+      description: 'Comprehensive nursing curriculum with hands-on clinical training'
     },
     {
       icon: Users,
-      title: 'Expert Faculty',
-      description: 'Learn from passionate educators with real-world experience'
+      title: 'Expert Nursing Faculty',
+      description: 'Learn from experienced nurses and healthcare professionals'
     },
     {
       icon: Globe,
-      title: 'Global Community',
-      description: 'Connect with students from over 50 countries worldwide'
+      title: 'Pan-African Healthcare Network',
+      description: 'Connect with nursing students from all 54 African countries'
     },
     {
       icon: Award,
-      title: 'Accredited Programs',
-      description: 'Internationally recognized degrees and certifications'
+      title: 'Accredited Nursing Programs',
+      description: 'Internationally recognized nursing degrees and certifications'
     }
   ];
 
   const stats = [
-    { number: '15,000+', label: 'Active Students' },
-    { number: '98%', label: 'Job Placement Rate' },
-    { number: '200+', label: 'Expert Instructors' },
+    { number: '8,500+', label: 'Nursing Students' },
+    { number: '96%', label: 'Healthcare Job Placement' },
+    { number: '150+', label: 'Clinical Instructors' },
     { number: '50+', label: 'Countries Represented' }
   ];
 
   const blogPosts = [
     {
-      title: 'The Future of Online Learning',
-      excerpt: 'Discover how technology is reshaping education and creating new opportunities for students worldwide.',
+      title: 'The Future of Nursing Education in Africa',
+      excerpt: 'Discover how technology is reshaping nursing education and creating new opportunities for healthcare professionals across Africa.',
       date: 'March 15, 2024',
       readTime: '5 min read',
-      image: 'https://images.pexels.com/photos/5428836/pexels-photo-5428836.jpeg?auto=compress&cs=tinysrgb&w=400'
+      image: 'https://images.pexels.com/photos/7551544/pexels-photo-7551544.jpeg?auto=compress&cs=tinysrgb&w=400'
     },
     {
-      title: 'Study Tips for Academic Success',
-      excerpt: 'Essential strategies and techniques to help you excel in your studies and achieve your academic goals.',
+      title: 'Clinical Skills for African Nurses',
+      excerpt: 'Essential clinical skills and techniques to help you excel in nursing practice and provide quality healthcare.',
       date: 'March 12, 2024',
       readTime: '7 min read',
-      image: 'https://images.pexels.com/photos/4144222/pexels-photo-4144222.jpeg?auto=compress&cs=tinysrgb&w=400'
+      image: 'https://images.pexels.com/photos/7551468/pexels-photo-7551468.jpeg?auto=compress&cs=tinysrgb&w=400'
     },
     {
-      title: 'Career Opportunities in Tech',
-      excerpt: 'Explore the fastest-growing career paths in technology and how our programs prepare you for success.',
+      title: 'Healthcare Career Opportunities in Africa',
+      excerpt: 'Explore the growing healthcare career opportunities across Africa and how our nursing programs prepare you for success.',
       date: 'March 10, 2024',
       readTime: '6 min read',
-      image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400'
+      image: 'https://images.pexels.com/photos/7551522/pexels-photo-7551522.jpeg?auto=compress&cs=tinysrgb&w=400'
     }
   ];
 
@@ -90,8 +91,8 @@ const Home: React.FC = () => {
                 <span className="text-yellow-300 drop-shadow-lg"> Matipa</span>
               </h1>
               <p className="text-xl md:text-2xl mb-8 text-orange-100 leading-relaxed">
-                Join thousands of African students in our innovative learning environment. 
-                Get access to world-class education, expert mentorship, and career opportunities designed for African excellence.
+                Join thousands of African nursing students in our innovative healthcare learning environment. 
+                Get access to world-class nursing education, clinical training, and healthcare career opportunities designed for African excellence.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Link
@@ -111,8 +112,8 @@ const Home: React.FC = () => {
             </div>
             <div className="relative">
               <img 
-                src="https://images.pexels.com/photos/5427674/pexels-photo-5427674.jpeg?auto=compress&cs=tinysrgb&w=600" 
-                alt="African students learning"
+                src="https://images.pexels.com/photos/7551667/pexels-photo-7551667.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                alt="African nursing students in clinical training"
                 className="rounded-lg shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500 border-4 border-yellow-400"
               />
               <div className="absolute -bottom-6 -left-6 bg-gradient-to-r from-yellow-400 to-orange-400 text-gray-900 p-4 rounded-lg shadow-xl">
@@ -176,23 +177,23 @@ const Home: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                Experience Our Virtual Classroom
+                Experience Our Virtual Nursing Labs
               </h2>
               <p className="text-lg text-gray-600 mb-8">
-                Join interactive online classes with real-time collaboration tools, virtual labs, and personalized learning paths designed for your success.
+                Join interactive online nursing classes with virtual clinical simulations, real-time collaboration tools, and personalized learning paths designed for healthcare excellence.
               </p>
               <ul className="space-y-4 mb-8">
                 <li className="flex items-center">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
-                  <span>Live interactive sessions with expert instructors</span>
+                  <span>Live clinical simulations with expert nursing instructors</span>
                 </li>
                 <li className="flex items-center">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
-                  <span>Collaborative projects and peer-to-peer learning</span>
+                  <span>Collaborative case studies and peer-to-peer clinical learning</span>
                 </li>
                 <li className="flex items-center">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
-                  <span>24/7 access to recorded lectures and materials</span>
+                  <span>24/7 access to recorded clinical procedures and nursing materials</span>
                 </li>
               </ul>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -207,8 +208,8 @@ const Home: React.FC = () => {
             </div>
             <div className="relative">
               <img 
-                src="https://images.pexels.com/photos/5212703/pexels-photo-5212703.jpeg?auto=compress&cs=tinysrgb&w=600" 
-                alt="African students in virtual classroom"
+                src="https://images.pexels.com/photos/7551421/pexels-photo-7551421.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                alt="African nursing students in virtual clinical training"
                 className="rounded-lg shadow-lg"
               />
               <div className="absolute inset-0 bg-orange-600 bg-opacity-20 rounded-lg flex items-center justify-center">
@@ -226,10 +227,10 @@ const Home: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Smart Assignment Management
+              Clinical Assignment Management
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Streamlined assignment submission, automated grading, and detailed feedback system
+              Streamlined clinical assignment submission, case study evaluation, and detailed feedback system
             </p>
           </div>
           
@@ -239,9 +240,9 @@ const Home: React.FC = () => {
                 <TrendingUp className="w-8 h-8 text-green-600" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-4">Easy Upload</h3>
-              <p className="text-gray-600 mb-6">Submit assignments in multiple formats with drag-and-drop simplicity</p>
+              <p className="text-gray-600 mb-6">Submit clinical reports and case studies in multiple formats with drag-and-drop simplicity</p>
               <button className="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition-colors">
-                Upload Assignment
+                Upload Clinical Report
               </button>
             </div>
             
@@ -250,7 +251,7 @@ const Home: React.FC = () => {
                 <Clock className="w-8 h-8 text-orange-600" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-4">Quick Feedback</h3>
-              <p className="text-gray-600 mb-6">Get detailed feedback and grades within 24-48 hours</p>
+              <p className="text-gray-600 mb-6">Get detailed clinical feedback and evaluations within 24-48 hours</p>
               <button className="bg-orange-600 text-white px-6 py-2 rounded-lg hover:bg-orange-700 transition-colors">
                 View Feedback
               </button>
@@ -261,7 +262,7 @@ const Home: React.FC = () => {
                 <Calendar className="w-8 h-8 text-blue-600" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-4">Track Progress</h3>
-              <p className="text-gray-600 mb-6">Monitor your academic progress with detailed analytics</p>
+              <p className="text-gray-600 mb-6">Monitor your clinical competency progress with detailed analytics</p>
               <button className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors">
                 View Progress
               </button>

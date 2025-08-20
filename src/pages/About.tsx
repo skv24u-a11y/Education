@@ -15,70 +15,70 @@ const About: React.FC = () => {
   const values = [
     {
       icon: Target,
-      title: 'Excellence',
-      description: 'We strive for the highest standards in education and student success'
+      title: 'Clinical Excellence',
+      description: 'We strive for the highest standards in nursing education and patient care'
     },
     {
       icon: Heart,
-      title: 'Integrity',
-      description: 'We maintain honesty, transparency, and ethical practices in all we do'
+      title: 'Compassionate Care',
+      description: 'We maintain empathy, compassion, and ethical nursing practices in all we do'
     },
     {
       icon: Lightbulb,
-      title: 'Innovation',
-      description: 'We embrace new technologies and teaching methods to enhance learning'
+      title: 'Healthcare Innovation',
+      description: 'We embrace new medical technologies and teaching methods to enhance nursing education'
     },
     {
       icon: Users,
-      title: 'Community',
-      description: 'We foster a supportive, inclusive environment for all students and faculty'
+      title: 'Ubuntu Community',
+      description: 'We foster a supportive, inclusive environment for all nursing students and faculty'
     }
   ];
 
   const achievements = [
-    { number: '4', label: 'Years of Excellence' },
-    { number: '25,000+', label: 'African Alumni' },
-    { number: '150+', label: 'Academic Programs' },
-    { number: '97%', label: 'Graduate Employment Rate' }
+    { number: '6', label: 'Years of Nursing Excellence' },
+    { number: '12,000+', label: 'African Nursing Alumni' },
+    { number: '25+', label: 'Nursing Specializations' },
+    { number: '98%', label: 'Healthcare Employment Rate' }
   ];
 
   const facultyMembers = [
     {
       name: 'Dr. Amina Kone',
-      position: 'Dean of Engineering',
-      education: 'PhD in Computer Science, University of Cape Town',
-      image: 'https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg?auto=compress&cs=tinysrgb&w=300',
-      expertise: 'Artificial Intelligence, Machine Learning'
+      position: 'Dean of Nursing',
+      education: 'PhD in Nursing Science, University of Cape Town',
+      image: 'https://images.pexels.com/photos/7551544/pexels-photo-7551544.jpeg?auto=compress&cs=tinysrgb&w=300',
+      expertise: 'Critical Care Nursing, Healthcare Leadership'
     },
     {
       name: 'Prof. Kwame Asante',
-      position: 'Head of Business School',
-      education: 'MBA INSEAD, PhD Economics University of Ghana',
-      image: 'https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=300',
-      expertise: 'Strategic Management, Entrepreneurship'
+      position: 'Head of Clinical Training',
+      education: 'MSN Clinical Leadership, University of Ghana Medical School',
+      image: 'https://images.pexels.com/photos/7551468/pexels-photo-7551468.jpeg?auto=compress&cs=tinysrgb&w=300',
+      expertise: 'Clinical Simulation, Emergency Nursing'
     },
     {
       name: 'Dr. Fatima Al-Zahra',
-      position: 'Director of Research',
-      education: 'PhD in Biomedical Sciences, University of the Witwatersrand',
-      image: 'https://images.pexels.com/photos/3762800/pexels-photo-3762800.jpeg?auto=compress&cs=tinysrgb&w=300',
-      expertise: 'Biotechnology, Medical Research'
+      position: 'Director of Nursing Research',
+      education: 'PhD in Nursing Research, University of the Witwatersrand',
+      image: 'https://images.pexels.com/photos/7551522/pexels-photo-7551522.jpeg?auto=compress&cs=tinysrgb&w=300',
+      expertise: 'Community Health Nursing, Maternal Care'
     },
     {
-      name: 'Prof. Chinua Achebe Jr.',
-      position: 'Chair of Liberal Arts',
-      education: 'PhD in African Literature, University of Ibadan',
-      image: 'https://images.pexels.com/photos/3785077/pexels-photo-3785077.jpeg?auto=compress&cs=tinysrgb&w=300',
-      expertise: 'Comparative Literature, Creative Writing'
+      name: 'Prof. Chinua Okafor',
+      position: 'Chair of Pediatric Nursing',
+      education: 'MSN Pediatric Nursing, University of Ibadan',
+      image: 'https://images.pexels.com/photos/7551667/pexels-photo-7551667.jpeg?auto=compress&cs=tinysrgb&w=300',
+      expertise: 'Pediatric Care, Child Health Nursing'
     }
   ];
 
   const accreditations = [
-    'African Union Commission on Education',
-    'Association of African Universities (AAU)',
-    'AACSB International (Business Programs)',
+    'African Nursing Council (ANC)',
+    'International Council of Nurses (ICN)',
+    'Commission on Collegiate Nursing Education (CCNE)',
     'Inter-University Council for East Africa (IUCEA)',
-    'Southern African Regional Universities Association (SARUA)'
+    'African Association of Nursing and Midwifery (AANM)'
   ];
 
   return (
@@ -103,15 +103,15 @@ const About: React.FC = () => {
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Dhamira Yetu (Our Mission)</h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                Matipa Academy is dedicated to providing world-class education that empowers African students 
-                to achieve their full potential. We combine rigorous academics with innovative teaching 
-                methods, practical experience, and African perspectives to prepare graduates for success 
-                in an ever-evolving global landscape while staying rooted in African values.
+                Matipa Academy is dedicated to providing world-class nursing education that empowers African healthcare professionals 
+                to achieve their full potential. We combine rigorous clinical training with innovative teaching 
+                methods, hands-on experience, and African healthcare perspectives to prepare nursing graduates for success 
+                in addressing Africa's healthcare challenges while staying rooted in Ubuntu values.
               </p>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                Our commitment extends beyond traditional education – we nurture Ubuntu philosophy, 
-                critical thinking, creativity, and leadership skills that enable our students to become 
-                catalysts for positive change in their African communities and beyond.
+                Our commitment extends beyond traditional nursing education – we nurture Ubuntu philosophy, 
+                critical thinking, compassionate care, and leadership skills that enable our nursing students to become 
+                catalysts for positive healthcare transformation in their African communities and beyond.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <button className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
@@ -124,8 +124,8 @@ const About: React.FC = () => {
             </div>
             <div className="relative">
               <img 
-                src="https://images.pexels.com/photos/5427674/pexels-photo-5427674.jpeg?auto=compress&cs=tinysrgb&w=600" 
-                alt="African students in library"
+                src="https://images.pexels.com/photos/7551421/pexels-photo-7551421.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                alt="African nursing students in clinical training"
                 className="rounded-lg shadow-lg"
               />
               <div className="absolute -bottom-6 -right-6 bg-gradient-to-r from-orange-500 to-red-500 text-white p-6 rounded-lg shadow-lg">
@@ -240,8 +240,8 @@ const About: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
               <img 
-                src="https://images.pexels.com/photos/5427674/pexels-photo-5427674.jpeg?auto=compress&cs=tinysrgb&w=600" 
-                alt="Diverse students"
+                src="https://images.pexels.com/photos/7551421/pexels-photo-7551421.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                alt="Diverse African nursing students"
                 className="rounded-lg shadow-lg"
               />
               <div className="absolute -top-6 -left-6 bg-gradient-to-r from-orange-500 to-red-500 text-white p-4 rounded-lg shadow-lg">
@@ -257,29 +257,29 @@ const About: React.FC = () => {
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Pan-African Student Community</h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                Our virtual campus is home to a vibrant community of students from all 54 African countries, creating 
-                a rich pan-African learning environment that celebrates our diversity while preparing you for global success.
+                Our virtual campus is home to a vibrant community of nursing students from all 54 African countries, creating 
+                a rich pan-African healthcare learning environment that celebrates our diversity while preparing you for global nursing excellence.
               </p>
               <ul className="space-y-4 mb-8">
                 <li className="flex items-center">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
-                  <span>Pan-African student exchange programs</span>
+                  <span>Pan-African nursing student exchange programs</span>
                 </li>
                 <li className="flex items-center">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
-                  <span>Cultural clubs representing all African regions</span>
+                  <span>Healthcare clubs representing all African regions</span>
                 </li>
                 <li className="flex items-center">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
-                  <span>African and global internship placement network</span>
+                  <span>African and global clinical placement network</span>
                 </li>
                 <li className="flex items-center">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
-                  <span>Ubuntu philosophy and cross-cultural workshops</span>
+                  <span>Ubuntu philosophy and cross-cultural healthcare workshops</span>
                 </li>
               </ul>
               <button className="bg-gradient-to-r from-orange-600 to-red-600 text-white px-6 py-3 rounded-lg font-semibold hover:from-orange-700 hover:to-red-700 transition-colors">
-                Explore Pan-African Programs
+                Explore Pan-African Nursing Programs
               </button>
             </div>
           </div>
@@ -292,7 +292,7 @@ const About: React.FC = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Uthibitisho na Utambulisho (Accreditations & Recognition)</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our programs are recognized by leading African and international accreditation bodies
+              Our nursing programs are recognized by leading African and international nursing accreditation bodies
             </p>
           </div>
           

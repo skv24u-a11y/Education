@@ -101,53 +101,53 @@ const FAQ: React.FC = () => {
   const testimonials = [
     {
       name: 'Amina Hassan',
-      program: 'Computer Science, Class of 2023',
+      program: 'Bachelor of Science in Nursing, Class of 2023',
       location: 'Nairobi, Kenya',
-      image: 'https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg?auto=compress&cs=tinysrgb&w=300',
+      image: 'https://images.pexels.com/photos/7551544/pexels-photo-7551544.jpeg?auto=compress&cs=tinysrgb&w=300',
       rating: 5,
       date: 'March 2024',
-      testimonial: 'Matipa Academy transformed my life. The professors understand African challenges, the online platform works even with limited internet, and the career support helped me start my own tech company in Nairobi.',
-      highlight: 'Started Tech Company in Kenya'
+      testimonial: 'Matipa Academy transformed my life. The nursing professors understand African healthcare challenges, the online clinical simulations work even with limited internet, and the career support helped me secure a position at Kenyatta National Hospital.',
+      highlight: 'Senior Nurse at Kenyatta National Hospital'
     },
     {
       name: 'Kofi Mensah',
-      program: 'Business Administration, Class of 2022',
+      program: 'Registered Nurse Program, Class of 2022',
       location: 'Accra, Ghana',
-      image: 'https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=300',
+      image: 'https://images.pexels.com/photos/7551468/pexels-photo-7551468.jpeg?auto=compress&cs=tinysrgb&w=300',
       rating: 5,
       date: 'February 2024',
-      testimonial: 'The flexibility of online learning allowed me to balance my cocoa farming business with studies. The MBA program taught me to scale my business across West Africa. Now I employ 200+ farmers.',
-      highlight: 'Scaled Agribusiness Across West Africa'
+      testimonial: 'The flexibility of online learning allowed me to balance my work at the local clinic with studies. The nursing program taught me advanced clinical skills. Now I lead the emergency department at Ridge Hospital.',
+      highlight: 'Emergency Department Head at Ridge Hospital'
     },
     {
       name: 'Fatima Al-Rashid',
-      program: 'Digital Marketing, Class of 2024',
+      program: 'Nurse Midwifery, Class of 2024',
       location: 'Cairo, Egypt',
-      image: 'https://images.pexels.com/photos/3762800/pexels-photo-3762800.jpeg?auto=compress&cs=tinysrgb&w=300',
+      image: 'https://images.pexels.com/photos/7551522/pexels-photo-7551522.jpeg?auto=compress&cs=tinysrgb&w=300',
       rating: 5,
       date: 'January 2024',
-      testimonial: 'As a working mother in Cairo, the online format was perfect. The professors understood my cultural context, and the practical projects helped me build a portfolio. I now run the leading digital agency in North Africa!',
-      highlight: 'Leading Digital Agency in North Africa'
+      testimonial: 'As a working mother in Cairo, the online format was perfect. The professors understood my cultural context, and the clinical simulations helped me build confidence. I now run the leading maternal health clinic in North Africa!',
+      highlight: 'Leading Maternal Health Clinic in North Africa'
     },
     {
       name: 'Thabo Mthembu',
-      program: 'Data Science, Class of 2023',
+      program: 'Clinical Nurse Specialist, Class of 2023',
       location: 'Cape Town, South Africa',
-      image: 'https://images.pexels.com/photos/3785077/pexels-photo-3785077.jpeg?auto=compress&cs=tinysrgb&w=300',
+      image: 'https://images.pexels.com/photos/7551667/pexels-photo-7551667.jpeg?auto=compress&cs=tinysrgb&w=300',
       rating: 5,
       date: 'March 2024',
-      testimonial: 'The hands-on approach to learning data science was exceptional. Real-world African projects, industry mentors, and cutting-edge curriculum prepared me to solve African challenges with data.',
-      highlight: 'Leading Data Science for African Development'
+      testimonial: 'The hands-on approach to clinical nursing was exceptional. Real-world African healthcare scenarios, clinical mentors, and cutting-edge curriculum prepared me to address African healthcare challenges.',
+      highlight: 'Leading Clinical Nursing at Groote Schuur Hospital'
     },
     {
       name: 'Aisha Traore',
-      program: 'Healthcare Administration, Class of 2022',
+      program: 'Public Health Nursing, Class of 2022',
       location: 'Bamako, Mali',
-      image: 'https://images.pexels.com/photos/3211476/pexels-photo-3211476.jpeg?auto=compress&cs=tinysrgb&w=300',
+      image: 'https://images.pexels.com/photos/7551421/pexels-photo-7551421.jpeg?auto=compress&cs=tinysrgb&w=300',
       rating: 5,
       date: 'February 2024',
-      testimonial: 'The healthcare program focused on African health challenges. The networking with African healthcare leaders and alumni connections helped me transform rural healthcare in Mali.',
-      highlight: 'Transforming Rural Healthcare in Mali'
+      testimonial: 'The public health nursing program focused on African health challenges. The networking with African nursing leaders and alumni connections helped me establish community health programs across rural Mali.',
+      highlight: 'Community Health Director in Rural Mali'
     }
   ];
 
