@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
           <div className="col-span-1 lg:col-span-1">
             <div className="flex items-center space-x-3 mb-4">
               <div className="bg-gradient-to-r from-orange-500 to-red-600 p-2 rounded-lg">
-                <GraduationCap className="w-6 h-6 text-white" />
+                <span className="text-white font-bold text-lg">MA</span>
               </div>
               <div>
                 <h3 className="text-xl font-bold">Matipa Academy</h3>
