@@ -33,7 +33,7 @@ const Home: React.FC = () => {
     },
     {
       icon: Globe,
-      title: 'Pan-African Healthcare Network',
+      title: 'Sierra Leone  Healthcare Network',
       description: 'Connect with nursing students from all 54 African countries'
     },
     {
