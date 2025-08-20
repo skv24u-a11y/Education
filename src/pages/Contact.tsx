@@ -53,7 +53,7 @@ const Contact: React.FC = () => {
     {
       icon: Phone,
       title: 'Call Us',
-      details: ['+254 700 123 456', '+254 700 123 457 (Admissions)', '+254 700 123 458 (Support)'],
+      details: ['033762485 ', '033762485  (Admissions)', '033762485  (Support)'],
       color: 'text-green-600'
     },
     {
