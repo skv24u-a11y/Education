@@ -63,22 +63,22 @@ const Donation: React.FC = () => {
 
   const successStories = [
     {
-      name: 'Maria Rodriguez',
+      name: 'Amara Diallo',
       image: 'https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg?auto=compress&cs=tinysrgb&w=300',
-      story: 'Thanks to scholarship support, I graduated with honors and now work as a software engineer at Google.',
-      achievement: 'Computer Science Graduate, 2023'
+      story: 'Thanks to Matipa Academy scholarship, I graduated with honors and now lead tech innovation in Senegal.',
+      achievement: 'Computer Science Graduate, 2023 - Senegal'
     },
     {
-      name: 'James Chen',
+      name: 'Kwame Osei',
       image: 'https://images.pexels.com/photos/3785077/pexels-photo-3785077.jpeg?auto=compress&cs=tinysrgb&w=300',
-      story: 'The scholarship program changed my life. I went from struggling to pay for textbooks to earning my MBA.',
-      achievement: 'Business Administration Graduate, 2022'
+      story: 'The scholarship program changed my life. I went from struggling farmer to successful agribusiness entrepreneur.',
+      achievement: 'Business Administration Graduate, 2022 - Ghana'
     },
     {
-      name: 'Aisha Patel',
+      name: 'Fatou Kone',
       image: 'https://images.pexels.com/photos/3762800/pexels-photo-3762800.jpeg?auto=compress&cs=tinysrgb&w=300',
-      story: 'Your support helped me pursue my passion for biomedical research. Now I\'m developing life-saving treatments.',
-      achievement: 'PhD in Biomedical Sciences, 2024'
+      story: 'Your support helped me pursue biomedical research. Now I\'m developing treatments for tropical diseases in Mali.',
+      achievement: 'PhD in Biomedical Sciences, 2024 - Mali'
     }
   ];
 
@@ -94,12 +94,23 @@ const Donation: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitted(true);
-    setTimeout(() => {
-      setIsSubmitted(false);
-      setSelectedAmount(null);
-      setCustomAmount('');
-    }, 3000);
+    // Form will be handled by FormSubmit
+    const form = e.target as HTMLFormElement;
+    const formData = new FormData(form);
+    formData.append('_subject', 'New Donation - Matipa Academy');
+    formData.append('_captcha', 'false');
+    
+    fetch('https://formsubmit.co/admission@matipaacademy.online', {
+      method: 'POST',
+      body: formData
+    }).then(() => {
+      setIsSubmitted(true);
+      setTimeout(() => {
+        setIsSubmitted(false);
+        setSelectedAmount(null);
+        setCustomAmount('');
+      }, 3000);
+    });
   };
 
   const getProgressPercentage = (raised: number, goal: number) => {
@@ -109,14 +120,14 @@ const Donation: React.FC = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 text-white py-20">
+      <section className="relative bg-gradient-to-br from-orange-600 via-red-600 to-yellow-600 text-white py-20">
         <div className="absolute inset-0 bg-black opacity-20"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <Heart className="w-16 h-16 text-red-400 mx-auto mb-6" />
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">Make a Difference</h1>
-            <p className="text-xl md:text-2xl text-blue-100 max-w-4xl mx-auto mb-8">
-              Your generous donation helps us provide world-class education and opportunities to students worldwide
+            <Heart className="w-16 h-16 text-yellow-300 mx-auto mb-6" />
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">Fanya Mabadiliko (Make a Difference)</h1>
+            <p className="text-xl md:text-2xl text-orange-100 max-w-4xl mx-auto mb-8">
+              Your generous donation helps us provide world-class education and opportunities to African students
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="bg-gradient-to-r from-red-500 to-red-600 text-white px-8 py-4 rounded-lg font-semibold hover:from-red-600 hover:to-red-700 transition-all transform hover:scale-105">
@@ -135,20 +146,20 @@ const Donation: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="text-4xl font-bold text-blue-600 mb-2">2,500+</div>
-              <div className="text-gray-600">Students Supported</div>
+              <div className="text-4xl font-bold text-orange-600 mb-2">15,000+</div>
+              <div className="text-gray-600">African Students Supported</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-green-600 mb-2">$2.5M</div>
+              <div className="text-4xl font-bold text-green-600 mb-2">$5.2M</div>
               <div className="text-gray-600">Scholarships Awarded</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-orange-600 mb-2">98%</div>
+              <div className="text-4xl font-bold text-red-600 mb-2">97%</div>
               <div className="text-gray-600">Graduate Success Rate</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-purple-600 mb-2">50+</div>
-              <div className="text-gray-600">Countries Reached</div>
+              <div className="text-4xl font-bold text-yellow-600 mb-2">54</div>
+              <div className="text-gray-600">African Countries Reached</div>
             </div>
           </div>
         </div>
@@ -159,10 +170,10 @@ const Donation: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Where Your Donation Goes
+              Mahali Mchango Wako Unapoenda (Where Your Donation Goes)
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Choose the area where you'd like to make the biggest impact
+              Choose the area where you'd like to make the biggest impact for African students
             </p>
           </div>
           
@@ -218,10 +229,10 @@ const Donation: React.FC = () => {
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white rounded-xl shadow-2xl overflow-hidden">
-            <div className="bg-gradient-to-r from-blue-600 to-blue-700 p-8 text-white text-center">
+            <div className="bg-gradient-to-r from-orange-600 to-red-600 p-8 text-white text-center">
               <DollarSign className="w-12 h-12 mx-auto mb-4" />
-              <h2 className="text-3xl font-bold mb-2">Make Your Donation</h2>
-              <p className="text-blue-100">Every contribution makes a difference in a student's life</p>
+              <h2 className="text-3xl font-bold mb-2">Toa Mchango Wako (Make Your Donation)</h2>
+              <p className="text-orange-100">Every contribution makes a difference in an African student's life</p>
             </div>
             
             {isSubmitted ? (
@@ -229,11 +240,11 @@ const Donation: React.FC = () => {
                 <CheckCircle className="w-20 h-20 text-green-500 mx-auto mb-6" />
                 <h3 className="text-3xl font-bold text-gray-900 mb-4">Thank You!</h3>
                 <p className="text-xl text-gray-600 mb-6">
-                  Your generous donation has been processed successfully. You will receive a confirmation email shortly.
+                  Asante sana! Your generous donation has been processed successfully. You will receive a confirmation email shortly.
                 </p>
                 <div className="bg-green-50 p-6 rounded-lg">
                   <p className="text-green-800 font-medium">
-                    Your donation will directly impact students' lives and help us continue our mission of educational excellence.
+                    Your donation will directly impact African students' lives and help us continue our mission of educational excellence.
                   </p>
                 </div>
               </div>
@@ -248,7 +259,7 @@ const Donation: React.FC = () => {
                       onClick={() => setDonationType('one-time')}
                       className={`flex-1 py-3 px-6 rounded-lg font-medium transition-colors ${
                         donationType === 'one-time'
-                          ? 'bg-blue-600 text-white'
+                          ? 'bg-orange-600 text-white'
                           : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                       }`}
                     >
@@ -259,7 +270,7 @@ const Donation: React.FC = () => {
                       onClick={() => setDonationType('monthly')}
                       className={`flex-1 py-3 px-6 rounded-lg font-medium transition-colors ${
                         donationType === 'monthly'
-                          ? 'bg-blue-600 text-white'
+                          ? 'bg-orange-600 text-white'
                           : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                       }`}
                     >
@@ -279,7 +290,7 @@ const Donation: React.FC = () => {
                         onClick={() => handleAmountSelect(amount)}
                         className={`py-3 px-4 rounded-lg font-medium transition-colors ${
                           selectedAmount === amount
-                            ? 'bg-blue-600 text-white'
+                            ? 'bg-orange-600 text-white'
                             : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                         }`}
                       >
@@ -299,7 +310,7 @@ const Donation: React.FC = () => {
                         value={customAmount}
                         onChange={handleCustomAmountChange}
                         placeholder="Enter amount"
-                        className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                        className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                       />
                     </div>
                   </div>
@@ -315,8 +326,9 @@ const Donation: React.FC = () => {
                       </label>
                       <input
                         type="text"
+                        name="fullName"
                         required
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                         placeholder="Enter your full name"
                       />
                     </div>
@@ -326,8 +338,9 @@ const Donation: React.FC = () => {
                       </label>
                       <input
                         type="email"
+                        name="email"
                         required
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                         placeholder="Enter your email"
                       />
                     </div>
@@ -341,9 +354,10 @@ const Donation: React.FC = () => {
                       <CreditCard className="absolute left-3 top-3 w-5 h-5 text-gray-400" />
                       <input
                         type="text"
+                        name="cardNumber"
                         required
                         placeholder="1234 5678 9012 3456"
-                        className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                        className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                       />
                     </div>
                   </div>
@@ -355,9 +369,10 @@ const Donation: React.FC = () => {
                       </label>
                       <input
                         type="text"
+                        name="expiryDate"
                         required
                         placeholder="MM/YY"
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                       />
                     </div>
                     <div>
@@ -366,9 +381,10 @@ const Donation: React.FC = () => {
                       </label>
                       <input
                         type="text"
+                        name="cvv"
                         required
                         placeholder="123"
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                       />
                     </div>
                   </div>
@@ -377,10 +393,12 @@ const Donation: React.FC = () => {
                 <button
                   type="submit"
                   disabled={!selectedAmount && !customAmount}
-                  className="w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white py-4 px-6 rounded-lg font-semibold hover:from-blue-700 hover:to-blue-800 transition-all transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+                  className="w-full bg-gradient-to-r from-orange-600 to-red-600 text-white py-4 px-6 rounded-lg font-semibold hover:from-orange-700 hover:to-red-700 transition-all transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
                 >
-                  Complete Donation ${selectedAmount || customAmount || '0'}
+                  Maliza Mchango (Complete Donation) ${selectedAmount || customAmount || '0'}
                 </button>
+                <input type="hidden" name="amount" value={selectedAmount || customAmount || '0'} />
+                <input type="hidden" name="donationType" value={donationType} />
               </form>
             )}
           </div>
@@ -392,10 +410,10 @@ const Donation: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Success Stories
+              Hadithi za Mafanikio (Success Stories)
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              See how your donations have transformed lives and created opportunities
+              See how your donations have transformed African lives and created opportunities
             </p>
           </div>
           
@@ -416,7 +434,7 @@ const Donation: React.FC = () => {
                     <Star className="w-5 h-5 text-yellow-400" />
                   </div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">{story.name}</h3>
-                  <p className="text-blue-600 font-medium text-sm mb-3">{story.achievement}</p>
+                  <p className="text-orange-600 font-medium text-sm mb-3">{story.achievement}</p>
                   <p className="text-gray-600 italic">"{story.story}"</p>
                 </div>
               </div>
@@ -426,19 +444,19 @@ const Donation: React.FC = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-700 text-white">
+      <section className="py-20 bg-gradient-to-r from-orange-600 to-red-600 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Join Our Mission Today
+            Jiunge na Dhamira Yetu Leo (Join Our Mission Today)
           </h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto">
-            Together, we can create more success stories and transform lives through education
+            Together, we can create more African success stories and transform lives through education
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-red-500 text-white px-8 py-4 rounded-lg font-semibold hover:bg-red-600 transition-all transform hover:scale-105">
-              Make a Donation
+            <button className="bg-gradient-to-r from-yellow-500 to-orange-500 text-white px-8 py-4 rounded-lg font-semibold hover:from-yellow-600 hover:to-orange-600 transition-all transform hover:scale-105">
+              Toa Mchango (Make a Donation)
             </button>
-            <button className="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all transform hover:scale-105">
+            <button className="bg-white text-orange-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all transform hover:scale-105">
               Become a Partner
             </button>
           </div>

@@ -25,11 +25,11 @@ const Header: React.FC = () => {
             <div className="flex items-center space-x-4">
               <div className="flex items-center">
                 <Phone className="w-4 h-4 mr-1" />
-                <span>033762485 / 034485514</span>
+                <span>+254 700 123 456 / +254 700 123 457</span>
               </div>
               <div className="flex items-center">
                 <Mail className="w-4 h-4 mr-1" />
-                <span>info@excellenceacademy.edu</span>
+                <span>info@matipaacademy.online</span>
               </div>
             </div>
             <div className="hidden md:flex space-x-4">
@@ -55,12 +55,12 @@ const Header: React.FC = () => {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
-            <div className="bg-blue-600 p-2 rounded-lg">
-              <GraduationCap className="w-8 h-8 text-white" />
+            <div className="bg-gradient-to-r from-orange-500 to-red-600 p-2 rounded-lg shadow-lg">
+              <GraduationCap className="w-8 h-8 text-white drop-shadow-sm" />
             </div>
             <div>
-              <h1 className="text-2xl font-bold text-gray-900">Excellence Academy</h1>
-              <p className="text-sm text-gray-600">Educating Future Leaders</p>
+              <h1 className="text-2xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">Matipa Academy</h1>
+              <p className="text-sm text-orange-600 font-medium">Empowering African Excellence</p>
             </div>
           </Link>
 
@@ -85,7 +85,7 @@ const Header: React.FC = () => {
           <div className="hidden md:block">
             <Link
               to="/onboarding"
-              className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-2 rounded-lg font-medium hover:from-blue-700 hover:to-blue-800 transition-all transform hover:scale-105"
+              className="bg-gradient-to-r from-orange-500 to-red-600 text-white px-6 py-2 rounded-lg font-medium hover:from-orange-600 hover:to-red-700 transition-all transform hover:scale-105 shadow-lg"
             >
               Enroll Now
             </Link>
@@ -128,7 +128,7 @@ const Header: React.FC = () => {
                 </Link>
                 <Link
                   to="/onboarding"
-                  className="w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white px-4 py-2 rounded font-medium hover:from-blue-700 hover:to-blue-800 transition-all block text-center"
+                  className="w-full bg-gradient-to-r from-orange-500 to-red-600 text-white px-4 py-2 rounded font-medium hover:from-orange-600 hover:to-red-700 transition-all block text-center shadow-lg"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Enroll Now

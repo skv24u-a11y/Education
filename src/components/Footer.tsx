@@ -10,16 +10,16 @@ const Footer: React.FC = () => {
           {/* Brand */}
           <div className="col-span-1 lg:col-span-1">
             <div className="flex items-center space-x-3 mb-4">
-              <div className="bg-blue-600 p-2 rounded-lg">
+              <div className="bg-gradient-to-r from-orange-500 to-red-600 p-2 rounded-lg">
                 <GraduationCap className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h3 className="text-xl font-bold">Excellence Academy</h3>
-                <p className="text-gray-400 text-sm">Educating Future Leaders</p>
+                <h3 className="text-xl font-bold">Matipa Academy</h3>
+                <p className="text-gray-400 text-sm">Empowering African Excellence</p>
               </div>
             </div>
             <p className="text-gray-400 mb-4">
-              Empowering students with world-class education and innovative learning experiences since 1995.
+              Empowering African students with world-class education and innovative learning experiences since 2020.
             </p>
             <div className="flex space-x-4">
               <Facebook className="w-5 h-5 text-gray-400 hover:text-blue-500 cursor-pointer transition-colors" />
@@ -60,15 +60,15 @@ const Footer: React.FC = () => {
             <div className="space-y-3">
               <div className="flex items-center">
                 <MapPin className="w-5 h-5 text-gray-400 mr-3" />
-                <span className="text-gray-400">123 Education Street, Learning City, LC 12345</span>
+                <span className="text-gray-400">Uhuru Highway, Nairobi, Kenya</span>
               </div>
               <div className="flex items-center">
                 <Phone className="w-5 h-5 text-gray-400 mr-3" />
-                <span className="text-gray-400">033762485 / 034485514</span>
+                <span className="text-gray-400">+254 700 123 456 / +254 700 123 457</span>
               </div>
               <div className="flex items-center">
                 <Mail className="w-5 h-5 text-gray-400 mr-3" />
-                <span className="text-gray-400">info@excellenceacademy.edu</span>
+                <span className="text-gray-400">info@matipaacademy.online</span>
               </div>
             </div>
           </div>
@@ -77,7 +77,7 @@ const Footer: React.FC = () => {
         <div className="border-t border-gray-800 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © 2024 Excellence Academy. All rights reserved.
+              © 2024 Matipa Academy. All rights reserved.
             </p>
             <div className="flex space-x-4 mt-4 md:mt-0">
               <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</a>

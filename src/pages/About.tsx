@@ -36,60 +36,60 @@ const About: React.FC = () => {
   ];
 
   const achievements = [
-    { number: '29', label: 'Years of Excellence' },
-    { number: '50,000+', label: 'Alumni Worldwide' },
+    { number: '4', label: 'Years of Excellence' },
+    { number: '25,000+', label: 'African Alumni' },
     { number: '150+', label: 'Academic Programs' },
-    { number: '95%', label: 'Graduate Employment Rate' }
+    { number: '97%', label: 'Graduate Employment Rate' }
   ];
 
   const facultyMembers = [
     {
-      name: 'Dr. Sarah Johnson',
+      name: 'Dr. Amina Kone',
       position: 'Dean of Engineering',
-      education: 'PhD in Computer Science, MIT',
-      image: 'https://images.pexels.com/photos/3781529/pexels-photo-3781529.jpeg?auto=compress&cs=tinysrgb&w=300',
+      education: 'PhD in Computer Science, University of Cape Town',
+      image: 'https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg?auto=compress&cs=tinysrgb&w=300',
       expertise: 'Artificial Intelligence, Machine Learning'
     },
     {
-      name: 'Prof. Michael Chen',
+      name: 'Prof. Kwame Asante',
       position: 'Head of Business School',
-      education: 'MBA Harvard, PhD Economics Stanford',
+      education: 'MBA INSEAD, PhD Economics University of Ghana',
       image: 'https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=300',
       expertise: 'Strategic Management, Entrepreneurship'
     },
     {
-      name: 'Dr. Emily Rodriguez',
+      name: 'Dr. Fatima Al-Zahra',
       position: 'Director of Research',
-      education: 'PhD in Biomedical Sciences, Johns Hopkins',
+      education: 'PhD in Biomedical Sciences, University of the Witwatersrand',
       image: 'https://images.pexels.com/photos/3762800/pexels-photo-3762800.jpeg?auto=compress&cs=tinysrgb&w=300',
       expertise: 'Biotechnology, Medical Research'
     },
     {
-      name: 'Prof. David Thompson',
+      name: 'Prof. Chinua Achebe Jr.',
       position: 'Chair of Liberal Arts',
-      education: 'PhD in Literature, Oxford University',
+      education: 'PhD in African Literature, University of Ibadan',
       image: 'https://images.pexels.com/photos/3785077/pexels-photo-3785077.jpeg?auto=compress&cs=tinysrgb&w=300',
       expertise: 'Comparative Literature, Creative Writing'
     }
   ];
 
   const accreditations = [
-    'Middle States Commission on Higher Education',
+    'African Union Commission on Education',
+    'Association of African Universities (AAU)',
     'AACSB International (Business Programs)',
-    'ABET (Engineering Programs)',
-    'National Association of Schools of Art and Design',
-    'Commission on Collegiate Nursing Education'
+    'Inter-University Council for East Africa (IUCEA)',
+    'Southern African Regional Universities Association (SARUA)'
   ];
 
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 text-white py-20">
+      <section className="relative bg-gradient-to-br from-orange-600 via-red-600 to-yellow-600 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">About Excellence Academy</h1>
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">About Matipa Academy</h1>
             <p className="text-xl md:text-2xl text-blue-100 max-w-4xl mx-auto">
-              Empowering minds, transforming lives, and building tomorrow's leaders since 1995
+              Empowering African minds, transforming lives, and building tomorrow's leaders since 2020
             </p>
           </div>
         </div>
@@ -101,17 +101,17 @@ const About: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Our Mission</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Dhamira Yetu (Our Mission)</h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                Excellence Academy is dedicated to providing world-class education that empowers students 
+                Matipa Academy is dedicated to providing world-class education that empowers African students 
                 to achieve their full potential. We combine rigorous academics with innovative teaching 
-                methods, practical experience, and global perspectives to prepare graduates for success 
-                in an ever-evolving world.
+                methods, practical experience, and African perspectives to prepare graduates for success 
+                in an ever-evolving global landscape while staying rooted in African values.
               </p>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                Our commitment extends beyond traditional education – we nurture critical thinking, 
-                creativity, and leadership skills that enable our students to become catalysts for 
-                positive change in their communities and industries.
+                Our commitment extends beyond traditional education – we nurture Ubuntu philosophy, 
+                critical thinking, creativity, and leadership skills that enable our students to become 
+                catalysts for positive change in their African communities and beyond.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <button className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
@@ -124,11 +124,11 @@ const About: React.FC = () => {
             </div>
             <div className="relative">
               <img 
-                src="https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=600" 
-                alt="Students in library"
+                src="https://images.pexels.com/photos/5427674/pexels-photo-5427674.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                alt="African students in library"
                 className="rounded-lg shadow-lg"
               />
-              <div className="absolute -bottom-6 -right-6 bg-green-500 text-white p-6 rounded-lg shadow-lg">
+              <div className="absolute -bottom-6 -right-6 bg-gradient-to-r from-orange-500 to-red-500 text-white p-6 rounded-lg shadow-lg">
                 <div className="text-center">
                   <div className="text-2xl font-bold">98%</div>
                   <div className="text-sm">Student Satisfaction</div>
@@ -143,17 +143,17 @@ const About: React.FC = () => {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Core Values</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Maadili Yetu (Our Core Values)</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              These fundamental principles guide everything we do and shape our educational approach
+              These fundamental African principles guide everything we do and shape our educational approach
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map((value, index) => (
               <div key={index} className="bg-white p-8 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow duration-300">
-                <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <value.icon className="w-8 h-8 text-blue-600" />
+                <div className="bg-gradient-to-r from-orange-100 to-red-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <value.icon className="w-8 h-8 text-orange-600" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">{value.title}</h3>
                 <p className="text-gray-600">{value.description}</p>
@@ -168,34 +168,34 @@ const About: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Our History</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Historia Yetu (Our History)</h2>
               <div className="space-y-6">
                 <div className="border-l-4 border-blue-600 pl-6">
-                  <div className="text-blue-600 font-semibold">1995</div>
+                  <div className="text-orange-600 font-semibold">2020</div>
                   <h3 className="text-lg font-semibold text-gray-900">Foundation</h3>
-                  <p className="text-gray-600">Excellence Academy was founded with a vision to revolutionize higher education</p>
+                  <p className="text-gray-600">Matipa Academy was founded with a vision to revolutionize African higher education</p>
+                </div>
+                <div className="border-l-4 border-red-500 pl-6">
+                  <div className="text-red-500 font-semibold">2021</div>
+                  <h3 className="text-lg font-semibold text-gray-900">Pan-African Expansion</h3>
+                  <p className="text-gray-600">Launched online programs reaching students across all 54 African countries</p>
+                </div>
+                <div className="border-l-4 border-yellow-500 pl-6">
+                  <div className="text-yellow-500 font-semibold">2022</div>
+                  <h3 className="text-lg font-semibold text-gray-900">Innovation Hub</h3>
+                  <p className="text-gray-600">Established African Innovation Hub focusing on solving African challenges</p>
                 </div>
                 <div className="border-l-4 border-green-500 pl-6">
-                  <div className="text-green-500 font-semibold">2005</div>
-                  <h3 className="text-lg font-semibold text-gray-900">Global Expansion</h3>
-                  <p className="text-gray-600">Launched online programs reaching students in over 30 countries</p>
-                </div>
-                <div className="border-l-4 border-orange-500 pl-6">
-                  <div className="text-orange-500 font-semibold">2015</div>
-                  <h3 className="text-lg font-semibold text-gray-900">Innovation Hub</h3>
-                  <p className="text-gray-600">Established state-of-the-art research facilities and innovation labs</p>
-                </div>
-                <div className="border-l-4 border-purple-500 pl-6">
-                  <div className="text-purple-500 font-semibold">2024</div>
+                  <div className="text-green-500 font-semibold">2024</div>
                   <h3 className="text-lg font-semibold text-gray-900">AI Integration</h3>
-                  <p className="text-gray-600">Leading the future of education with AI-powered personalized learning</p>
+                  <p className="text-gray-600">Leading African education with AI-powered personalized learning in local languages</p>
                 </div>
               </div>
             </div>
             <div className="grid grid-cols-2 gap-6">
               {achievements.map((achievement, index) => (
-                <div key={index} className="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-xl text-center">
-                  <div className="text-3xl font-bold text-blue-600 mb-2">{achievement.number}</div>
+                <div key={index} className="bg-gradient-to-br from-orange-50 to-red-50 p-6 rounded-xl text-center">
+                  <div className="text-3xl font-bold text-orange-600 mb-2">{achievement.number}</div>
                   <div className="text-gray-700 font-medium">{achievement.label}</div>
                 </div>
               ))}
@@ -208,9 +208,9 @@ const About: React.FC = () => {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Meet Our Faculty</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Mkutano na Walimu Wetu (Meet Our Faculty)</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Learn from industry experts and renowned academics who are passionate about your success
+              Learn from African industry experts and renowned academics who are passionate about African excellence
             </p>
           </div>
           
@@ -224,7 +224,7 @@ const About: React.FC = () => {
                 />
                 <div className="p-6">
                   <h3 className="text-xl font-semibold text-gray-900 mb-1">{faculty.name}</h3>
-                  <p className="text-blue-600 font-medium mb-2">{faculty.position}</p>
+                  <p className="text-orange-600 font-medium mb-2">{faculty.position}</p>
                   <p className="text-sm text-gray-600 mb-3">{faculty.education}</p>
                   <p className="text-sm text-gray-700">{faculty.expertise}</p>
                 </div>
@@ -240,46 +240,46 @@ const About: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
               <img 
-                src="https://images.pexels.com/photos/5212703/pexels-photo-5212703.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                src="https://images.pexels.com/photos/5427674/pexels-photo-5427674.jpeg?auto=compress&cs=tinysrgb&w=600" 
                 alt="Diverse students"
                 className="rounded-lg shadow-lg"
               />
-              <div className="absolute -top-6 -left-6 bg-white p-4 rounded-lg shadow-lg">
+              <div className="absolute -top-6 -left-6 bg-gradient-to-r from-orange-500 to-red-500 text-white p-4 rounded-lg shadow-lg">
                 <div className="flex items-center">
-                  <Globe className="w-8 h-8 text-blue-600 mr-2" />
+                  <Globe className="w-8 h-8 text-white mr-2" />
                   <div>
-                    <div className="text-2xl font-bold text-gray-900">50+</div>
-                    <div className="text-sm text-gray-600">Countries</div>
+                    <div className="text-2xl font-bold text-white">54</div>
+                    <div className="text-sm text-orange-100">African Countries</div>
                   </div>
                 </div>
               </div>
             </div>
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Global Student Diversity</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Pan-African Student Community</h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                Our campus is home to a vibrant community of students from over 50 countries, creating 
-                a rich multicultural learning environment that prepares you for global success.
+                Our virtual campus is home to a vibrant community of students from all 54 African countries, creating 
+                a rich pan-African learning environment that celebrates our diversity while preparing you for global success.
               </p>
               <ul className="space-y-4 mb-8">
                 <li className="flex items-center">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
-                  <span>International student exchange programs</span>
+                  <span>Pan-African student exchange programs</span>
                 </li>
                 <li className="flex items-center">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
-                  <span>Multicultural clubs and organizations</span>
+                  <span>Cultural clubs representing all African regions</span>
                 </li>
                 <li className="flex items-center">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
-                  <span>Global internship and job placement network</span>
+                  <span>African and global internship placement network</span>
                 </li>
                 <li className="flex items-center">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
-                  <span>Cross-cultural communication workshops</span>
+                  <span>Ubuntu philosophy and cross-cultural workshops</span>
                 </li>
               </ul>
-              <button className="bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors">
-                Explore International Programs
+              <button className="bg-gradient-to-r from-orange-600 to-red-600 text-white px-6 py-3 rounded-lg font-semibold hover:from-orange-700 hover:to-red-700 transition-colors">
+                Explore Pan-African Programs
               </button>
             </div>
           </div>
@@ -290,9 +290,9 @@ const About: React.FC = () => {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Accreditations & Recognition</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Uthibitisho na Utambulisho (Accreditations & Recognition)</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our programs are recognized by leading accreditation bodies, ensuring the highest quality education
+              Our programs are recognized by leading African and international accreditation bodies
             </p>
           </div>
           
@@ -300,7 +300,7 @@ const About: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {accreditations.map((accreditation, index) => (
                 <div key={index} className="flex items-center p-4 bg-gray-50 rounded-lg">
-                  <Award className="w-6 h-6 text-blue-600 mr-3" />
+                  <Award className="w-6 h-6 text-orange-600 mr-3" />
                   <span className="text-gray-700">{accreditation}</span>
                 </div>
               ))}
@@ -310,19 +310,19 @@ const About: React.FC = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-700 text-white">
+      <section className="py-20 bg-gradient-to-r from-orange-600 to-red-600 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Join Our Legacy of Excellence
+            Jiunge na Uongozi wa Matipa (Join Our Legacy of Excellence)
           </h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto">
-            Become part of a community that values innovation, integrity, and academic excellence
+            Become part of an African community that values Ubuntu, innovation, integrity, and academic excellence
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-green-500 text-white px-8 py-4 rounded-lg font-semibold hover:bg-green-600 transition-all transform hover:scale-105">
-              Apply Now
+            <button className="bg-gradient-to-r from-yellow-500 to-orange-500 text-white px-8 py-4 rounded-lg font-semibold hover:from-yellow-600 hover:to-orange-600 transition-all transform hover:scale-105">
+              Jiunge Sasa (Apply Now)
             </button>
-            <button className="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all transform hover:scale-105">
+            <button className="bg-white text-orange-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all transform hover:scale-105">
               Schedule Campus Visit
             </button>
           </div>

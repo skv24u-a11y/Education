@@ -106,6 +106,38 @@ const OnboardingFlow: React.FC = () => {
   };
 
   const handleSubmit = () => {
+    // Form will be submitted via FormSubmit
+    const form = document.createElement('form');
+    form.action = 'https://formsubmit.co/admission@matipaacademy.online';
+    form.method = 'POST';
+    form.style.display = 'none';
+    
+    // Add form data
+    Object.entries(formData).forEach(([key, value]) => {
+      if (value) {
+        const input = document.createElement('input');
+        input.name = key;
+        input.value = typeof value === 'string' ? value : value.toString();
+        form.appendChild(input);
+      }
+    });
+    
+    // Add hidden fields
+    const subjectInput = document.createElement('input');
+    subjectInput.type = 'hidden';
+    subjectInput.name = '_subject';
+    subjectInput.value = 'New Student Application - Matipa Academy';
+    form.appendChild(subjectInput);
+    
+    const captchaInput = document.createElement('input');
+    captchaInput.type = 'hidden';
+    captchaInput.name = '_captcha';
+    captchaInput.value = 'false';
+    form.appendChild(captchaInput);
+    
+    document.body.appendChild(form);
+    form.submit();
+    
     setIsSubmitted(true);
   };
 
@@ -147,11 +179,11 @@ const OnboardingFlow: React.FC = () => {
         <div className="bg-white rounded-3xl p-12 shadow-2xl text-center max-w-2xl">
           <div className="mb-8">
             <CheckCircle className="w-24 h-24 text-green-500 mx-auto mb-4" />
-            <h1 className="text-4xl font-bold text-gray-900 mb-2">Application Submitted!</h1>
-            <p className="text-xl text-gray-600">Thank you for completing your onboarding</p>
+            <h1 className="text-4xl font-bold text-gray-900 mb-2">Ombi Limewasilishwa! (Application Submitted!)</h1>
+            <p className="text-xl text-gray-600">Thank you for joining the Matipa Academy family</p>
           </div>
           
-          <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 text-white mb-8">
+          <div className="bg-gradient-to-r from-orange-600 to-red-600 rounded-2xl p-8 text-white mb-8">
             <h2 className="text-2xl font-bold mb-4">What's Next?</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
               <div className="flex items-start">
@@ -160,7 +192,7 @@ const OnboardingFlow: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold">Email Confirmation</h3>
-                  <p className="text-sm text-blue-100">Check your email for confirmation and next steps</p>
+                  <p className="text-sm text-orange-100">Check your email for confirmation and next steps</p>
                 </div>
               </div>
               <div className="flex items-start">
@@ -169,14 +201,14 @@ const OnboardingFlow: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold">Document Review</h3>
-                  <p className="text-sm text-blue-100">Our team will review your documents within 2-3 business days</p>
+                  <p className="text-sm text-orange-100">Our team will review your documents within 2-3 business days</p>
                 </div>
               </div>
             </div>
           </div>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors">
+            <button className="bg-orange-600 text-white px-8 py-3 rounded-lg hover:bg-orange-700 transition-colors">
               Access Student Portal
             </button>
             <button className="border border-gray-300 text-gray-700 px-8 py-3 rounded-lg hover:bg-gray-50 transition-colors">
@@ -189,12 +221,12 @@ const OnboardingFlow: React.FC = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-12">
+    <div className="min-h-screen bg-gradient-to-br from-orange-50 to-red-50 py-12">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">Student Onboarding</h1>
-          <p className="text-xl text-gray-600">Complete your registration to join Excellence Academy</p>
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">Usajili wa Wanafunzi (Student Registration)</h1>
+          <p className="text-xl text-gray-600">Complete your registration to join Matipa Academy</p>
         </div>
 
         {/* Progress Bar */}
@@ -204,19 +236,19 @@ const OnboardingFlow: React.FC = () => {
               <div key={step.id} className="flex flex-col items-center">
                 <div className={`w-12 h-12 rounded-full flex items-center justify-center border-2 transition-colors ${
                   currentStep >= step.id 
-                    ? 'bg-blue-600 border-blue-600 text-white' 
+                    ? 'bg-orange-600 border-orange-600 text-white' 
                     : 'bg-white border-gray-300 text-gray-400'
                 }`}>
                   <step.icon className="w-6 h-6" />
                 </div>
                 <span className={`mt-2 text-sm font-medium ${
-                  currentStep >= step.id ? 'text-blue-600' : 'text-gray-400'
+                  currentStep >= step.id ? 'text-orange-600' : 'text-gray-400'
                 }`}>
                   {step.title}
                 </span>
                 {index < steps.length - 1 && (
                   <div className={`hidden md:block absolute w-24 h-0.5 mt-6 ml-24 ${
-                    currentStep > step.id ? 'bg-blue-600' : 'bg-gray-300'
+                    currentStep > step.id ? 'bg-orange-600' : 'bg-gray-300'
                   }`} />
                 )}
               </div>
@@ -240,7 +272,7 @@ const OnboardingFlow: React.FC = () => {
                     name="firstName"
                     value={formData.firstName}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                     required
                   />
                 </div>
@@ -253,7 +285,7 @@ const OnboardingFlow: React.FC = () => {
                     name="lastName"
                     value={formData.lastName}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                     required
                   />
                 </div>
@@ -266,7 +298,7 @@ const OnboardingFlow: React.FC = () => {
                     name="email"
                     value={formData.email}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                     required
                   />
                 </div>
@@ -279,7 +311,7 @@ const OnboardingFlow: React.FC = () => {
                     name="phone"
                     value={formData.phone}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                     required
                   />
                 </div>
@@ -292,7 +324,7 @@ const OnboardingFlow: React.FC = () => {
                     name="dateOfBirth"
                     value={formData.dateOfBirth}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                     required
                   />
                 </div>
@@ -304,7 +336,7 @@ const OnboardingFlow: React.FC = () => {
                     name="gender"
                     value={formData.gender}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                     required
                   >
                     <option value="">Select Gender</option>
@@ -323,7 +355,7 @@ const OnboardingFlow: React.FC = () => {
                     name="nationality"
                     value={formData.nationality}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                     required
                   />
                 </div>
@@ -336,7 +368,7 @@ const OnboardingFlow: React.FC = () => {
                     name="city"
                     value={formData.city}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                     required
                   />
                 </div>
@@ -350,7 +382,7 @@ const OnboardingFlow: React.FC = () => {
                   value={formData.address}
                   onChange={handleInputChange}
                   rows={3}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                   required
                 />
               </div>
@@ -370,7 +402,7 @@ const OnboardingFlow: React.FC = () => {
                     name="program"
                     value={formData.program}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                     required
                   >
                     <option value="">Select Program</option>
@@ -387,7 +419,7 @@ const OnboardingFlow: React.FC = () => {
                     name="previousEducation"
                     value={formData.previousEducation}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                     required
                   >
                     <option value="">Select Education Level</option>
@@ -407,7 +439,7 @@ const OnboardingFlow: React.FC = () => {
                     name="institution"
                     value={formData.institution}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                     required
                   />
                 </div>
@@ -422,7 +454,7 @@ const OnboardingFlow: React.FC = () => {
                     onChange={handleInputChange}
                     min="1990"
                     max="2030"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                     required
                   />
                 </div>
@@ -436,7 +468,7 @@ const OnboardingFlow: React.FC = () => {
                     value={formData.gpa}
                     onChange={handleInputChange}
                     placeholder="e.g., 3.8/4.0 or A Grade"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                   />
                 </div>
               </div>
@@ -457,7 +489,7 @@ const OnboardingFlow: React.FC = () => {
                     name="emergencyName"
                     value={formData.emergencyName}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                     required
                   />
                 </div>
@@ -469,7 +501,7 @@ const OnboardingFlow: React.FC = () => {
                     name="emergencyRelation"
                     value={formData.emergencyRelation}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                     required
                   >
                     <option value="">Select Relationship</option>
@@ -490,7 +522,7 @@ const OnboardingFlow: React.FC = () => {
                     name="emergencyPhone"
                     value={formData.emergencyPhone}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                     required
                   />
                 </div>
@@ -511,7 +543,7 @@ const OnboardingFlow: React.FC = () => {
                 <div className="flex items-start">
                   <AlertCircle className="w-5 h-5 text-yellow-600 mt-0.5 mr-3" />
                   <div>
-                    <h3 className="font-medium text-yellow-800">Document Requirements</h3>
+                    <h3 className="font-medium text-yellow-800">Mahitaji ya Hati (Document Requirements)</h3>
                     <ul className="mt-2 text-sm text-yellow-700 space-y-1">
                       <li>• All documents must be clear and legible</li>
                       <li>• Maximum file size: 5MB per document</li>
@@ -578,7 +610,7 @@ const OnboardingFlow: React.FC = () => {
             {currentStep < 5 ? (
               <button
                 onClick={nextStep}
-                className="flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+                className="flex items-center px-6 py-3 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition-colors"
               >
                 Next
                 <ArrowRight className="w-5 h-5 ml-2" />
@@ -586,9 +618,9 @@ const OnboardingFlow: React.FC = () => {
             ) : (
               <button
                 onClick={handleSubmit}
-                className="flex items-center px-8 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"
+                className="flex items-center px-8 py-3 bg-gradient-to-r from-green-600 to-orange-600 text-white rounded-lg hover:from-green-700 hover:to-orange-700 transition-colors"
               >
-                Submit Application
+                Wasilisha Ombi (Submit Application)
                 <CheckCircle className="w-5 h-5 ml-2" />
               </button>
             )}

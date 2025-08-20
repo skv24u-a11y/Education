@@ -30,31 +30,27 @@ const Contact: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Simulate form submission
+    // Form will be handled by FormSubmit
     setIsSubmitted(true);
-    setTimeout(() => {
-      setIsSubmitted(false);
-      setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
-    }, 3000);
   };
 
   const contactInfo = [
     {
       icon: MapPin,
       title: 'Visit Us',
-      details: ['123 Education Street', 'Learning City, LC 12345', 'United States'],
-      color: 'text-blue-600'
+      details: ['Uhuru Highway', 'Nairobi, Kenya', 'East Africa'],
+      color: 'text-orange-600'
     },
     {
       icon: Phone,
       title: 'Call Us',
-      details: ['+1 (555) 123-4567', '+1 (555) 123-4568 (Admissions)', '+1 (555) 123-4569 (Support)'],
+      details: ['+254 700 123 456', '+254 700 123 457 (Admissions)', '+254 700 123 458 (Support)'],
       color: 'text-green-600'
     },
     {
       icon: Mail,
       title: 'Email Us',
-      details: ['info@excellenceacademy.edu', 'admissions@excellenceacademy.edu', 'support@excellenceacademy.edu'],
+      details: ['info@matipaacademy.online', 'admissions@matipaacademy.online', 'support@matipaacademy.online'],
       color: 'text-orange-600'
     },
     {
@@ -79,12 +75,12 @@ const Contact: React.FC = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 text-white py-20">
+      <section className="relative bg-gradient-to-br from-orange-600 via-red-600 to-yellow-600 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">Contact Us</h1>
-            <p className="text-xl md:text-2xl text-blue-100 max-w-4xl mx-auto">
-              We're here to help you on your educational journey. Get in touch with us today!
+            <p className="text-xl md:text-2xl text-orange-100 max-w-4xl mx-auto">
+              We're here to help you on your African excellence journey. Get in touch with us today!
             </p>
           </div>
         </div>
@@ -119,7 +115,7 @@ const Contact: React.FC = () => {
             <div>
               <div className="bg-white p-8 rounded-xl shadow-lg">
                 <div className="flex items-center mb-6">
-                  <MessageSquare className="w-8 h-8 text-blue-600 mr-3" />
+                  <MessageSquare className="w-8 h-8 text-orange-600 mr-3" />
                   <h2 className="text-3xl font-bold text-gray-900">Send us a Message</h2>
                 </div>
                 
@@ -130,7 +126,10 @@ const Contact: React.FC = () => {
                     <p className="text-gray-600">Your message has been sent successfully. We'll get back to you within 24 hours.</p>
                   </div>
                 ) : (
-                  <form onSubmit={handleSubmit} className="space-y-6">
+                  <form action="https://formsubmit.co/admission@matipaacademy.online" method="POST" className="space-y-6">
+                    <input type="hidden" name="_subject" value="New Contact Form Submission - Matipa Academy" />
+                    <input type="hidden" name="_captcha" value="false" />
+                    <input type="hidden" name="_template" value="table" />
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div>
                         <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
@@ -142,10 +141,8 @@ const Contact: React.FC = () => {
                             type="text"
                             id="name"
                             name="name"
-                            value={formData.name}
-                            onChange={handleChange}
                             required
-                            className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                            className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                             placeholder="Enter your full name"
                           />
                         </div>
@@ -161,10 +158,8 @@ const Contact: React.FC = () => {
                             type="email"
                             id="email"
                             name="email"
-                            value={formData.email}
-                            onChange={handleChange}
                             required
-                            className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                            className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                             placeholder="Enter your email"
                           />
                         </div>
@@ -182,9 +177,7 @@ const Contact: React.FC = () => {
                             type="tel"
                             id="phone"
                             name="phone"
-                            value={formData.phone}
-                            onChange={handleChange}
-                            className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                            className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                             placeholder="Enter your phone number"
                           />
                         </div>
@@ -197,10 +190,8 @@ const Contact: React.FC = () => {
                         <select
                           id="subject"
                           name="subject"
-                          value={formData.subject}
-                          onChange={handleChange}
                           required
-                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                         >
                           <option value="">Select a subject</option>
                           {departments.map((dept, index) => (
@@ -219,11 +210,9 @@ const Contact: React.FC = () => {
                         <textarea
                           id="message"
                           name="message"
-                          value={formData.message}
-                          onChange={handleChange}
                           required
                           rows={6}
-                          className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
+                          className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent resize-none"
                           placeholder="Tell us how we can help you..."
                         />
                       </div>
@@ -231,7 +220,7 @@ const Contact: React.FC = () => {
                     
                     <button
                       type="submit"
-                      className="w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white py-4 px-6 rounded-lg font-semibold hover:from-blue-700 hover:to-blue-800 transition-all transform hover:scale-105 flex items-center justify-center"
+                      className="w-full bg-gradient-to-r from-orange-600 to-red-600 text-white py-4 px-6 rounded-lg font-semibold hover:from-orange-700 hover:to-red-700 transition-all transform hover:scale-105 flex items-center justify-center"
                     >
                       <Send className="w-5 h-5 mr-2" />
                       Send Message
@@ -245,28 +234,28 @@ const Contact: React.FC = () => {
             <div>
               {/* Map Placeholder */}
               <div className="bg-gray-200 rounded-xl overflow-hidden shadow-lg mb-8 h-64 lg:h-80">
-                <div className="w-full h-full bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center">
+                <div className="w-full h-full bg-gradient-to-br from-orange-100 to-red-100 flex items-center justify-center">
                   <div className="text-center">
-                    <MapPin className="w-16 h-16 text-blue-600 mx-auto mb-4" />
+                    <MapPin className="w-16 h-16 text-orange-600 mx-auto mb-4" />
                     <p className="text-gray-700 font-medium">Interactive Map</p>
-                    <p className="text-gray-600 text-sm">123 Education Street, Learning City</p>
+                    <p className="text-gray-600 text-sm">Uhuru Highway, Nairobi, Kenya</p>
                   </div>
                 </div>
               </div>
 
               {/* Quick Contact */}
-              <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-xl">
+              <div className="bg-gradient-to-br from-orange-50 to-red-50 p-8 rounded-xl">
                 <h3 className="text-2xl font-bold text-gray-900 mb-6">Need Immediate Help?</h3>
                 <div className="space-y-4">
                   <div className="flex items-center p-4 bg-white rounded-lg shadow-sm">
                     <Phone className="w-6 h-6 text-green-600 mr-3" />
                     <div>
                       <p className="font-semibold text-gray-900">Emergency Hotline</p>
-                      <p className="text-gray-600">+1 (555) 911-HELP</p>
+                      <p className="text-gray-600">+254 700 911 HELP</p>
                     </div>
                   </div>
                   <div className="flex items-center p-4 bg-white rounded-lg shadow-sm">
-                    <MessageSquare className="w-6 h-6 text-blue-600 mr-3" />
+                    <MessageSquare className="w-6 h-6 text-orange-600 mr-3" />
                     <div>
                       <p className="font-semibold text-gray-900">Live Chat</p>
                       <p className="text-gray-600">Available 24/7</p>
@@ -276,7 +265,7 @@ const Contact: React.FC = () => {
                     <Mail className="w-6 h-6 text-orange-600 mr-3" />
                     <div>
                       <p className="font-semibold text-gray-900">Quick Response</p>
-                      <p className="text-gray-600">urgent@excellenceacademy.edu</p>
+                      <p className="text-gray-600">urgent@matipaacademy.online</p>
                     </div>
                   </div>
                 </div>

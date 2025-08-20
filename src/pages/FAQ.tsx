@@ -100,54 +100,54 @@ const FAQ: React.FC = () => {
 
   const testimonials = [
     {
-      name: 'Sarah Johnson',
+      name: 'Amina Hassan',
       program: 'Computer Science, Class of 2023',
-      location: 'San Francisco, CA',
+      location: 'Nairobi, Kenya',
       image: 'https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg?auto=compress&cs=tinysrgb&w=300',
       rating: 5,
       date: 'March 2024',
-      testimonial: 'Excellence Academy transformed my life. The professors are world-class, the online platform is intuitive, and the career support helped me land my dream job at Google. The community feeling, even in online classes, was incredible.',
-      highlight: 'Landed job at Google'
+      testimonial: 'Matipa Academy transformed my life. The professors understand African challenges, the online platform works even with limited internet, and the career support helped me start my own tech company in Nairobi.',
+      highlight: 'Started Tech Company in Kenya'
     },
     {
-      name: 'Michael Chen',
+      name: 'Kofi Mensah',
       program: 'Business Administration, Class of 2022',
-      location: 'New York, NY',
+      location: 'Accra, Ghana',
       image: 'https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=300',
       rating: 5,
       date: 'February 2024',
-      testimonial: 'The flexibility of online learning allowed me to balance work and studies perfectly. The MBA program is rigorous but rewarding. I\'ve seen immediate applications in my career and recently got promoted to VP.',
-      highlight: 'Promoted to VP'
+      testimonial: 'The flexibility of online learning allowed me to balance my cocoa farming business with studies. The MBA program taught me to scale my business across West Africa. Now I employ 200+ farmers.',
+      highlight: 'Scaled Agribusiness Across West Africa'
     },
     {
-      name: 'Emily Rodriguez',
+      name: 'Fatima Al-Rashid',
       program: 'Digital Marketing, Class of 2024',
-      location: 'Austin, TX',
+      location: 'Cairo, Egypt',
       image: 'https://images.pexels.com/photos/3762800/pexels-photo-3762800.jpeg?auto=compress&cs=tinysrgb&w=300',
       rating: 5,
       date: 'January 2024',
-      testimonial: 'As a working mom, the online format was perfect for me. The professors were incredibly supportive, and the practical projects helped me build a portfolio that impressed employers. I started my own consulting firm!',
-      highlight: 'Started own business'
+      testimonial: 'As a working mother in Cairo, the online format was perfect. The professors understood my cultural context, and the practical projects helped me build a portfolio. I now run the leading digital agency in North Africa!',
+      highlight: 'Leading Digital Agency in North Africa'
     },
     {
-      name: 'David Thompson',
+      name: 'Thabo Mthembu',
       program: 'Data Science, Class of 2023',
-      location: 'Seattle, WA',
+      location: 'Cape Town, South Africa',
       image: 'https://images.pexels.com/photos/3785077/pexels-photo-3785077.jpeg?auto=compress&cs=tinysrgb&w=300',
       rating: 5,
       date: 'March 2024',
-      testimonial: 'The hands-on approach to learning data science was exceptional. Real-world projects, industry mentors, and cutting-edge curriculum prepared me for the fast-paced tech industry. Highly recommend!',
-      highlight: 'Data Scientist at Microsoft'
+      testimonial: 'The hands-on approach to learning data science was exceptional. Real-world African projects, industry mentors, and cutting-edge curriculum prepared me to solve African challenges with data.',
+      highlight: 'Leading Data Science for African Development'
     },
     {
-      name: 'Lisa Wang',
+      name: 'Aisha Traore',
       program: 'Healthcare Administration, Class of 2022',
-      location: 'Chicago, IL',
+      location: 'Bamako, Mali',
       image: 'https://images.pexels.com/photos/3211476/pexels-photo-3211476.jpeg?auto=compress&cs=tinysrgb&w=300',
       rating: 5,
       date: 'February 2024',
-      testimonial: 'The healthcare program combined theoretical knowledge with practical experience beautifully. The networking opportunities and alumni connections opened doors I never imagined. Now I\'m a hospital administrator.',
-      highlight: 'Hospital Administrator'
+      testimonial: 'The healthcare program focused on African health challenges. The networking with African healthcare leaders and alumni connections helped me transform rural healthcare in Mali.',
+      highlight: 'Transforming Rural Healthcare in Mali'
     }
   ];
 
@@ -172,12 +172,12 @@ const FAQ: React.FC = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 text-white py-20">
+      <section className="relative bg-gradient-to-br from-orange-600 via-red-600 to-yellow-600 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">FAQ & Testimonials</h1>
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">Maswali na Ushuhuda (FAQ & Testimonials)</h1>
             <p className="text-xl md:text-2xl text-blue-100 max-w-4xl mx-auto">
-              Get answers to common questions and hear from our successful graduates
+              Get answers to common questions and hear from our successful African graduates
             </p>
           </div>
         </div>
@@ -188,10 +188,10 @@ const FAQ: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Frequently Asked Questions
+              Maswali Yanayoulizwa Mara Kwa Mara (Frequently Asked Questions)
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Find quick answers to the most common questions about our programs and services
+              Find quick answers to the most common questions about our African-focused programs and services
             </p>
           </div>
 
@@ -273,7 +273,7 @@ const FAQ: React.FC = () => {
           </div>
 
           {/* Featured Testimonial */}
-          <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8 md:p-12 mb-12">
+          <div className="bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl p-8 md:p-12 mb-12">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
               <div className="lg:col-span-1 text-center">
                 <img
@@ -284,7 +284,7 @@ const FAQ: React.FC = () => {
                 <h3 className="text-xl font-bold text-gray-900 mb-1">
                   {testimonials[currentTestimonial].name}
                 </h3>
-                <p className="text-blue-600 font-medium mb-2">
+                <p className="text-orange-600 font-medium mb-2">
                   {testimonials[currentTestimonial].program}
                 </p>
                 <div className="flex items-center justify-center mb-2">
@@ -294,13 +294,13 @@ const FAQ: React.FC = () => {
                 <div className="flex justify-center mb-2">
                   {renderStars(testimonials[currentTestimonial].rating)}
                 </div>
-                <div className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
+                <div className="bg-gradient-to-r from-green-100 to-yellow-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
                   {testimonials[currentTestimonial].highlight}
                 </div>
               </div>
               
               <div className="lg:col-span-2">
-                <Quote className="w-12 h-12 text-blue-600 mb-4" />
+                <Quote className="w-12 h-12 text-orange-600 mb-4" />
                 <blockquote className="text-xl text-gray-700 leading-relaxed mb-6 italic">
                   "{testimonials[currentTestimonial].testimonial}"
                 </blockquote>
@@ -349,7 +349,7 @@ const FAQ: React.FC = () => {
                 <p className="text-gray-700 mb-4 line-clamp-3">"{testimonial.testimonial}"</p>
                 <div className="flex items-center justify-between text-sm text-gray-500">
                   <span>{testimonial.date}</span>
-                  <div className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">
+                  <div className="bg-orange-100 text-orange-800 px-2 py-1 rounded text-xs">
                     {testimonial.highlight}
                   </div>
                 </div>
@@ -361,19 +361,19 @@ const FAQ: React.FC = () => {
           <div className="mt-16 bg-gray-50 rounded-xl p-8">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
               <div>
-                <div className="text-3xl font-bold text-blue-600 mb-2">4.9/5</div>
+                <div className="text-3xl font-bold text-orange-600 mb-2">4.9/5</div>
                 <div className="text-gray-600">Average Rating</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-green-600 mb-2">2,500+</div>
-                <div className="text-gray-600">Happy Students</div>
+                <div className="text-3xl font-bold text-green-600 mb-2">15,000+</div>
+                <div className="text-gray-600">Happy African Students</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-orange-600 mb-2">95%</div>
+                <div className="text-3xl font-bold text-red-600 mb-2">97%</div>
                 <div className="text-gray-600">Would Recommend</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-purple-600 mb-2">98%</div>
+                <div className="text-3xl font-bold text-yellow-600 mb-2">97%</div>
                 <div className="text-gray-600">Career Success Rate</div>
               </div>
             </div>
@@ -382,19 +382,19 @@ const FAQ: React.FC = () => {
       </section>
 
       {/* Contact CTA */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-700 text-white">
+      <section className="py-20 bg-gradient-to-r from-orange-600 to-red-600 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Still Have Questions?
+            Bado Una Maswali? (Still Have Questions?)
           </h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto">
-            Our admissions counselors are here to help you every step of the way
+            Our African admissions counselors are here to help you every step of the way
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all transform hover:scale-105">
+            <button className="bg-white text-orange-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all transform hover:scale-105">
               Schedule a Call
             </button>
-            <button className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-all transform hover:scale-105">
+            <button className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-orange-600 transition-all transform hover:scale-105">
               Live Chat Now
             </button>
           </div>
