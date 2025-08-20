@@ -12,6 +12,15 @@ import {
 } from 'lucide-react';
 
 const About: React.FC = () => {
+  // Set page title and description
+  React.useEffect(() => {
+    document.title = 'About Us - Matipa Academy | Leading African Nursing Education';
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'Learn about Matipa Academy, Africa\'s premier online nursing college. Discover our mission, values, faculty, and commitment to empowering African healthcare professionals through world-class nursing education.');
+    }
+  }, []);
+
   const values = [
     {
       icon: Target,

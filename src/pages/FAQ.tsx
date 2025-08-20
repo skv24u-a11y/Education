@@ -16,6 +16,15 @@ import {
 } from 'lucide-react';
 
 const FAQ: React.FC = () => {
+  // Set page title and description
+  React.useEffect(() => {
+    document.title = 'FAQ & Testimonials - Matipa Academy | Student Success Stories';
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'Find answers to frequently asked questions about Matipa Academy\'s nursing programs and read inspiring testimonials from our successful African nursing graduates.');
+    }
+  }, []);
+
   const [openFAQ, setOpenFAQ] = useState<number | null>(0);
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
 

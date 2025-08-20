@@ -54,7 +54,7 @@ const Header: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-3">
+          <Link to="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
             <div className="bg-gradient-to-r from-orange-500 to-red-600 p-3 rounded-lg shadow-lg">
               <span className="text-white font-bold text-2xl drop-shadow-sm">MA</span>
             </div>

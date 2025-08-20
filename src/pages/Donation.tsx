@@ -15,6 +15,15 @@ import {
 } from 'lucide-react';
 
 const Donation: React.FC = () => {
+  // Set page title and description
+  React.useEffect(() => {
+    document.title = 'Support Our Mission - Matipa Academy | Make a Donation';
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'Support African nursing education by donating to Matipa Academy. Your contribution helps provide scholarships, improve facilities, and empower the next generation of African healthcare professionals.');
+    }
+  }, []);
+
   const [selectedAmount, setSelectedAmount] = useState<number | null>(null);
   const [customAmount, setCustomAmount] = useState('');
   const [donationType, setDonationType] = useState('one-time');
