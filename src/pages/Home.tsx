@@ -1,5 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import VirtualCampusTour from '../components/VirtualCampusTour';
+import AIStudyAssistant from '../components/AIStudyAssistant';
+import LiveNursingClasses from '../components/LiveNursingClasses';
 import { 
   BookOpen, 
   Users, 
@@ -173,6 +176,18 @@ const Home: React.FC = () => {
 
       {/* Virtual Classroom Preview */}
       <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Experience Our Virtual Nursing Campus
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Take a 360° tour of our state-of-the-art virtual nursing facilities and learning environments
+            </p>
+          </div>
+          <VirtualCampusTour />
+        </div>
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -219,6 +234,36 @@ const Home: React.FC = () => {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Live Nursing Classes */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Join Live Nursing Classes
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Participate in real-time nursing education with expert instructors and fellow students
+            </p>
+          </div>
+          <LiveNursingClasses />
+        </div>
+      </section>
+
+      {/* AI Study Assistant */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Your Personal AI Nursing Tutor
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Get instant help with nursing concepts, study plans, and clinical scenarios 24/7
+            </p>
+          </div>
+          <AIStudyAssistant />
         </div>
       </section>
 
