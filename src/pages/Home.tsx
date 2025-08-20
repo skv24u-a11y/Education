@@ -336,7 +336,9 @@ const Home: React.FC = () => {
                   </h3>
                   <p className="text-gray-600 mb-4">{post.excerpt}</p>
                   <button className="text-orange-600 font-semibold hover:text-orange-700 flex items-center">
-                    Read More
+                    <a href="#" onClick={(e) => { e.preventDefault(); alert('Full article coming soon! Stay tuned for more nursing education insights.'); }}>
+                      Read More
+                    </a>
                     <ArrowRight className="w-4 h-4 ml-1" />
                   </button>
                 </div>

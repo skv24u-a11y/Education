@@ -6,6 +6,9 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Donation from './pages/Donation';
 import FAQ from './pages/FAQ';
+import Programs from './pages/Programs';
+import Admissions from './pages/Admissions';
+import Policies from './pages/Policies';
 import StudentPortal from './pages/StudentPortal';
 import Onboarding from './pages/Onboarding';
 
@@ -20,6 +23,9 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
+              <Route path="/programs" element={<Programs />} />
+              <Route path="/admissions" element={<Admissions />} />
+              <Route path="/policies" element={<Policies />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/donation" element={<Donation />} />
               <Route path="/faq" element={<FAQ />} />

@@ -21,12 +21,6 @@ const Footer: React.FC = () => {
             <p className="text-gray-400 mb-4">
               Empowering African students with world-class education and innovative learning experiences since 2020.
             </p>
-            <div className="flex space-x-4">
-              <Facebook className="w-5 h-5 text-gray-400 hover:text-blue-500 cursor-pointer transition-colors" />
-              <Twitter className="w-5 h-5 text-gray-400 hover:text-blue-400 cursor-pointer transition-colors" />
-              <Instagram className="w-5 h-5 text-gray-400 hover:text-pink-500 cursor-pointer transition-colors" />
-              <Linkedin className="w-5 h-5 text-gray-400 hover:text-blue-600 cursor-pointer transition-colors" />
-            </div>
           </div>
 
           {/* Quick Links */}
@@ -35,10 +29,11 @@ const Footer: React.FC = () => {
             <ul className="space-y-2">
               <li><Link to="/" className="text-gray-400 hover:text-white transition-colors">Home</Link></li>
               <li><Link to="/about" className="text-gray-400 hover:text-white transition-colors">About Us</Link></li>
+              <li><Link to="/programs" className="text-gray-400 hover:text-white transition-colors">Programs</Link></li>
+              <li><Link to="/admissions" className="text-gray-400 hover:text-white transition-colors">Admissions</Link></li>
               <li><Link to="/contact" className="text-gray-400 hover:text-white transition-colors">Contact</Link></li>
-              <li><Link to="/donation" className="text-gray-400 hover:text-white transition-colors">Donation</Link></li>
               <li><Link to="/faq" className="text-gray-400 hover:text-white transition-colors">FAQ</Link></li>
-              <li><Link to="/onboarding" className="text-gray-400 hover:text-white transition-colors">Apply Now</Link></li>
+              <li><Link to="/policies" className="text-gray-400 hover:text-white transition-colors">Policies</Link></li>
             </ul>
           </div>
 
@@ -46,11 +41,11 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Programs</h4>
             <ul className="space-y-2 text-gray-400">
-              <li>Undergraduate Degrees</li>
-              <li>Graduate Programs</li>
-              <li>Online Courses</li>
-              <li>Certificate Programs</li>
-              <li>Professional Development</li>
+              <li>Bachelor of Science in Nursing (BSN)</li>
+              <li>Associate Degree in Nursing (ADN)</li>
+              <li>Licensed Practical Nurse (LPN)</li>
+              <li>Registered Nurse (RN)</li>
+              <li>Nurse Practitioner (NP)</li>
             </ul>
           </div>
 
