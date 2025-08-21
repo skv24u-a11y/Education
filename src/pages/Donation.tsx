@@ -402,4 +402,84 @@ const Donation: React.FC = () => {
                 <button
                   type="submit"
                   disabled={!selectedAmount && !customAmount}
-                  className="w-full bg-gradient-to-r from-orange-600 to-red-600 text-white py-4 px-6 rounded-lg font-semibold hover:from-orange-700 hover:to-red-700 transition-all transform hover:scale-105 disabled:opacity-50
+                  className="w-full bg-gradient-to-r from-orange-600 to-red-600 text-white py-4 px-6 rounded-lg font-semibold hover:from-orange-700 hover:to-red-700 transition-all transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                  <div className="flex items-center justify-center">
+                    <Heart className="w-5 h-5 mr-2" />
+                    Donate {selectedAmount ? `$${selectedAmount}` : customAmount ? `$${customAmount}` : ''} {donationType === 'monthly' ? 'Monthly' : 'Now'}
+                  </div>
+                </button>
+              </form>
+            )}
+          </div>
+        </div>
+      </section>
+
+      {/* Success Stories */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Hadithi za Mafanikio (Success Stories)
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              See how your donations have transformed lives and communities across Africa
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {successStories.map((story, index) => (
+              <div key={index} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                <div className="aspect-w-16 aspect-h-9">
+                  <img 
+                    src={story.image} 
+                    alt={story.name}
+                    className="w-full h-48 object-cover"
+                  />
+                </div>
+                <div className="p-6">
+                  <div className="flex items-center mb-4">
+                    <Star className="w-5 h-5 text-yellow-500 mr-1" />
+                    <Star className="w-5 h-5 text-yellow-500 mr-1" />
+                    <Star className="w-5 h-5 text-yellow-500 mr-1" />
+                    <Star className="w-5 h-5 text-yellow-500 mr-1" />
+                    <Star className="w-5 h-5 text-yellow-500" />
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">{story.name}</h3>
+                  <p className="text-gray-600 mb-4 italic">"{story.story}"</p>
+                  <div className="bg-orange-50 p-3 rounded-lg">
+                    <p className="text-orange-800 font-medium text-sm">{story.achievement}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Call to Action */}
+      <section className="py-20 bg-gradient-to-r from-orange-600 to-red-600 text-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <Award className="w-16 h-16 mx-auto mb-6" />
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            Jiunge Nasi Katika Safari Hii (Join Us on This Journey)
+          </h2>
+          <p className="text-xl text-orange-100 mb-8 max-w-3xl mx-auto">
+            Every donation, no matter the size, contributes to building a stronger healthcare system across Africa. 
+            Together, we can empower the next generation of African nursing professionals.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <button className="bg-white text-orange-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+              Make a Donation
+            </button>
+            <button className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-orange-600 transition-colors">
+              Learn More About Our Impact
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default Donation;
