@@ -28,7 +28,7 @@ const LoadingAnimation: React.FC = () => {
         </div>
         
         <h2 className="text-3xl font-bold text-white mb-4">Excellence Academy</h2>
-        <h2 className="text-3xl font-bold text-white mb-4">Matipa Academy</h2>
+        <h2 className="text-3xl font-bold text-white mb-4">Matipa College of Nursing</h2>
         <p className="text-orange-200 text-lg mb-6">Empowering African Excellence</p>
         
         {/* Loading bar */}

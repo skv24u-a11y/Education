@@ -19,9 +19,10 @@ const FAQ: React.FC = () => {
   // Set page title and description
   React.useEffect(() => {
     document.title = 'FAQ & Testimonials - Matipa Academy | Student Success Stories';
+    document.title = 'FAQ & Testimonials - Matipa College of Nursing | Student Success Stories';
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Find answers to frequently asked questions about Matipa Academy\'s nursing programs and read inspiring testimonials from our successful African nursing graduates.');
+      metaDescription.setAttribute('content', 'Find answers to frequently asked questions about Matipa College of Nursing\'s nursing programs and read inspiring testimonials from our successful African nursing graduates.');
     }
   }, []);
 
@@ -115,7 +116,7 @@ const FAQ: React.FC = () => {
       image: 'https://images.pexels.com/photos/7551544/pexels-photo-7551544.jpeg?auto=compress&cs=tinysrgb&w=300',
       rating: 5,
       date: 'March 2024',
-      testimonial: 'Matipa Academy transformed my life. The nursing professors understand African healthcare challenges, the online clinical simulations work even with limited internet, and the career support helped me secure a position at Kenyatta National Hospital.',
+      testimonial: 'Matipa College of Nursing transformed my life. The nursing professors understand African healthcare challenges, the online clinical simulations work even with limited internet, and the career support helped me secure a position at Kenyatta National Hospital.',
       highlight: 'Senior Nurse at Kenyatta National Hospital'
     },
     {
@@ -394,10 +395,10 @@ const FAQ: React.FC = () => {
       <section className="py-20 bg-gradient-to-r from-orange-600 to-red-600 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Bado Una Maswali? (Still Have Questions?)
+            Bado Una Maswali kuhusu Matipa College of Nursing? (Still Have Questions?)
           </h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto">
-            Our African admissions counselors are here to help you every step of the way
+          Our African nursing admissions counselors are here to help you every step of the way
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="bg-white text-orange-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all transform hover:scale-105">

@@ -34,7 +34,7 @@ const WhatsAppChat: React.FC = () => {
                 <MessageCircle className="w-5 h-5" />
               </div>
               <div>
-                <h3 className="font-semibold">Matipa Academy</h3>
+                <h3 className="font-semibold">Matipa College of Nursing</h3>
                 <p className="text-sm text-green-100">Nursing Admissions Support</p>
               </div>
             </div>
@@ -50,7 +50,7 @@ const WhatsAppChat: React.FC = () => {
           <div className="p-4 bg-gray-50 max-h-64 overflow-y-auto">
             <div className="bg-white p-3 rounded-lg shadow-sm mb-3">
               <p className="text-sm text-gray-700">
-                👋 Hello! Welcome to Matipa Academy - Africa's leading online nursing college!
+                👋 Hello! Welcome to Matipa College of Nursing - Africa's leading online nursing college!
               </p>
             </div>
             <div className="bg-white p-3 rounded-lg shadow-sm mb-3">
@@ -66,7 +66,7 @@ const WhatsAppChat: React.FC = () => {
             </div>
             <div className="bg-white p-3 rounded-lg shadow-sm">
               <p className="text-sm text-gray-700">
-                📱 Click below to chat with our admissions team on WhatsApp for instant support!
+                📱 Click below to chat with our nursing admissions team on WhatsApp for instant support!
               </p>
             </div>
           </div>
@@ -81,7 +81,7 @@ const WhatsAppChat: React.FC = () => {
               <span>Chat on WhatsApp</span>
             </button>
             <p className="text-xs text-gray-500 text-center mt-2">
-              Get instant admission guidance & support
+              Get instant nursing admission guidance & support
             </p>
           </div>
         </div>

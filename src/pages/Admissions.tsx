@@ -17,9 +17,10 @@ import {
 const Admissions: React.FC = () => {
   React.useEffect(() => {
     document.title = 'Admissions - Matipa Academy | Apply to Nursing Programs';
+    document.title = 'Admissions - Matipa College of Nursing | Apply to Nursing Programs';
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Learn about Matipa Academy\'s nursing program admissions process, requirements, deadlines, and financial aid options. Start your nursing education journey today.');
+      metaDescription.setAttribute('content', 'Learn about Matipa College of Nursing\'s nursing program admissions process, requirements, deadlines, and financial aid options. Start your nursing education journey today.');
     }
   }, []);
 

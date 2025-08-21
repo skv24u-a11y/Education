@@ -239,8 +239,8 @@ const Dashboard: React.FC = () => {
                 <span className="text-white font-bold text-xl">MA</span>
               </div>
               <div>
-                <h1 className={`text-xl font-bold ${darkMode ? 'text-white' : 'text-gray-900'}`}>Student Portal</h1>
-                <p className={`text-sm ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>Matipa Academy</p>
+                <h1 className={`text-xl font-bold ${darkMode ? 'text-white' : 'text-gray-900'}`}>Nursing Student Portal</h1>
+                <p className={`text-sm ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>Matipa College of Nursing</p>
               </div>
             </div>
 

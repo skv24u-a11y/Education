@@ -127,6 +127,7 @@ const OnboardingFlow: React.FC = () => {
     subjectInput.type = 'hidden';
     subjectInput.name = '_subject';
     subjectInput.value = 'New Student Application - Matipa Academy';
+    subjectInput.value = 'New Student Application - Matipa College of Nursing';
     form.appendChild(subjectInput);
     
     const captchaInput = document.createElement('input');
@@ -180,7 +181,7 @@ const OnboardingFlow: React.FC = () => {
           <div className="mb-8">
             <CheckCircle className="w-24 h-24 text-green-500 mx-auto mb-4" />
             <h1 className="text-4xl font-bold text-gray-900 mb-2">Ombi Limewasilishwa! (Application Submitted!)</h1>
-            <p className="text-xl text-gray-600">Thank you for joining the Matipa Academy family</p>
+            <p className="text-xl text-gray-600">Thank you for joining the Matipa College of Nursing family</p>
           </div>
           
           <div className="bg-gradient-to-r from-orange-600 to-red-600 rounded-2xl p-8 text-white mb-8">
@@ -226,7 +227,7 @@ const OnboardingFlow: React.FC = () => {
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Usajili wa Wanafunzi (Student Registration)</h1>
-          <p className="text-xl text-gray-600">Complete your registration to join Matipa Academy</p>
+          <p className="text-xl text-gray-600">Complete your registration to join Matipa College of Nursing</p>
         </div>
 
         {/* Progress Bar */}

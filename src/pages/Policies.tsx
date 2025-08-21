@@ -17,9 +17,10 @@ import {
 const Policies: React.FC = () => {
   React.useEffect(() => {
     document.title = 'Academic Policies - Matipa Academy | Student Guidelines';
+    document.title = 'Academic Policies - Matipa College of Nursing | Student Guidelines';
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Review Matipa Academy\'s academic policies including admission, fees, grading, attendance, and student conduct guidelines for nursing programs.');
+      metaDescription.setAttribute('content', 'Review Matipa College of Nursing\'s academic policies including admission, fees, grading, attendance, and student conduct guidelines for nursing programs.');
     }
   }, []);
 
