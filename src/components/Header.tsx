@@ -57,11 +57,10 @@ const Header: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
-          <img 
-  src="/logo.png" 
-  alt="Matipa Academy Logo" 
-  className="w-12 h-12 object-contain"
-/>
+     <Link to="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
+            <div className="bg-gradient-to-r from-orange-500 to-red-600 p-3 rounded-lg shadow-lg flex items-center justify-center min-w-[48px] min-h-[48px]">
+              <GraduationCap className="w-6 h-6 text-white" />
+            </div>
 
             <div>
               <h1 className="text-2xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">Matipa Academy</h1>
