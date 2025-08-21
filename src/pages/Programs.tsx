@@ -15,10 +15,10 @@ import {
 
 const Programs: React.FC = () => {
   React.useEffect(() => {
-    document.title = 'Nursing Programs - Matipa Academy | BSN, RN, ADN Programs';
+    document.title = 'Nursing Programs - Matipa College of Nursing | BSN, RN, ADN Programs';
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Explore Matipa Academy\'s comprehensive nursing programs including BSN, RN, ADN, LPN, and NP degrees. World-class nursing education designed for African healthcare professionals.');
+      metaDescription.setAttribute('content', 'Explore Matipa College of Nursing\'s comprehensive nursing programs including BSN, RN, ADN, LPN, and NP degrees. World-class nursing education designed for African healthcare professionals.');
     }
   }, []);
 
@@ -260,7 +260,7 @@ const Programs: React.FC = () => {
             Ready to Start Your Nursing Career?
           </h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto">
-            Join thousands of successful nursing graduates who started their journey at Matipa Academy
+            Join thousands of successful nursing graduates who started their journey at Matipa College of Nursing
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
