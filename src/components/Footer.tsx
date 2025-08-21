@@ -10,8 +10,8 @@ const Footer: React.FC = () => {
           {/* Brand */}
           <div className="col-span-1 lg:col-span-1">
             <div className="flex items-center space-x-3 mb-4">
-              <div className="bg-gradient-to-r from-orange-500 to-red-600 p-2 rounded-lg flex items-center justify-center min-w-[40px] min-h-[40px]">
-                <GraduationCap className="w-5 h-5 text-white" />
+              <div className="bg-gradient-to-r from-orange-500 to-red-600 p-2 rounded-lg">
+                <span className="text-white font-bold text-lg">MA</span>
               </div>
               <div>
                 <h3 className="text-xl font-bold">Matipa Academy</h3>
