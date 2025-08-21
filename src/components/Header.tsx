@@ -63,7 +63,7 @@ const Header: React.FC = () => {
 >
   <div className="p-2 flex items-center justify-center">
     <img
-      src="https://i.ibb.co/4wVXCMJj/11.png"
+      src="https://ibb.co/RG4qZdp8"
       alt="Logo"
       className="w-12 h-12 object-contain"
     />
