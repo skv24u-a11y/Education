@@ -63,7 +63,7 @@ const Header: React.FC = () => {
 >
   <div className="p-2 rounded-lg shadow-lg bg-white">
     <img
-      src="https://i.ibb.co/4wVXCMJj/11.png"
+      src="https://ibb.co/qYHTJCnd"
       alt="Matipa Academy Logo"
       className="w-12 h-12 object-contain"
     />
