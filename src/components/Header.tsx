@@ -57,17 +57,24 @@ const Header: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
-  <Link
-  to="/"
-  className="flex items-center space-x-3 hover:opacity-80 transition-opacity"
->
-  <div className="p-2 flex items-center justify-center">
-    <img
-      src="/logo.png"
-      alt="Logo"
-      className="w-12 h-12 object-contain"
-    />
-  </div>
+ import logo from "@/assets/logo.png";
+
+export default function NavbarLogo() {
+  return (
+    <Link
+      to="/"
+      className="flex items-center space-x-3 hover:opacity-80 transition-opacity"
+    >
+      <div className="p-2 flex items-center justify-center">
+        <img
+          src={logo}
+          alt="Logo"
+          className="w-12 h-12 object-contain"
+        />
+      </div>
+   
+  );
+}
 
 
             <div>
