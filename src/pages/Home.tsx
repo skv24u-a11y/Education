@@ -91,10 +91,10 @@ const Home: React.FC = () => {
             <div className="text-center lg:text-left">
               <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
                 Unlock Your Potential with 
-                <span className="text-yellow-300 drop-shadow-lg"> Matipa</span>
+                <span className="text-yellow-300 drop-shadow-lg"> Matipa College of Nursing</span>
               </h1>
               <p className="text-xl md:text-2xl mb-8 text-orange-100 leading-relaxed">
-                Join thousands of African nursing students in our innovative healthcare learning environment. 
+                Join thousands of African nursing students at Matipa College of Nursing in our innovative healthcare learning environment. 
                 Get access to world-class nursing education, clinical training, and healthcare career opportunities designed for African excellence.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -153,10 +153,10 @@ const Home: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Why Choose Matipa Academy?
+              Why Choose Matipa College of Nursing?
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We provide an exceptional learning experience tailored for African students with cutting-edge resources and dedicated support
+              We provide an exceptional nursing education experience tailored for African students with cutting-edge clinical resources and dedicated support
             </p>
           </div>
           
@@ -370,7 +370,7 @@ const Home: React.FC = () => {
             Ready to Start Your African Excellence Journey?
           </h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto">
-            Join thousands of successful African students who have transformed their careers with Matipa Academy
+            Join thousands of successful nursing graduates who have transformed their careers with Matipa College of Nursing
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

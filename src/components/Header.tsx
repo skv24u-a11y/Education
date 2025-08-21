@@ -62,7 +62,7 @@ const Header: React.FC = () => {
               <span className="text-white font-bold text-2xl drop-shadow-sm">MA</span>
             </div>
             <div>
-              <h1 className="text-2xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">Matipa Academy</h1>
+              <h1 className="text-2xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">Matipa College of Nursing</h1>
               <p className="text-sm text-orange-600 font-medium">Empowering African Excellence</p>
             </div>
           </Link>

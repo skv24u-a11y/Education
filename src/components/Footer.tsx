@@ -15,11 +15,11 @@ const Footer: React.FC = () => {
               </div>
               <div>
                 <h3 className="text-xl font-bold">Matipa College of Nursing</h3>
-                <p className="text-gray-400 text-sm">Empowering African Excellence</p>
+                <p className="text-gray-400 text-sm">Empowering African Nursing Excellence</p>
               </div>
             </div>
             <p className="text-gray-400 mb-4">
-              Empowering African students with world-class education and innovative learning experiences since 2020.
+              Empowering African nursing students with world-class nursing education and innovative clinical learning experiences since 2020.
             </p>
           </div>
 

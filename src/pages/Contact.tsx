@@ -14,10 +14,10 @@ import {
 const Contact: React.FC = () => {
   // Set page title and description
   React.useEffect(() => {
-    document.title = 'Contact Us - Matipa Academy | Get in Touch';
+    document.title = 'Contact Us - Matipa College of Nursing | Get in Touch';
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Contact Matipa Academy for nursing program inquiries, admissions support, and student services. Reach out via phone, email, or our contact form for immediate assistance.');
+      metaDescription.setAttribute('content', 'Contact Matipa College of Nursing for nursing program inquiries, admissions support, and student services. Reach out via phone, email, or our contact form for immediate assistance.');
     }
   }, []);
 

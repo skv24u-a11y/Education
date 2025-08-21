@@ -17,7 +17,7 @@ const About: React.FC = () => {
     document.title = 'About Us - Matipa Academy | Leading African Nursing Education';
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Learn about Matipa Academy, Africa\'s premier online nursing college. Discover our mission, values, faculty, and commitment to empowering African healthcare professionals through world-class nursing education.');
+      metaDescription.setAttribute('content', 'Learn about Matipa College of Nursing, Africa\'s premier online nursing college. Discover our mission, values, faculty, and commitment to empowering African healthcare professionals through world-class nursing education.');
     }
   }, []);
 
@@ -97,8 +97,9 @@ const About: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">About Matipa Academy</h1>
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">About Matipa College of Nursing</h1>
             <p className="text-xl md:text-2xl text-blue-100 max-w-4xl mx-auto">
-              Empowering African minds, transforming lives, and building tomorrow's leaders since 2020
+              Empowering African nursing minds, transforming healthcare lives, and building tomorrow's nursing leaders since 2020
             </p>
           </div>
         </div>
@@ -112,7 +113,7 @@ const About: React.FC = () => {
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Dhamira Yetu (Our Mission)</h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                Matipa Academy is dedicated to providing world-class nursing education that empowers African healthcare professionals 
+                Matipa College of Nursing is dedicated to providing world-class nursing education that empowers African healthcare professionals 
                 to achieve their full potential. We combine rigorous clinical training with innovative teaching 
                 methods, hands-on experience, and African healthcare perspectives to prepare nursing graduates for success 
                 in addressing Africa's healthcare challenges while staying rooted in Ubuntu values.
@@ -182,7 +183,7 @@ const About: React.FC = () => {
                 <div className="border-l-4 border-blue-600 pl-6">
                   <div className="text-orange-600 font-semibold">2020</div>
                   <h3 className="text-lg font-semibold text-gray-900">Foundation</h3>
-                  <p className="text-gray-600">Matipa Academy was founded with a vision to revolutionize African higher education</p>
+                  <p className="text-gray-600">Matipa College of Nursing was founded with a vision to revolutionize African nursing education</p>
                 </div>
                 <div className="border-l-4 border-red-500 pl-6">
                   <div className="text-red-500 font-semibold">2021</div>
@@ -197,7 +198,7 @@ const About: React.FC = () => {
                 <div className="border-l-4 border-green-500 pl-6">
                   <div className="text-green-500 font-semibold">2024</div>
                   <h3 className="text-lg font-semibold text-gray-900">AI Integration</h3>
-                  <p className="text-gray-600">Leading African education with AI-powered personalized learning in local languages</p>
+                  <p className="text-gray-600">Leading African nursing education with AI-powered personalized clinical learning in local languages</p>
                 </div>
               </div>
             </div>
@@ -322,10 +323,10 @@ const About: React.FC = () => {
       <section className="py-20 bg-gradient-to-r from-orange-600 to-red-600 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Jiunge na Uongozi wa Matipa (Join Our Legacy of Excellence)
+            Jiunge na Uongozi wa Matipa College of Nursing (Join Our Legacy of Excellence)
           </h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto">
-            Become part of an African community that values Ubuntu, innovation, integrity, and academic excellence
+            Become part of an African nursing community that values Ubuntu, innovation, integrity, and clinical excellence
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="bg-gradient-to-r from-yellow-500 to-orange-500 text-white px-8 py-4 rounded-lg font-semibold hover:from-yellow-600 hover:to-orange-600 transition-all transform hover:scale-105">
