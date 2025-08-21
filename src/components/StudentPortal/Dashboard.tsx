@@ -235,8 +235,8 @@ const Dashboard: React.FC = () => {
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <div className="flex items-center space-x-3">
-              <div className="bg-gradient-to-r from-orange-600 to-red-600 p-3 rounded-lg">
-                <span className="text-white font-bold text-xl">MA</span>
+              <div className="bg-gradient-to-r from-orange-600 to-red-600 p-3 rounded-lg flex items-center justify-center min-w-[48px] min-h-[48px]">
+                <GraduationCap className="w-6 h-6 text-white" />
               </div>
               <div>
                 <h1 className={`text-xl font-bold ${darkMode ? 'text-white' : 'text-gray-900'}`}>Student Portal</h1>
