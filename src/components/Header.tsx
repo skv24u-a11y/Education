@@ -57,15 +57,26 @@ const Header: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
-            <div className="bg-gradient-to-r from-orange-500 to-red-600 p-3 rounded-lg shadow-lg">
-              <span className="text-white font-bold text-2xl drop-shadow-sm">MA</span>
-            </div>
-            <div>
-              <h1 className="text-2xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">Matipa Academy</h1>
-              <p className="text-sm text-orange-600 font-medium">Empowering African Excellence</p>
-            </div>
-          </Link>
+         <Link
+  to="/"
+  className="flex items-center space-x-3 hover:opacity-80 transition-opacity"
+>
+  <div className="p-2 rounded-lg shadow-lg bg-white">
+    <img
+      src="https://i.ibb.co/4wVXCMJj/11.png"
+      alt="Matipa Academy Logo"
+      className="w-12 h-12 object-contain"
+    />
+  </div>
+  <div>
+    <h1 className="text-2xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">
+      Matipa Academy
+    </h1>
+    <p className="text-sm text-orange-600 font-medium">
+      Empowering African Excellence
+    </p>
+  </div>
+</Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
