@@ -30,8 +30,12 @@ const WhatsAppChat: React.FC = () => {
           {/* Header */}
           <div className="bg-green-500 text-white p-4 flex items-center justify-between">
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
-                <MessageCircle className="w-5 h-5" />
+              <div className="relative w-10 h-10">
+                <img
+                  src="https://i.ibb.co/393rK7nD/generated-image.png"
+                  alt="Matipa College of Nursing"
+                  className="w-10 h-10 object-contain rounded-full border-2 border-white/30 shadow-lg"
+                />
               </div>
               <div>
                 <h3 className="font-semibold">Matipa College of Nursing</h3>

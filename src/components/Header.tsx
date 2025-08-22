@@ -57,21 +57,25 @@ const Header: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
-         <Link to="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
-  <img
-    src="https://i.ibb.co/393rK7nD/generated-image.png"
-    alt="Matipa College of Nursing Logo"
-    className="w-16 h-16 object-contain rounded-lg shadow-lg"
-  />
-  <div>
-    <h1 className="text-2xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">
-      Matipa College of Nursing
-    </h1>
-    <p className="text-sm text-orange-600 font-medium">
-      Empowering African Excellence
-    </p>
-  </div>
-</Link>
+          <Link to="/" className="flex items-center space-x-4 hover:scale-105 transition-all duration-300 group">
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-to-r from-orange-500 to-red-500 rounded-xl blur-lg opacity-30 group-hover:opacity-50 transition-opacity"></div>
+              <img
+                src="https://i.ibb.co/393rK7nD/generated-image.png"
+                alt="Matipa College of Nursing Logo"
+                className="relative w-16 h-16 object-contain rounded-xl shadow-2xl border-2 border-white/20 group-hover:border-orange-300 transition-all duration-300"
+              />
+              <div className="absolute -top-1 -right-1 w-4 h-4 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-full animate-pulse"></div>
+            </div>
+            <div className="flex flex-col">
+              <h1 className="text-2xl font-bold bg-gradient-to-r from-orange-600 via-red-600 to-yellow-600 bg-clip-text text-transparent group-hover:from-orange-500 group-hover:via-red-500 group-hover:to-yellow-500 transition-all duration-300">
+                Matipa College of Nursing
+              </h1>
+              <p className="text-sm font-semibold bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">
+                🌍 Empowering African Excellence
+              </p>
+            </div>
+          </Link>
 
 
           {/* Desktop Navigation */}

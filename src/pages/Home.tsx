@@ -121,7 +121,11 @@ const Home: React.FC = () => {
               />
               <div className="absolute -bottom-6 -left-6 bg-gradient-to-r from-yellow-400 to-orange-400 text-gray-900 p-4 rounded-lg shadow-xl">
                 <div className="flex items-center">
-                  <Star className="w-5 h-5 mr-2" />
+                  <img
+                    src="https://i.ibb.co/393rK7nD/generated-image.png"
+                    alt="Matipa College of Nursing"
+                    className="w-6 h-6 mr-2 rounded"
+                  />
                   <span className="font-semibold">4.9/5 Student Rating</span>
                 </div>
               </div>

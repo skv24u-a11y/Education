@@ -29,6 +29,19 @@ const LoadingAnimation: React.FC = () => {
         
         <h2 className="text-3xl font-bold text-white mb-4">Excellence Academy</h2>
         <h2 className="text-3xl font-bold text-white mb-4">Matipa College of Nursing</h2>
+        
+        {/* Enhanced Logo Display */}
+        <div className="flex justify-center mb-6">
+          <div className="relative">
+            <div className="absolute inset-0 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-2xl blur-xl opacity-60 animate-pulse"></div>
+            <img
+              src="https://i.ibb.co/393rK7nD/generated-image.png"
+              alt="Matipa College of Nursing Logo"
+              className="relative w-20 h-20 object-contain rounded-2xl shadow-2xl border-2 border-white/30 animate-bounce"
+            />
+          </div>
+        </div>
+        
         <p className="text-orange-200 text-lg mb-6">Empowering African Excellence</p>
         
         {/* Loading bar */}
