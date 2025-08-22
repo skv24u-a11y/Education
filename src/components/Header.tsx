@@ -61,7 +61,7 @@ const Header: React.FC = () => {
   <img
     src="https://i.ibb.co/393rK7nD/generated-image.png"
     alt="Matipa College of Nursing Logo"
-    className="w-16 h-20 object-contain rounded-lg shadow-lg"
+    className="w-25 h-30 object-contain rounded-lg shadow-lg"
   />
   <div>
     <h1 className="text-2xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">
