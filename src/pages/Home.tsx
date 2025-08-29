@@ -215,9 +215,9 @@ const Home: React.FC = () => {
                 alt="African nursing students in virtual clinical training"
                 className="rounded-lg shadow-lg"
               />
-              <div className="absolute inset-0 bg-orange-600 bg-opacity-20 rounded-lg flex items-center justify-center">
+              <div className="absolute inset-0 bg-seaformBlue-600 bg-opacity-20 rounded-lg flex items-center justify-center">
                 <div className="bg-white bg-opacity-90 p-4 rounded-full">
-                  <Play className="w-12 h-12 text-orange-600" />
+                  <Play className="w-12 h-12 text-seaformBlue-600" />
                 </div>
               </div>
             </div>
@@ -269,34 +269,34 @@ const Home: React.FC = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white p-8 rounded-xl shadow-lg text-center">
-              <div className="bg-gradient-to-r from-green-100 to-yellow-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                <TrendingUp className="w-8 h-8 text-green-600" />
+              <div className="bg-seaformBlue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                <TrendingUp className="w-8 h-8 text-seaformBlue-600" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-4">Easy Upload</h3>
               <p className="text-gray-600 mb-6">Submit clinical reports and case studies in multiple formats with drag-and-drop simplicity</p>
-              <button className="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition-colors">
+              <button className="bg-seaformBlue-600 text-white px-6 py-2 rounded-lg hover:bg-seaformBlue-700 transition-colors">
                 Upload Clinical Report
               </button>
             </div>
             
             <div className="bg-white p-8 rounded-xl shadow-lg text-center">
-              <div className="bg-gradient-to-r from-orange-100 to-red-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Clock className="w-8 h-8 text-orange-600" />
+              <div className="bg-seaformBlue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Clock className="w-8 h-8 text-seaformBlue-600" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-4">Quick Feedback</h3>
               <p className="text-gray-600 mb-6">Get detailed clinical feedback and evaluations within 24-48 hours</p>
-              <button className="bg-orange-600 text-white px-6 py-2 rounded-lg hover:bg-orange-700 transition-colors">
+              <button className="bg-seaformBlue-600 text-white px-6 py-2 rounded-lg hover:bg-seaformBlue-700 transition-colors">
                 View Feedback
               </button>
             </div>
             
             <div className="bg-white p-8 rounded-xl shadow-lg text-center">
-              <div className="bg-gradient-to-r from-blue-100 to-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Calendar className="w-8 h-8 text-blue-600" />
+              <div className="bg-seaformBlue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Calendar className="w-8 h-8 text-seaformBlue-600" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-4">Track Progress</h3>
               <p className="text-gray-600 mb-6">Monitor your clinical competency progress with detailed analytics</p>
-              <button className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+              <button className="bg-seaformBlue-600 text-white px-6 py-2 rounded-lg hover:bg-seaformBlue-700 transition-colors">
                 View Progress
               </button>
             </div>
@@ -335,7 +335,7 @@ const Home: React.FC = () => {
                     {post.title}
                   </h3>
                   <p className="text-gray-600 mb-4">{post.excerpt}</p>
-                  <button className="text-orange-600 font-semibold hover:text-orange-700 flex items-center">
+                  <button className="text-seaformBlue-600 font-semibold hover:text-seaformBlue-700 flex items-center">
                     <a href="#" onClick={(e) => { e.preventDefault(); alert('Full article coming soon! Stay tuned for more nursing education insights.'); }}>
                       Read More
                     </a>
@@ -347,7 +347,7 @@ const Home: React.FC = () => {
           </div>
           
           <div className="text-center mt-12">
-            <button className="bg-gradient-to-r from-orange-600 to-red-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-orange-700 hover:to-red-700 transition-all shadow-lg">
+            <button className="bg-seaformBlue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-seaformBlue-700 transition-all shadow-lg">
               View All Posts
             </button>
           </div>
