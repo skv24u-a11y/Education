@@ -143,3 +143,5 @@ export default WelcomeHero;
 };
 
 export default WelcomeHero;
+  )
+}
