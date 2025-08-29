@@ -284,10 +284,7 @@ const Admissions: React.FC = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-xl">
-            <div className="bg-gradient-to-br from-teal-50 to-cyan-100 p-6 rounded-xl">
             <div className="bg-gradient-to-br from-cyan-50 to-teal-100 p-6 rounded-xl">
-              <DollarSign className="w-12 h-12 text-teal-600 mb-4" />
               <DollarSign className="w-12 h-12 text-cyan-600 mb-4" />
               <h3 className="text-xl font-semibold text-gray-900 mb-3">Merit Scholarships</h3>
               <p className="text-gray-600 mb-4">Academic excellence scholarships up to $5,000 per year</p>
@@ -309,7 +306,6 @@ const Admissions: React.FC = () => {
               </ul>
             </div>
 
-            <div className="bg-gradient-to-br from-orange-50 to-orange-100 p-6 rounded-xl">
             <div className="bg-gradient-to-br from-cyan-50 to-blue-100 p-6 rounded-xl">
               <BookOpen className="w-12 h-12 text-cyan-600 mb-4" />
               <h3 className="text-xl font-semibold text-gray-900 mb-3">Work-Study Programs</h3>
@@ -336,14 +332,12 @@ const Admissions: React.FC = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
             <div className="bg-white p-6 rounded-xl shadow-lg">
-              <Phone className="w-8 h-8 text-teal-600 mx-auto mb-4" />
               <Phone className="w-8 h-8 text-cyan-600 mx-auto mb-4" />
               <h3 className="font-semibold text-gray-900 mb-2">Call Us</h3>
               <p className="text-gray-600">+254 700 123 456</p>
               <p className="text-sm text-gray-500">Monday - Friday, 8 AM - 6 PM</p>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-lg">
-              <Mail className="w-8 h-8 text-teal-600 mx-auto mb-4" />
               <Mail className="w-8 h-8 text-cyan-600 mx-auto mb-4" />
               <h3 className="font-semibold text-gray-900 mb-2">Email Us</h3>
               <p className="text-gray-600">admissions@matipaacademy.online</p>
