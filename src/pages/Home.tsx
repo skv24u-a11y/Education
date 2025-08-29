@@ -77,7 +77,7 @@ const Home: React.FC = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-teal-500 via-cyan-600 to-blue-500 text-white overflow-hidden">
+      <section className="relative bg-gradient-to-br from-teal-500 via-cyan-600 to-emerald-500 text-white overflow-hidden">
         <div className="absolute inset-0 bg-black opacity-20"></div>
         {/* African Pattern Overlay */}
         <div className="absolute inset-0 opacity-10">
@@ -91,16 +91,16 @@ const Home: React.FC = () => {
             <div className="text-center lg:text-left">
               <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
                 Unlock Your Potential with 
-                <span className="text-cyan-300 drop-shadow-lg"> Matipa College of Nursing</span>
+                <span className="text-emerald-300 drop-shadow-lg"> Matipa College of Nursing</span>
               </h1>
-              <p className="text-xl md:text-2xl mb-8 text-cyan-100 leading-relaxed">
+              <p className="text-xl md:text-2xl mb-8 text-teal-100 leading-relaxed">
                 Join thousands of African nursing students at Matipa College of Nursing in our innovative healthcare learning environment. 
                 Get access to world-class nursing education, clinical training, and healthcare career opportunities designed for African excellence.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Link
                   to="/onboarding"
-                  className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-8 py-4 rounded-lg font-semibold hover:from-cyan-600 hover:to-teal-600 transition-all transform hover:scale-105 shadow-xl flex items-center justify-center"
+                  className="bg-gradient-to-r from-teal-500 to-emerald-500 text-white px-8 py-4 rounded-lg font-semibold hover:from-teal-600 hover:to-emerald-600 transition-all transform hover:scale-105 shadow-xl flex items-center justify-center"
                 >
                   <UserPlus className="w-5 h-5 mr-2" />
                   Jiunge Sasa (Join Now)
@@ -120,6 +120,7 @@ const Home: React.FC = () => {
                 className="rounded-lg shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500 border-4 border-yellow-400"
               />
               <div className="absolute -bottom-6 -left-6 bg-gradient-to-r from-cyan-400 to-teal-400 text-gray-900 p-4 rounded-lg shadow-xl">
+              <div className="absolute -bottom-6 -left-6 bg-gradient-to-r from-teal-400 to-emerald-400 text-gray-900 p-4 rounded-lg shadow-xl">
                 <div className="flex items-center">
                   <img
                     src="https://i.ibb.co/393rK7nD/generated-image.png"
@@ -144,7 +145,7 @@ const Home: React.FC = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-transparent mb-2">{stat.number}</div>
+                <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-teal-600 to-emerald-600 bg-clip-text text-transparent mb-2">{stat.number}</div>
                 <div className="text-gray-600">{stat.label}</div>
               </div>
             ))}
@@ -167,7 +168,7 @@ const Home: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {features.map((feature, index) => (
               <div key={index} className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 text-center group hover:transform hover:scale-105">
-                <div className="bg-gradient-to-r from-teal-100 to-cyan-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:from-teal-600 group-hover:to-cyan-600 transition-all">
+                <div className="bg-gradient-to-r from-teal-100 to-emerald-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:from-teal-600 group-hover:to-emerald-600 transition-all">
                   <feature.icon className="w-8 h-8 text-teal-600 group-hover:text-white transition-colors" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">{feature.title}</h3>
@@ -205,10 +206,11 @@ const Home: React.FC = () => {
               </ul>
               <div className="flex flex-col sm:flex-row gap-4">
                 <button className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors flex items-center">
+                <button className="bg-teal-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-teal-700 transition-colors flex items-center">
                   <Play className="w-5 h-5 mr-2" />
                   Watch Demo
                 </button>
-                <button className="border-2 border-blue-600 text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors">
+                <button className="border-2 border-teal-600 text-teal-600 px-6 py-3 rounded-lg font-semibold hover:bg-teal-50 transition-colors">
                   Join Free Webinar
                 </button>
               </div>
@@ -273,7 +275,7 @@ const Home: React.FC = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white p-8 rounded-xl shadow-lg text-center">
-              <div className="bg-gradient-to-r from-teal-100 to-cyan-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+              <div className="bg-gradient-to-r from-teal-100 to-emerald-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
                 <TrendingUp className="w-8 h-8 text-teal-600" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-4">Easy Upload</h3>
@@ -284,7 +286,7 @@ const Home: React.FC = () => {
             </div>
             
             <div className="bg-white p-8 rounded-xl shadow-lg text-center">
-              <div className="bg-gradient-to-r from-cyan-100 to-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+              <div className="bg-gradient-to-r from-cyan-100 to-emerald-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Clock className="w-8 h-8 text-cyan-600" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-4">Quick Feedback</h3>
@@ -295,7 +297,7 @@ const Home: React.FC = () => {
             </div>
             
             <div className="bg-white p-8 rounded-xl shadow-lg text-center">
-              <div className="bg-gradient-to-r from-teal-100 to-cyan-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+              <div className="bg-gradient-to-r from-teal-100 to-emerald-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Calendar className="w-8 h-8 text-teal-600" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-4">Track Progress</h3>
@@ -351,7 +353,7 @@ const Home: React.FC = () => {
           </div>
           
           <div className="text-center mt-12">
-            <button className="bg-gradient-to-r from-teal-600 to-cyan-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-teal-700 hover:to-cyan-700 transition-all shadow-lg">
+            <button className="bg-gradient-to-r from-teal-600 to-emerald-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-teal-700 hover:to-emerald-700 transition-all shadow-lg">
               View All Posts
             </button>
           </div>
@@ -359,7 +361,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-teal-600 to-cyan-600 text-white relative overflow-hidden">
+      <section className="py-20 bg-gradient-to-r from-teal-600 to-emerald-600 text-white relative overflow-hidden">
         {/* African Pattern Background */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 left-0 w-full h-full">
@@ -379,7 +381,7 @@ const Home: React.FC = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/onboarding"
-              className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-8 py-4 rounded-lg font-semibold hover:from-cyan-600 hover:to-teal-600 transition-all transform hover:scale-105 inline-block shadow-xl"
+              className="bg-gradient-to-r from-emerald-500 to-teal-500 text-white px-8 py-4 rounded-lg font-semibold hover:from-emerald-600 hover:to-teal-600 transition-all transform hover:scale-105 inline-block shadow-xl"
             >
               Jiunge Sasa (Apply Now)
             </Link>
