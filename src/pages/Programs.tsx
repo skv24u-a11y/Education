@@ -118,7 +118,7 @@ const Programs: React.FC = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-teal-500 via-cyan-600 to-blue-500 text-white py-20">
+      <section className="relative bg-gradient-to-br from-cyan-400 via-teal-500 to-cyan-600 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">Nursing Programs</h1>
@@ -255,6 +255,7 @@ const Programs: React.FC = () => {
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-teal-600 to-cyan-600 text-white">
+      <section className="py-20 bg-gradient-to-r from-cyan-600 to-teal-600 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Ready to Start Your Nursing Career?
@@ -265,13 +266,13 @@ const Programs: React.FC = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/onboarding"
-              className="bg-white text-teal-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all transform hover:scale-105 inline-block"
+              className="bg-white text-cyan-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all transform hover:scale-105 inline-block"
             >
               Apply Now
             </Link>
             <Link
               to="/contact"
-              className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-teal-600 transition-all transform hover:scale-105 inline-block"
+              className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-cyan-600 transition-all transform hover:scale-105 inline-block"
             >
               Contact Admissions
             </Link>

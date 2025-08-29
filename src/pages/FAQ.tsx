@@ -182,7 +182,7 @@ const FAQ: React.FC = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-teal-500 via-cyan-600 to-blue-500 text-white py-20">
+      <section className="relative bg-gradient-to-br from-cyan-400 via-teal-500 to-cyan-600 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">Maswali na Ushuhuda (FAQ & Testimonials)</h1>

@@ -93,7 +93,7 @@ const About: React.FC = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-teal-500 via-cyan-600 to-blue-500 text-white py-20">
+      <section className="relative bg-gradient-to-br from-cyan-400 via-teal-500 to-cyan-600 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">About Matipa Academy</h1>
@@ -164,7 +164,8 @@ const About: React.FC = () => {
             {values.map((value, index) => (
               <div key={index} className="bg-white p-8 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow duration-300">
                 <div className="bg-gradient-to-r from-teal-100 to-cyan-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <value.icon className="w-8 h-8 text-teal-600" />
+                <div className="bg-gradient-to-r from-cyan-100 to-teal-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <value.icon className="w-8 h-8 text-cyan-600" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">{value.title}</h3>
                 <p className="text-gray-600">{value.description}</p>
@@ -259,6 +260,7 @@ const About: React.FC = () => {
                 className="rounded-lg shadow-lg"
               />
               <div className="absolute -top-6 -left-6 bg-gradient-to-r from-orange-500 to-red-500 text-white p-4 rounded-lg shadow-lg">
+              <div className="absolute -top-6 -left-6 bg-gradient-to-r from-cyan-500 to-teal-500 text-white p-4 rounded-lg shadow-lg">
                 <div className="flex items-center">
                   <Globe className="w-8 h-8 text-white mr-2" />
                   <div>
@@ -294,6 +296,7 @@ const About: React.FC = () => {
               </ul>
               <button className="bg-gradient-to-r from-orange-600 to-red-600 text-white px-6 py-3 rounded-lg font-semibold hover:from-orange-700 hover:to-red-700 transition-colors">
               <button className="bg-gradient-to-r from-teal-600 to-cyan-600 text-white px-6 py-3 rounded-lg font-semibold hover:from-teal-700 hover:to-cyan-700 transition-colors">
+              <button className="bg-gradient-to-r from-cyan-600 to-teal-600 text-white px-6 py-3 rounded-lg font-semibold hover:from-cyan-700 hover:to-teal-700 transition-colors">
                 Explore Sierra Leone  Nursing Programs
               </button>
             </div>
@@ -316,6 +319,7 @@ const About: React.FC = () => {
               {accreditations.map((accreditation, index) => (
                 <div key={index} className="flex items-center p-4 bg-gray-50 rounded-lg">
                   <Award className="w-6 h-6 text-orange-600 mr-3" />
+                  <Award className="w-6 h-6 text-cyan-600 mr-3" />
                   <span className="text-gray-700">{accreditation}</span>
                 </div>
               ))}
@@ -326,6 +330,7 @@ const About: React.FC = () => {
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-teal-600 to-cyan-600 text-white">
+      <section className="py-20 bg-gradient-to-r from-cyan-600 to-teal-600 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Jiunge na Uongozi wa Matipa College of Nursing (Join Our Legacy of Excellence)
@@ -335,9 +340,10 @@ const About: React.FC = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-8 py-4 rounded-lg font-semibold hover:from-cyan-600 hover:to-teal-600 transition-all transform hover:scale-105">
+            <button className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-8 py-4 rounded-lg font-semibold hover:from-cyan-600 hover:to-teal-600 transition-all transform hover:scale-105">
               Jiunge Sasa (Apply Now)
             </button>
-            <button className="bg-white text-teal-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all transform hover:scale-105">
+            <button className="bg-white text-cyan-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all transform hover:scale-105">
               Schedule Campus Visit
             </button>
           </div>

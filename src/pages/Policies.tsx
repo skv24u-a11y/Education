@@ -258,7 +258,7 @@ const Policies: React.FC = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-teal-500 via-cyan-600 to-blue-500 text-white py-20">
+      <section className="relative bg-gradient-to-br from-cyan-400 via-teal-500 to-cyan-600 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">Academic Policies</h1>
@@ -292,7 +292,7 @@ const Policies: React.FC = () => {
                   <p className="text-gray-600 mb-4">
                     {policy.sections.length} key areas covered in this policy
                   </p>
-                  <button className="text-orange-600 font-semibold hover:text-orange-700 transition-colors">
+                  <button className="text-cyan-600 font-semibold hover:text-cyan-700 transition-colors">
                     View Details →
                   </button>
                 </div>
@@ -308,7 +308,7 @@ const Policies: React.FC = () => {
           <div className="space-y-16">
             {policies.map((policy) => (
               <div key={policy.id} id={policy.id} className="bg-gray-50 rounded-2xl p-8">
-                    <button className="text-teal-600 font-semibold hover:text-teal-700 transition-colors">
+                <div className="flex items-center mb-8">
                   <div className={`bg-gradient-to-r ${policy.color} p-4 rounded-full mr-6`}>
                     <policy.icon className="w-8 h-8 text-white" />
                   </div>
@@ -380,25 +380,24 @@ const Policies: React.FC = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
             <div className="bg-gray-50 p-6 rounded-xl">
-              <FileText className="w-8 h-8 text-orange-600 mx-auto mb-4" />
+              <FileText className="w-8 h-8 text-cyan-600 mx-auto mb-4" />
               <h3 className="font-semibold text-gray-900 mb-2">Student Handbook</h3>
               <p className="text-gray-600 mb-4">Download the complete student handbook with all policies</p>
-              <button className="bg-orange-600 text-white px-6 py-2 rounded-lg hover:bg-orange-700 transition-colors">
+              <button className="bg-cyan-600 text-white px-6 py-2 rounded-lg hover:bg-cyan-700 transition-colors">
                 Download PDF
               </button>
             </div>
             <div className="bg-gray-50 p-6 rounded-xl">
-              <Users className="w-8 h-8 text-orange-600 mx-auto mb-4" />
+              <Users className="w-8 h-8 text-cyan-600 mx-auto mb-4" />
               <h3 className="font-semibold text-gray-900 mb-2">Student Services</h3>
               <p className="text-gray-600 mb-4">Speak with a counselor about policy questions</p>
-              <button className="bg-orange-600 text-white px-6 py-2 rounded-lg hover:bg-orange-700 transition-colors">
+              <button className="bg-cyan-600 text-white px-6 py-2 rounded-lg hover:bg-cyan-700 transition-colors">
                 Schedule Meeting
               </button>
             </div>
           </div>
 
-          <div className="bg-gradient-to-r from-orange-600 to-red-600 text-white p-6 rounded-xl">
-          <div className="bg-gradient-to-r from-teal-600 to-cyan-600 text-white p-6 rounded-xl">
+          <div className="bg-gradient-to-r from-cyan-600 to-teal-600 text-white p-6 rounded-xl">
             <h3 className="text-xl font-bold mb-2">Policy Commitment</h3>
             <p className="text-cyan-100">
               We are committed to maintaining fair, transparent, and student-centered policies that support 
