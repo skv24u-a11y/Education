@@ -138,3 +138,5 @@ const WelcomeHero: React.FC<WelcomeHeroProps> = ({ studentData }) => {
 };
 
 export default WelcomeHero;
+  )
+}
