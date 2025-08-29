@@ -22,7 +22,7 @@ const Header: React.FC = () => {
   return (
     <header className="bg-white shadow-lg sticky top-0 z-40">
       {/* Top bar */}
-      <div className="bg-blue-600 text-white py-2">
+      <div className="bg-seafoamBlue-500 text-white py-2">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center text-sm">
             <div className="flex items-center space-x-4">
@@ -38,13 +38,13 @@ const Header: React.FC = () => {
             <div className="hidden md:flex space-x-4">
               <Link 
                 to="/portal"
-                className="bg-green-500 hover:bg-green-600 px-4 py-1 rounded text-sm font-medium transition-colors"
+                className="bg-navyBlue-800 hover:bg-navyBlue-900 px-4 py-1 rounded text-sm font-medium transition-colors"
               >
                 Student Portal
               </Link>
               <Link
                 to="/onboarding"
-                className="bg-orange-500 hover:bg-orange-600 px-4 py-1 rounded text-sm font-medium transition-colors"
+                className="bg-white text-seafoamBlue-500 hover:bg-warmGray-50 px-4 py-1 rounded text-sm font-medium transition-colors"
               >
                 Apply Now
               </Link>
@@ -64,10 +64,10 @@ const Header: React.FC = () => {
               className="w-16 h-16 object-contain"
             />
   <div>
-              <h1 className="text-2xl font-bold text-seaformBlue-600">
+              <h1 className="text-2xl font-bold text-seafoamBlue-500">
       Matipa College of Nursing
     </h1>
-    <p className="text-sm text-seaformBlue-500 font-medium">
+    <p className="text-sm text-navyBlue-800 font-medium">
       Empowering African Excellence
     </p>
   </div>
@@ -82,8 +82,8 @@ const Header: React.FC = () => {
                 to={item.href}
                 className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
                   isActive(item.href)
-                    ? 'text-blue-600 bg-blue-50'
-                    : 'text-gray-700 hover:text-blue-600 hover:bg-blue-50'
+                    ? 'text-seafoamBlue-500 bg-seafoamBlue-50'
+                    : 'text-navyBlue-800 hover:text-seafoamBlue-500 hover:bg-seafoamBlue-50'
                 }`}
               >
                 {item.name}
@@ -95,7 +95,7 @@ const Header: React.FC = () => {
           <div className="hidden md:block">
             <Link
               to="/onboarding"
-              className="bg-seaformBlue-500 text-white px-6 py-2 rounded-lg font-medium hover:bg-seaformBlue-600 transition-all transform hover:scale-105 shadow-lg"
+              className="bg-seafoamBlue-500 text-white px-6 py-2 rounded-lg font-medium hover:bg-seafoamBlue-600 transition-all transform hover:scale-105 shadow-lg"
             >
               Enroll Now
             </Link>
@@ -104,7 +104,7 @@ const Header: React.FC = () => {
           {/* Mobile menu button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden p-2 rounded-md text-gray-700 hover:text-blue-600 hover:bg-blue-50"
+            className="md:hidden p-2 rounded-md text-navyBlue-800 hover:text-seafoamBlue-500 hover:bg-seafoamBlue-50"
           >
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
@@ -121,8 +121,8 @@ const Header: React.FC = () => {
                   onClick={() => setIsMenuOpen(false)}
                   className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
                     isActive(item.href)
-                      ? 'text-blue-600 bg-blue-50'
-                      : 'text-gray-700 hover:text-blue-600 hover:bg-blue-50'
+                      ? 'text-seafoamBlue-500 bg-seafoamBlue-50'
+                      : 'text-navyBlue-800 hover:text-seafoamBlue-500 hover:bg-seafoamBlue-50'
                   }`}
                 >
                   {item.name}
@@ -131,14 +131,14 @@ const Header: React.FC = () => {
               <div className="pt-2 space-y-2">
                 <Link
                   to="/portal"
-                  className="w-full bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded text-sm font-medium transition-colors block text-center"
+                  className="w-full bg-navyBlue-800 hover:bg-navyBlue-900 text-white px-4 py-2 rounded text-sm font-medium transition-colors block text-center"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Student Portal
                 </Link>
                 <Link
                   to="/onboarding"
-                  className="w-full bg-seaformBlue-500 text-white px-4 py-2 rounded font-medium hover:bg-seaformBlue-600 transition-all block text-center shadow-lg"
+                  className="w-full bg-seafoamBlue-500 text-white px-4 py-2 rounded font-medium hover:bg-seafoamBlue-600 transition-all block text-center shadow-lg"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Enroll Now

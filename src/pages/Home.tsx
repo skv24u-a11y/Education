@@ -77,7 +77,7 @@ const Home: React.FC = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-seaformBlue-500 to-seaformBlue-700 text-white overflow-hidden">
+      <section className="relative bg-gradient-to-br from-seafoamBlue-500 to-seafoamBlue-600 text-white overflow-hidden">
         <div className="absolute inset-0 bg-black opacity-20"></div>
         {/* African Pattern Overlay */}
         <div className="absolute inset-0 opacity-10">
@@ -94,21 +94,22 @@ const Home: React.FC = () => {
                 <span className="text-white drop-shadow-lg"> Matipa College of Nursing</span>
               </h1>
               <p className="text-xl md:text-2xl mb-8 text-seaformBlue-100 leading-relaxed">
+              <p className="text-xl md:text-2xl mb-8 text-seafoamBlue-100 leading-relaxed">
                 Join thousands of African nursing students at Matipa College of Nursing in our innovative healthcare learning environment. 
                 Get access to world-class nursing education, clinical training, and healthcare career opportunities designed for African excellence.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Link
                   to="/onboarding"
-                  className="bg-white text-seaformBlue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all transform hover:scale-105 shadow-xl flex items-center justify-center"
+                  className="bg-white text-seafoamBlue-500 px-8 py-4 rounded-lg font-semibold hover:bg-warmGray-50 transition-all transform hover:scale-105 shadow-xl flex items-center justify-center"
                 >
                   <UserPlus className="w-5 h-5 mr-2" />
                   Jiunge Sasa (Join Now)
                 </Link>
-                <button className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-seaformBlue-600 transition-all transform hover:scale-105">
+                <button className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-seafoamBlue-500 transition-all transform hover:scale-105">
                   Start Free Quiz
                 </button>
-                <button className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-seaformBlue-600 transition-all transform hover:scale-105">
+                <button className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-seafoamBlue-500 transition-all transform hover:scale-105">
                   Explore Our Blog
                 </button>
               </div>
@@ -120,6 +121,7 @@ const Home: React.FC = () => {
                 className="rounded-lg shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500 border-4 border-yellow-400"
               />
               <div className="absolute -bottom-6 -left-6 bg-white text-seaformBlue-600 p-4 rounded-lg shadow-xl">
+              <div className="absolute -bottom-6 -left-6 bg-white text-seafoamBlue-500 p-4 rounded-lg shadow-xl">
                 <div className="flex items-center">
                   <Star className="w-5 h-5 mr-2" />
                   <span className="font-semibold">4.9/5 Student Rating</span>
@@ -140,7 +142,7 @@ const Home: React.FC = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-seaformBlue-600 mb-2">{stat.number}</div>
+                <div className="text-3xl md:text-4xl font-bold text-seafoamBlue-500 mb-2">{stat.number}</div>
                 <div className="text-gray-600">{stat.label}</div>
               </div>
             ))}
@@ -149,7 +151,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* Features Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-warmGray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -163,10 +165,10 @@ const Home: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {features.map((feature, index) => (
               <div key={index} className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 text-center group hover:transform hover:scale-105">
-                <div className="bg-seaformBlue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-seaformBlue-600 transition-all">
-                  <feature.icon className="w-8 h-8 text-seaformBlue-600 group-hover:text-white transition-colors" />
+                <div className="bg-seafoamBlue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-seafoamBlue-500 transition-all">
+                  <feature.icon className="w-8 h-8 text-seafoamBlue-500 group-hover:text-white transition-colors" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">{feature.title}</h3>
+                <h3 className="text-xl font-semibold text-navyBlue-800 mb-4">{feature.title}</h3>
                 <p className="text-gray-600">{feature.description}</p>
               </div>
             ))}
@@ -179,7 +181,7 @@ const Home: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold text-navyBlue-800 mb-6">
                 Experience Our Virtual Nursing Labs
               </h2>
               <p className="text-lg text-gray-600 mb-8">
@@ -200,11 +202,11 @@ const Home: React.FC = () => {
                 </li>
               </ul>
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors flex items-center">
+                <button className="bg-seafoamBlue-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-seafoamBlue-600 transition-colors flex items-center">
                   <Play className="w-5 h-5 mr-2" />
                   Watch Demo
                 </button>
-                <button className="border-2 border-blue-600 text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors">
+                <button className="border-2 border-seafoamBlue-500 text-seafoamBlue-500 px-6 py-3 rounded-lg font-semibold hover:bg-seafoamBlue-50 transition-colors">
                   Join Free Webinar
                 </button>
               </div>
@@ -215,9 +217,9 @@ const Home: React.FC = () => {
                 alt="African nursing students in virtual clinical training"
                 className="rounded-lg shadow-lg"
               />
-              <div className="absolute inset-0 bg-seaformBlue-600 bg-opacity-20 rounded-lg flex items-center justify-center">
+              <div className="absolute inset-0 bg-seafoamBlue-500 bg-opacity-20 rounded-lg flex items-center justify-center">
                 <div className="bg-white bg-opacity-90 p-4 rounded-full">
-                  <Play className="w-12 h-12 text-seaformBlue-600" />
+                  <Play className="w-12 h-12 text-seafoamBlue-500" />
                 </div>
               </div>
             </div>
@@ -226,10 +228,10 @@ const Home: React.FC = () => {
       </section>
 
       {/* Live Nursing Classes */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-warmGray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-navyBlue-800 mb-4">
               Join Live Nursing Classes
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -244,7 +246,7 @@ const Home: React.FC = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-navyBlue-800 mb-4">
               Your Personal AI Nursing Tutor
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -256,10 +258,10 @@ const Home: React.FC = () => {
       </section>
 
       {/* Assignment System Preview */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-warmGray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-navyBlue-800 mb-4">
               Clinical Assignment Management
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -269,34 +271,34 @@ const Home: React.FC = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white p-8 rounded-xl shadow-lg text-center">
-              <div className="bg-seaformBlue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                <TrendingUp className="w-8 h-8 text-seaformBlue-600" />
+              <div className="bg-seafoamBlue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                <TrendingUp className="w-8 h-8 text-seafoamBlue-500" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Easy Upload</h3>
+              <h3 className="text-xl font-semibold text-navyBlue-800 mb-4">Easy Upload</h3>
               <p className="text-gray-600 mb-6">Submit clinical reports and case studies in multiple formats with drag-and-drop simplicity</p>
-              <button className="bg-seaformBlue-600 text-white px-6 py-2 rounded-lg hover:bg-seaformBlue-700 transition-colors">
+              <button className="bg-seafoamBlue-500 text-white px-6 py-2 rounded-lg hover:bg-seafoamBlue-600 transition-colors">
                 Upload Clinical Report
               </button>
             </div>
             
             <div className="bg-white p-8 rounded-xl shadow-lg text-center">
-              <div className="bg-seaformBlue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Clock className="w-8 h-8 text-seaformBlue-600" />
+              <div className="bg-seafoamBlue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Clock className="w-8 h-8 text-seafoamBlue-500" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Quick Feedback</h3>
+              <h3 className="text-xl font-semibold text-navyBlue-800 mb-4">Quick Feedback</h3>
               <p className="text-gray-600 mb-6">Get detailed clinical feedback and evaluations within 24-48 hours</p>
-              <button className="bg-seaformBlue-600 text-white px-6 py-2 rounded-lg hover:bg-seaformBlue-700 transition-colors">
+              <button className="bg-seafoamBlue-500 text-white px-6 py-2 rounded-lg hover:bg-seafoamBlue-600 transition-colors">
                 View Feedback
               </button>
             </div>
             
             <div className="bg-white p-8 rounded-xl shadow-lg text-center">
-              <div className="bg-seaformBlue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Calendar className="w-8 h-8 text-seaformBlue-600" />
+              <div className="bg-seafoamBlue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Calendar className="w-8 h-8 text-seafoamBlue-500" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Track Progress</h3>
+              <h3 className="text-xl font-semibold text-navyBlue-800 mb-4">Track Progress</h3>
               <p className="text-gray-600 mb-6">Monitor your clinical competency progress with detailed analytics</p>
-              <button className="bg-seaformBlue-600 text-white px-6 py-2 rounded-lg hover:bg-seaformBlue-700 transition-colors">
+              <button className="bg-seafoamBlue-500 text-white px-6 py-2 rounded-lg hover:bg-seafoamBlue-600 transition-colors">
                 View Progress
               </button>
             </div>
@@ -308,7 +310,7 @@ const Home: React.FC = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-navyBlue-800 mb-4">
               Latest from Our Blog
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -332,10 +334,11 @@ const Home: React.FC = () => {
                     <span>{post.readTime}</span>
                   </div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-3 hover:text-orange-600 cursor-pointer">
+                  <h3 className="text-xl font-semibold text-navyBlue-800 mb-3 hover:text-seafoamBlue-500 cursor-pointer">
                     {post.title}
                   </h3>
                   <p className="text-gray-600 mb-4">{post.excerpt}</p>
-                  <button className="text-seaformBlue-600 font-semibold hover:text-seaformBlue-700 flex items-center">
+                  <button className="text-seafoamBlue-500 font-semibold hover:text-seafoamBlue-600 flex items-center">
                     <a href="#" onClick={(e) => { e.preventDefault(); alert('Full article coming soon! Stay tuned for more nursing education insights.'); }}>
                       Read More
                     </a>
@@ -347,7 +350,7 @@ const Home: React.FC = () => {
           </div>
           
           <div className="text-center mt-12">
-            <button className="bg-seaformBlue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-seaformBlue-700 transition-all shadow-lg">
+            <button className="bg-seafoamBlue-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-seafoamBlue-600 transition-all shadow-lg">
               View All Posts
             </button>
           </div>
@@ -355,7 +358,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-seaformBlue-500 to-seaformBlue-700 text-white relative overflow-hidden">
+      <section className="py-20 bg-gradient-to-r from-seafoamBlue-500 to-seafoamBlue-600 text-white relative overflow-hidden">
         {/* African Pattern Background */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 left-0 w-full h-full">
@@ -375,14 +378,14 @@ const Home: React.FC = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/onboarding"
-              className="bg-white text-seaformBlue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all transform hover:scale-105 inline-block shadow-xl"
+              className="bg-white text-seafoamBlue-500 px-8 py-4 rounded-lg font-semibold hover:bg-warmGray-50 transition-all transform hover:scale-105 inline-block shadow-xl"
             >
               Jiunge Sasa (Apply Now)
             </Link>
-            <button className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-seaformBlue-600 transition-all transform hover:scale-105 shadow-lg">
+            <button className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-seafoamBlue-500 transition-all transform hover:scale-105 shadow-lg">
               Take Campus Tour
             </button>
-            <Link to="/contact" className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-seaformBlue-600 transition-all transform hover:scale-105 inline-block">
+            <Link to="/contact" className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-seafoamBlue-500 transition-all transform hover:scale-105 inline-block">
               Contact Us
             </Link>
           </div>
