@@ -215,9 +215,9 @@ const Home: React.FC = () => {
                 alt="African nursing students in virtual clinical training"
                 className="rounded-lg shadow-lg"
               />
-              <div className="absolute inset-0 bg-orange-600 bg-opacity-20 rounded-lg flex items-center justify-center">
+              <div className="absolute inset-0 bg-seaformBlue-600 bg-opacity-20 rounded-lg flex items-center justify-center">
                 <div className="bg-white bg-opacity-90 p-4 rounded-full">
-                  <Play className="w-12 h-12 text-orange-600" />
+                  <Play className="w-12 h-12 text-seaformBlue-600" />
                 </div>
               </div>
             </div>
