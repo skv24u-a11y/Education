@@ -117,21 +117,17 @@ const WelcomeHero: React.FC<WelcomeHeroProps> = ({ studentData }) => {
 
       {/* Action Buttons */}
       <div className="relative z-10 flex flex-wrap gap-4 mt-8">
-        <button className="bg-white text-blue-600 px-6 py-3 rounded-xl font-semibold hover:bg-gray-100 transition-all transform hover:scale-105 flex items-center space-x-2">
         <button className="bg-white text-cyan-600 px-6 py-3 rounded-xl font-semibold hover:bg-gray-100 transition-all transform hover:scale-105 flex items-center space-x-2">
           <Zap className="w-5 h-5" />
           <span>Quick Quiz</span>
         </button>
-        <button className="bg-green-500 text-white px-6 py-3 rounded-xl font-semibold hover:bg-green-600 transition-all transform hover:scale-105 flex items-center space-x-2">
         <button className="bg-teal-500 text-white px-6 py-3 rounded-xl font-semibold hover:bg-teal-600 transition-all transform hover:scale-105 flex items-center space-x-2">
           <Calendar className="w-5 h-5" />
           <span>Join Live Class</span>
         </button>
-        <button className="bg-yellow-500 text-gray-900 px-6 py-3 rounded-xl font-semibold hover:bg-yellow-400 transition-all transform hover:scale-105 flex items-center space-x-2">
         <button className="bg-cyan-400 text-white px-6 py-3 rounded-xl font-semibold hover:bg-cyan-500 transition-all transform hover:scale-105 flex items-center space-x-2">
           <Award className="w-5 h-5" />
           <span>View Achievements</span>
-        </button>
         </button>
       </div>
     </div>
@@ -139,9 +135,3 @@ const WelcomeHero: React.FC<WelcomeHeroProps> = ({ studentData }) => {
 };
 
 export default WelcomeHero;
-  )
-};
-
-export default WelcomeHero;
-  )
-}
