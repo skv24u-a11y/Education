@@ -18,7 +18,7 @@ const WhatsAppChat: React.FC = () => {
       <div className="fixed bottom-6 right-6 z-50">
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 animate-pulse"
+          className="bg-cyan-500 hover:bg-cyan-600 text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 animate-pulse"
         >
           <MessageCircle className="w-6 h-6" />
         </button>
@@ -28,7 +28,7 @@ const WhatsAppChat: React.FC = () => {
       {isOpen && (
         <div className="fixed bottom-24 right-6 z-50 w-80 bg-white rounded-2xl shadow-2xl border border-gray-200 overflow-hidden">
           {/* Header */}
-          <div className="bg-green-500 text-white p-4 flex items-center justify-between">
+          <div className="bg-cyan-500 text-white p-4 flex items-center justify-between">
             <div className="flex items-center space-x-3">
               <div className="relative w-10 h-10">
                 <img
@@ -39,7 +39,7 @@ const WhatsAppChat: React.FC = () => {
               </div>
               <div>
                 <h3 className="font-semibold">Matipa College of Nursing</h3>
-                <p className="text-sm text-green-100">Nursing Admissions Support</p>
+                <p className="text-sm text-cyan-100">Nursing Admissions Support</p>
               </div>
             </div>
             <button
@@ -79,7 +79,7 @@ const WhatsAppChat: React.FC = () => {
           <div className="p-4 bg-white border-t">
             <button
               onClick={openWhatsApp}
-              className="w-full bg-green-500 hover:bg-green-600 text-white py-3 px-4 rounded-lg font-semibold transition-colors flex items-center justify-center space-x-2"
+              className="w-full bg-cyan-500 hover:bg-cyan-600 text-white py-3 px-4 rounded-lg font-semibold transition-colors flex items-center justify-center space-x-2"
             >
               <MessageCircle className="w-5 h-5" />
               <span>Chat on WhatsApp</span>
