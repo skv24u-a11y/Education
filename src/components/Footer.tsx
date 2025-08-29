@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
           <div className="col-span-1 lg:col-span-1">
             <div className="flex items-center space-x-3 mb-4">
               <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-teal-500 rounded-lg blur-sm opacity-50"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-seafoam-500 to-seafoam-600 rounded-lg blur-sm opacity-50"></div>
                 <img
                   src="https://i.ibb.co/393rK7nD/generated-image.png"
                   alt="Matipa College of Nursing Logo"
