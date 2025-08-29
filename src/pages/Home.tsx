@@ -359,10 +359,10 @@ const Home: React.FC = () => {
         {/* African Pattern Background */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 left-0 w-full h-full">
-            <div className="absolute top-10 left-10 w-20 h-20 border-2 border-yellow-400 rounded-full"></div>
-            <div className="absolute top-20 right-20 w-16 h-16 bg-yellow-400 transform rotate-45"></div>
-            <div className="absolute bottom-20 left-20 w-24 h-24 border-2 border-yellow-400 transform rotate-12"></div>
-            <div className="absolute bottom-10 right-10 w-18 h-18 bg-yellow-400 rounded-full"></div>
+            <div className="absolute top-10 left-10 w-20 h-20 border-2 border-white rounded-full"></div>
+            <div className="absolute top-20 right-20 w-16 h-16 bg-white transform rotate-45"></div>
+            <div className="absolute bottom-20 left-20 w-24 h-24 border-2 border-white transform rotate-12"></div>
+            <div className="absolute bottom-10 right-10 w-18 h-18 bg-white rounded-full"></div>
           </div>
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
