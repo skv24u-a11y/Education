@@ -132,6 +132,7 @@ const WelcomeHero: React.FC<WelcomeHeroProps> = ({ studentData }) => {
           <Award className="w-5 h-5" />
           <span>View Achievements</span>
         </button>
+        </button>
       </div>
     </div>
   );
@@ -139,4 +140,6 @@ const WelcomeHero: React.FC<WelcomeHeroProps> = ({ studentData }) => {
 
 export default WelcomeHero;
   )
-}
+};
+
+export default WelcomeHero;
