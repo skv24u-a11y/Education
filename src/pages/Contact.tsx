@@ -84,11 +84,11 @@ const Contact: React.FC = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-orange-600 via-red-600 to-yellow-600 text-white py-20">
+      <section className="relative bg-gradient-to-br from-teal-500 via-cyan-600 to-blue-500 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">Contact Us</h1>
-            <p className="text-xl md:text-2xl text-orange-100 max-w-4xl mx-auto">
+            <p className="text-xl md:text-2xl text-cyan-100 max-w-4xl mx-auto">
               We're here to help you on your African excellence journey. Get in touch with us today!
             </p>
           </div>
@@ -229,7 +229,7 @@ const Contact: React.FC = () => {
                     
                     <button
                       type="submit"
-                      className="w-full bg-gradient-to-r from-orange-600 to-red-600 text-white py-4 px-6 rounded-lg font-semibold hover:from-orange-700 hover:to-red-700 transition-all transform hover:scale-105 flex items-center justify-center"
+                      className="w-full bg-gradient-to-r from-teal-600 to-cyan-600 text-white py-4 px-6 rounded-lg font-semibold hover:from-teal-700 hover:to-cyan-700 transition-all transform hover:scale-105 flex items-center justify-center"
                     >
                       <Send className="w-5 h-5 mr-2" />
                       Send Message
@@ -264,14 +264,14 @@ const Contact: React.FC = () => {
                     </div>
                   </div>
                   <div className="flex items-center p-4 bg-white rounded-lg shadow-sm">
-                    <MessageSquare className="w-6 h-6 text-orange-600 mr-3" />
+                    <MessageSquare className="w-6 h-6 text-teal-600 mr-3" />
                     <div>
                       <p className="font-semibold text-gray-900">Live Chat</p>
                       <p className="text-gray-600">Available 24/7</p>
                     </div>
                   </div>
                   <div className="flex items-center p-4 bg-white rounded-lg shadow-sm">
-                    <Mail className="w-6 h-6 text-orange-600 mr-3" />
+                    <Mail className="w-6 h-6 text-teal-600 mr-3" />
                     <div>
                       <p className="font-semibold text-gray-900">Quick Response</p>
                       <p className="text-gray-600">urgent@matipaacademy.online</p>

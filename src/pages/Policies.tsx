@@ -258,11 +258,11 @@ const Policies: React.FC = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-orange-600 via-red-600 to-yellow-600 text-white py-20">
+      <section className="relative bg-gradient-to-br from-teal-500 via-cyan-600 to-blue-500 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">Academic Policies</h1>
-            <p className="text-xl md:text-2xl text-orange-100 max-w-4xl mx-auto">
+            <p className="text-xl md:text-2xl text-cyan-100 max-w-4xl mx-auto">
               Clear, fair, and student-friendly policies designed to support your nursing education success
             </p>
           </div>
@@ -308,7 +308,7 @@ const Policies: React.FC = () => {
           <div className="space-y-16">
             {policies.map((policy) => (
               <div key={policy.id} id={policy.id} className="bg-gray-50 rounded-2xl p-8">
-                <div className="flex items-center mb-8">
+                    <button className="text-teal-600 font-semibold hover:text-teal-700 transition-colors">
                   <div className={`bg-gradient-to-r ${policy.color} p-4 rounded-full mr-6`}>
                     <policy.icon className="w-8 h-8 text-white" />
                   </div>
@@ -398,8 +398,9 @@ const Policies: React.FC = () => {
           </div>
 
           <div className="bg-gradient-to-r from-orange-600 to-red-600 text-white p-6 rounded-xl">
+          <div className="bg-gradient-to-r from-teal-600 to-cyan-600 text-white p-6 rounded-xl">
             <h3 className="text-xl font-bold mb-2">Policy Commitment</h3>
-            <p className="text-orange-100">
+            <p className="text-cyan-100">
               We are committed to maintaining fair, transparent, and student-centered policies that support 
               your success in our nursing programs. Your feedback helps us improve our policies continuously.
             </p>
