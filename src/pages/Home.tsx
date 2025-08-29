@@ -77,7 +77,7 @@ const Home: React.FC = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-seaformBlue-600 to-seaformBlue-800 text-white overflow-hidden">
+      <section className="relative bg-gradient-to-br from-seaformBlue-500 to-seaformBlue-700 text-white overflow-hidden">
         <div className="absolute inset-0 bg-black opacity-20"></div>
         {/* African Pattern Overlay */}
         <div className="absolute inset-0 opacity-10">

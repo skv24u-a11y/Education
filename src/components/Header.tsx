@@ -64,10 +64,10 @@ const Header: React.FC = () => {
               className="w-16 h-16 object-contain"
             />
   <div>
-              <h1 className="text-2xl font-bold bg-gradient-to-r from-seaformBlue-600 to-seaformBlue-800 bg-clip-text text-transparent">
+              <h1 className="text-2xl font-bold text-seaformBlue-600">
       Matipa College of Nursing
     </h1>
-    <p className="text-sm text-orange-600 font-medium">
+    <p className="text-sm text-seaformBlue-500 font-medium">
       Empowering African Excellence
     </p>
   </div>
@@ -95,7 +95,7 @@ const Header: React.FC = () => {
           <div className="hidden md:block">
             <Link
               to="/onboarding"
-              className="bg-gradient-to-r from-orange-500 to-red-600 text-white px-6 py-2 rounded-lg font-medium hover:from-orange-600 hover:to-red-700 transition-all transform hover:scale-105 shadow-lg"
+              className="bg-seaformBlue-500 text-white px-6 py-2 rounded-lg font-medium hover:bg-seaformBlue-600 transition-all transform hover:scale-105 shadow-lg"
             >
               Enroll Now
             </Link>
@@ -138,7 +138,7 @@ const Header: React.FC = () => {
                 </Link>
                 <Link
                   to="/onboarding"
-                  className="w-full bg-gradient-to-r from-orange-500 to-red-600 text-white px-4 py-2 rounded font-medium hover:from-orange-600 hover:to-red-700 transition-all block text-center shadow-lg"
+                  className="w-full bg-seaformBlue-500 text-white px-4 py-2 rounded font-medium hover:bg-seaformBlue-600 transition-all block text-center shadow-lg"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Enroll Now
