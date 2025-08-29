@@ -198,6 +198,144 @@ const FAQ: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Maswali Yanayoulizwa Mara Kwa Mara (
-  )
-}
+              Maswali Yanayoulizwa Mara Kwa Mara (FAQ)
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Get answers to common questions and hear from our successful graduates
+            </p>
+          </div>
+
+          {/* FAQ Categories */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+            {faqCategories.map((category, categoryIndex) => (
+              <div key={categoryIndex} className="text-center">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-white rounded-full shadow-lg mb-4">
+                  <category.icon className={`w-8 h-8 ${category.color}`} />
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900">{category.title}</h3>
+              </div>
+            ))}
+          </div>
+
+          {/* FAQ Items */}
+          <div className="max-w-4xl mx-auto">
+            {faqCategories.map((category, categoryIndex) => (
+              <div key={categoryIndex} className="mb-12">
+                <div className="flex items-center mb-6">
+                  <category.icon className={`w-6 h-6 ${category.color} mr-3`} />
+                  <h3 className="text-2xl font-bold text-gray-900">{category.title}</h3>
+                </div>
+                <div className="space-y-4">
+                  {category.faqs.map((faq, faqIndex) => {
+                    const globalIndex = categoryIndex * 10 + faqIndex;
+                    return (
+                      <div key={faqIndex} className="bg-white rounded-lg shadow-md overflow-hidden">
+                        <button
+                          className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors"
+                          onClick={() => toggleFAQ(globalIndex)}
+                        >
+                          <span className="font-semibold text-gray-900">{faq.question}</span>
+                          {openFAQ === globalIndex ? (
+                            <ChevronUp className="w-5 h-5 text-gray-500" />
+                          ) : (
+                            <ChevronDown className="w-5 h-5 text-gray-500" />
+                          )}
+                        </button>
+                        {openFAQ === globalIndex && (
+                          <div className="px-6 pb-4">
+                            <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
+                          </div>
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Ushuhuda wa Wanafunzi (Student Testimonials)
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Hear from our successful African nursing graduates
+            </p>
+          </div>
+
+          <div className="relative max-w-4xl mx-auto">
+            <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl shadow-xl p-8 md:p-12">
+              <div className="flex flex-col md:flex-row items-center gap-8">
+                <div className="flex-shrink-0">
+                  <img
+                    src={testimonials[currentTestimonial].image}
+                    alt={testimonials[currentTestimonial].name}
+                    className="w-32 h-32 rounded-full object-cover shadow-lg"
+                  />
+                </div>
+                <div className="flex-1 text-center md:text-left">
+                  <div className="flex justify-center md:justify-start mb-4">
+                    {renderStars(testimonials[currentTestimonial].rating)}
+                  </div>
+                  <Quote className="w-8 h-8 text-gray-400 mb-4 mx-auto md:mx-0" />
+                  <p className="text-lg text-gray-700 mb-6 italic leading-relaxed">
+                    "{testimonials[currentTestimonial].testimonial}"
+                  </p>
+                  <div className="border-t pt-6">
+                    <h4 className="font-bold text-gray-900 text-lg">
+                      {testimonials[currentTestimonial].name}
+                    </h4>
+                    <p className="text-gray-600 mb-2">{testimonials[currentTestimonial].program}</p>
+                    <div className="flex items-center justify-center md:justify-start text-sm text-gray-500 mb-2">
+                      <MapPin className="w-4 h-4 mr-1" />
+                      {testimonials[currentTestimonial].location}
+                      <Calendar className="w-4 h-4 ml-4 mr-1" />
+                      {testimonials[currentTestimonial].date}
+                    </div>
+                    <p className="text-sm font-semibold text-blue-600">
+                      {testimonials[currentTestimonial].highlight}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Navigation */}
+            <div className="flex justify-center mt-8 space-x-4">
+              <button
+                onClick={prevTestimonial}
+                className="p-3 bg-white rounded-full shadow-lg hover:shadow-xl transition-shadow"
+              >
+                <ChevronUp className="w-6 h-6 text-gray-600 transform -rotate-90" />
+              </button>
+              <div className="flex items-center space-x-2">
+                {testimonials.map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setCurrentTestimonial(index)}
+                    className={`w-3 h-3 rounded-full transition-colors ${
+                      index === currentTestimonial ? 'bg-blue-600' : 'bg-gray-300'
+                    }`}
+                  />
+                ))}
+              </div>
+              <button
+                onClick={nextTestimonial}
+                className="p-3 bg-white rounded-full shadow-lg hover:shadow-xl transition-shadow"
+              >
+                <ChevronDown className="w-6 h-6 text-gray-600 transform rotate-90" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default FAQ;
