@@ -93,7 +93,6 @@ const Home: React.FC = () => {
                 Unlock Your Potential with 
                 <span className="text-white drop-shadow-lg"> Matipa College of Nursing</span>
               </h1>
-              <p className="text-xl md:text-2xl mb-8 text-seaformBlue-100 leading-relaxed">
               <p className="text-xl md:text-2xl mb-8 text-seafoamBlue-100 leading-relaxed">
                 Join thousands of African nursing students at Matipa College of Nursing in our innovative healthcare learning environment. 
                 Get access to world-class nursing education, clinical training, and healthcare career opportunities designed for African excellence.
@@ -120,7 +119,6 @@ const Home: React.FC = () => {
                 alt="African nursing students in clinical training"
                 className="rounded-lg shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500 border-4 border-yellow-400"
               />
-              <div className="absolute -bottom-6 -left-6 bg-white text-seaformBlue-600 p-4 rounded-lg shadow-xl">
               <div className="absolute -bottom-6 -left-6 bg-white text-seafoamBlue-500 p-4 rounded-lg shadow-xl">
                 <div className="flex items-center">
                   <Star className="w-5 h-5 mr-2" />
@@ -333,7 +331,6 @@ const Home: React.FC = () => {
                     <Clock className="w-4 h-4 mr-1" />
                     <span>{post.readTime}</span>
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3 hover:text-orange-600 cursor-pointer">
                   <h3 className="text-xl font-semibold text-navyBlue-800 mb-3 hover:text-seafoamBlue-500 cursor-pointer">
                     {post.title}
                   </h3>
