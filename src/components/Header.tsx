@@ -59,7 +59,7 @@ const Header: React.FC = () => {
           {/* Logo */}
          <Link to="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
   <img
-    src="https://i.ibb.co/393rK7nD/generated-image.png"
+    src="https://i.ibb.co/cK7GqT1m/log.png"
     alt="Matipa College of Nursing Logo"
     className="w-16 h-16 object-contain rounded-lg shadow-lg"
   />
