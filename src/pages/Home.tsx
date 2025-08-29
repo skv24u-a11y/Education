@@ -335,7 +335,7 @@ const Home: React.FC = () => {
                     {post.title}
                   </h3>
                   <p className="text-gray-600 mb-4">{post.excerpt}</p>
-                  <button className="text-orange-600 font-semibold hover:text-orange-700 flex items-center">
+                  <button className="text-seaformBlue-600 font-semibold hover:text-seaformBlue-700 flex items-center">
                     <a href="#" onClick={(e) => { e.preventDefault(); alert('Full article coming soon! Stay tuned for more nursing education insights.'); }}>
                       Read More
                     </a>
@@ -347,7 +347,7 @@ const Home: React.FC = () => {
           </div>
           
           <div className="text-center mt-12">
-            <button className="bg-gradient-to-r from-orange-600 to-red-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-orange-700 hover:to-red-700 transition-all shadow-lg">
+            <button className="bg-seaformBlue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-seaformBlue-700 transition-all shadow-lg">
               View All Posts
             </button>
           </div>
