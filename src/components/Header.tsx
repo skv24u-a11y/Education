@@ -141,13 +141,12 @@ const Header: React.FC = () => {
                   className="w-full bg-gradient-to-r from-orange-500 to-red-600 text-white px-4 py-2 rounded font-medium hover:from-orange-600 hover:to-red-700 transition-all block text-center shadow-lg"
                   onClick={() => setIsMenuOpen(false)}
                 >
-              <p className="text-sm text-seaformBlue-600 font-medium">
+                  Enroll Now
                 </Link>
               </div>
             </div>
           </div>
         )}
-      
       </div>
     </header>
   );
