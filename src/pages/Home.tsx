@@ -140,7 +140,7 @@ const Home: React.FC = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent mb-2">{stat.number}</div>
+                <div className="text-3xl md:text-4xl font-bold text-seaformBlue-600 mb-2">{stat.number}</div>
                 <div className="text-gray-600">{stat.label}</div>
               </div>
             ))}
@@ -163,8 +163,8 @@ const Home: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {features.map((feature, index) => (
               <div key={index} className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 text-center group hover:transform hover:scale-105">
-                <div className="bg-gradient-to-r from-orange-100 to-red-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:from-orange-600 group-hover:to-red-600 transition-all">
-                  <feature.icon className="w-8 h-8 text-orange-600 group-hover:text-white transition-colors" />
+                <div className="bg-seaformBlue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-seaformBlue-600 transition-all">
+                  <feature.icon className="w-8 h-8 text-seaformBlue-600 group-hover:text-white transition-colors" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">{feature.title}</h3>
                 <p className="text-gray-600">{feature.description}</p>
