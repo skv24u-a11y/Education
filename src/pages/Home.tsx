@@ -130,8 +130,8 @@ const Home: React.FC = () => {
         </div>
         
         {/* Animated shapes */}
-        <div className="absolute top-20 left-10 w-20 h-20 bg-yellow-400 rounded-full opacity-30 animate-bounce"></div>
-        <div className="absolute bottom-20 right-10 w-16 h-16 bg-orange-400 rounded-full opacity-30 animate-pulse"></div>
+        <div className="absolute top-20 left-10 w-20 h-20 bg-white rounded-full opacity-30 animate-bounce"></div>
+        <div className="absolute bottom-20 right-10 w-16 h-16 bg-white rounded-full opacity-30 animate-pulse"></div>
       </section>
 
       {/* Stats Section */}
