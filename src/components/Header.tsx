@@ -69,9 +69,10 @@ const Header: React.FC = () => {
             </div>
             <div className="flex flex-col">
               <h1 className="text-2xl font-bold bg-gradient-to-r from-orange-600 via-red-600 to-yellow-600 bg-clip-text text-transparent group-hover:from-orange-500 group-hover:via-red-500 group-hover:to-yellow-500 transition-all duration-300">
+              <h1 className="text-2xl font-bold bg-gradient-to-r from-teal-600 via-cyan-600 to-blue-600 bg-clip-text text-transparent group-hover:from-teal-500 group-hover:via-cyan-500 group-hover:to-blue-500 transition-all duration-300">
                 Matipa College of Nursing
               </h1>
-              <p className="text-sm font-semibold bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">
+              <p className="text-sm font-semibold bg-gradient-to-r from-teal-500 to-cyan-500 bg-clip-text text-transparent">
                 🌍 Empowering African Excellence
               </p>
             </div>
@@ -86,8 +87,8 @@ const Header: React.FC = () => {
                 to={item.href}
                 className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
                   isActive(item.href)
-                    ? 'text-blue-600 bg-blue-50'
-                    : 'text-gray-700 hover:text-blue-600 hover:bg-blue-50'
+                    ? 'text-teal-600 bg-teal-50'
+                    : 'text-gray-700 hover:text-teal-600 hover:bg-teal-50'
                 }`}
               >
                 {item.name}
@@ -99,7 +100,7 @@ const Header: React.FC = () => {
           <div className="hidden md:block">
             <Link
               to="/onboarding"
-              className="bg-gradient-to-r from-orange-500 to-red-600 text-white px-6 py-2 rounded-lg font-medium hover:from-orange-600 hover:to-red-700 transition-all transform hover:scale-105 shadow-lg"
+              className="bg-gradient-to-r from-teal-500 to-cyan-600 text-white px-6 py-2 rounded-lg font-medium hover:from-teal-600 hover:to-cyan-700 transition-all transform hover:scale-105 shadow-lg"
             >
               Enroll Now
             </Link>
@@ -108,7 +109,7 @@ const Header: React.FC = () => {
           {/* Mobile menu button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden p-2 rounded-md text-gray-700 hover:text-blue-600 hover:bg-blue-50"
+            className="md:hidden p-2 rounded-md text-gray-700 hover:text-teal-600 hover:bg-teal-50"
           >
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
@@ -125,8 +126,8 @@ const Header: React.FC = () => {
                   onClick={() => setIsMenuOpen(false)}
                   className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
                     isActive(item.href)
-                      ? 'text-blue-600 bg-blue-50'
-                      : 'text-gray-700 hover:text-blue-600 hover:bg-blue-50'
+                      ? 'text-teal-600 bg-teal-50'
+                      : 'text-gray-700 hover:text-teal-600 hover:bg-teal-50'
                   }`}
                 >
                   {item.name}
@@ -135,14 +136,14 @@ const Header: React.FC = () => {
               <div className="pt-2 space-y-2">
                 <Link
                   to="/portal"
-                  className="w-full bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded text-sm font-medium transition-colors block text-center"
+                  className="w-full bg-teal-500 hover:bg-teal-600 text-white px-4 py-2 rounded text-sm font-medium transition-colors block text-center"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Student Portal
                 </Link>
                 <Link
                   to="/onboarding"
-                  className="w-full bg-gradient-to-r from-orange-500 to-red-600 text-white px-4 py-2 rounded font-medium hover:from-orange-600 hover:to-red-700 transition-all block text-center shadow-lg"
+                  className="w-full bg-gradient-to-r from-teal-500 to-cyan-600 text-white px-4 py-2 rounded font-medium hover:from-teal-600 hover:to-cyan-700 transition-all block text-center shadow-lg"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Enroll Now

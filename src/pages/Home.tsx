@@ -77,38 +77,38 @@ const Home: React.FC = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-orange-600 via-red-600 to-yellow-600 text-white overflow-hidden">
+      <section className="relative bg-gradient-to-br from-teal-500 via-cyan-600 to-blue-500 text-white overflow-hidden">
         <div className="absolute inset-0 bg-black opacity-20"></div>
         {/* African Pattern Overlay */}
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-10 left-10 w-32 h-32 border-4 border-yellow-400 rounded-full"></div>
-          <div className="absolute top-20 right-20 w-24 h-24 bg-orange-400 transform rotate-45"></div>
-          <div className="absolute bottom-20 left-20 w-20 h-20 bg-red-400 rounded-full"></div>
-          <div className="absolute bottom-10 right-10 w-28 h-28 border-4 border-yellow-400 transform rotate-12"></div>
+          <div className="absolute top-10 left-10 w-32 h-32 border-4 border-cyan-300 rounded-full"></div>
+          <div className="absolute top-20 right-20 w-24 h-24 bg-teal-400 transform rotate-45"></div>
+          <div className="absolute bottom-20 left-20 w-20 h-20 bg-cyan-400 rounded-full"></div>
+          <div className="absolute bottom-10 right-10 w-28 h-28 border-4 border-cyan-300 transform rotate-12"></div>
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left">
               <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
                 Unlock Your Potential with 
-                <span className="text-yellow-300 drop-shadow-lg"> Matipa College of Nursing</span>
+                <span className="text-cyan-300 drop-shadow-lg"> Matipa College of Nursing</span>
               </h1>
-              <p className="text-xl md:text-2xl mb-8 text-orange-100 leading-relaxed">
+              <p className="text-xl md:text-2xl mb-8 text-cyan-100 leading-relaxed">
                 Join thousands of African nursing students at Matipa College of Nursing in our innovative healthcare learning environment. 
                 Get access to world-class nursing education, clinical training, and healthcare career opportunities designed for African excellence.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Link
                   to="/onboarding"
-                  className="bg-gradient-to-r from-yellow-500 to-orange-500 text-white px-8 py-4 rounded-lg font-semibold hover:from-yellow-600 hover:to-orange-600 transition-all transform hover:scale-105 shadow-xl flex items-center justify-center"
+                  className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-8 py-4 rounded-lg font-semibold hover:from-cyan-600 hover:to-teal-600 transition-all transform hover:scale-105 shadow-xl flex items-center justify-center"
                 >
                   <UserPlus className="w-5 h-5 mr-2" />
                   Jiunge Sasa (Join Now)
                 </Link>
-                <button className="bg-white text-orange-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all transform hover:scale-105 shadow-lg">
+                <button className="bg-white text-teal-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all transform hover:scale-105 shadow-lg">
                   Start Free Quiz
                 </button>
-                <button className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-orange-600 transition-all transform hover:scale-105">
+                <button className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-teal-600 transition-all transform hover:scale-105">
                   Explore Our Blog
                 </button>
               </div>
@@ -119,7 +119,7 @@ const Home: React.FC = () => {
                 alt="African nursing students in clinical training"
                 className="rounded-lg shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500 border-4 border-yellow-400"
               />
-              <div className="absolute -bottom-6 -left-6 bg-gradient-to-r from-yellow-400 to-orange-400 text-gray-900 p-4 rounded-lg shadow-xl">
+              <div className="absolute -bottom-6 -left-6 bg-gradient-to-r from-cyan-400 to-teal-400 text-gray-900 p-4 rounded-lg shadow-xl">
                 <div className="flex items-center">
                   <img
                     src="https://i.ibb.co/393rK7nD/generated-image.png"
@@ -134,8 +134,8 @@ const Home: React.FC = () => {
         </div>
         
         {/* Animated shapes */}
-        <div className="absolute top-20 left-10 w-20 h-20 bg-yellow-400 rounded-full opacity-30 animate-bounce"></div>
-        <div className="absolute bottom-20 right-10 w-16 h-16 bg-orange-400 rounded-full opacity-30 animate-pulse"></div>
+        <div className="absolute top-20 left-10 w-20 h-20 bg-cyan-400 rounded-full opacity-30 animate-bounce"></div>
+        <div className="absolute bottom-20 right-10 w-16 h-16 bg-teal-400 rounded-full opacity-30 animate-pulse"></div>
       </section>
 
       {/* Stats Section */}
@@ -144,7 +144,7 @@ const Home: React.FC = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent mb-2">{stat.number}</div>
+                <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-transparent mb-2">{stat.number}</div>
                 <div className="text-gray-600">{stat.label}</div>
               </div>
             ))}
@@ -167,8 +167,8 @@ const Home: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {features.map((feature, index) => (
               <div key={index} className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 text-center group hover:transform hover:scale-105">
-                <div className="bg-gradient-to-r from-orange-100 to-red-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:from-orange-600 group-hover:to-red-600 transition-all">
-                  <feature.icon className="w-8 h-8 text-orange-600 group-hover:text-white transition-colors" />
+                <div className="bg-gradient-to-r from-teal-100 to-cyan-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:from-teal-600 group-hover:to-cyan-600 transition-all">
+                  <feature.icon className="w-8 h-8 text-teal-600 group-hover:text-white transition-colors" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">{feature.title}</h3>
                 <p className="text-gray-600">{feature.description}</p>
@@ -219,9 +219,9 @@ const Home: React.FC = () => {
                 alt="African nursing students in virtual clinical training"
                 className="rounded-lg shadow-lg"
               />
-              <div className="absolute inset-0 bg-orange-600 bg-opacity-20 rounded-lg flex items-center justify-center">
+              <div className="absolute inset-0 bg-teal-600 bg-opacity-20 rounded-lg flex items-center justify-center">
                 <div className="bg-white bg-opacity-90 p-4 rounded-full">
-                  <Play className="w-12 h-12 text-orange-600" />
+                  <Play className="w-12 h-12 text-teal-600" />
                 </div>
               </div>
             </div>
@@ -273,34 +273,34 @@ const Home: React.FC = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white p-8 rounded-xl shadow-lg text-center">
-              <div className="bg-gradient-to-r from-green-100 to-yellow-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                <TrendingUp className="w-8 h-8 text-green-600" />
+              <div className="bg-gradient-to-r from-teal-100 to-cyan-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                <TrendingUp className="w-8 h-8 text-teal-600" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-4">Easy Upload</h3>
               <p className="text-gray-600 mb-6">Submit clinical reports and case studies in multiple formats with drag-and-drop simplicity</p>
-              <button className="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition-colors">
+              <button className="bg-teal-600 text-white px-6 py-2 rounded-lg hover:bg-teal-700 transition-colors">
                 Upload Clinical Report
               </button>
             </div>
             
             <div className="bg-white p-8 rounded-xl shadow-lg text-center">
-              <div className="bg-gradient-to-r from-orange-100 to-red-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Clock className="w-8 h-8 text-orange-600" />
+              <div className="bg-gradient-to-r from-cyan-100 to-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Clock className="w-8 h-8 text-cyan-600" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-4">Quick Feedback</h3>
               <p className="text-gray-600 mb-6">Get detailed clinical feedback and evaluations within 24-48 hours</p>
-              <button className="bg-orange-600 text-white px-6 py-2 rounded-lg hover:bg-orange-700 transition-colors">
+              <button className="bg-cyan-600 text-white px-6 py-2 rounded-lg hover:bg-cyan-700 transition-colors">
                 View Feedback
               </button>
             </div>
             
             <div className="bg-white p-8 rounded-xl shadow-lg text-center">
-              <div className="bg-gradient-to-r from-blue-100 to-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Calendar className="w-8 h-8 text-blue-600" />
+              <div className="bg-gradient-to-r from-teal-100 to-cyan-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Calendar className="w-8 h-8 text-teal-600" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-4">Track Progress</h3>
               <p className="text-gray-600 mb-6">Monitor your clinical competency progress with detailed analytics</p>
-              <button className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+              <button className="bg-teal-600 text-white px-6 py-2 rounded-lg hover:bg-teal-700 transition-colors">
                 View Progress
               </button>
             </div>
@@ -351,7 +351,7 @@ const Home: React.FC = () => {
           </div>
           
           <div className="text-center mt-12">
-            <button className="bg-gradient-to-r from-orange-600 to-red-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-orange-700 hover:to-red-700 transition-all shadow-lg">
+            <button className="bg-gradient-to-r from-teal-600 to-cyan-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-teal-700 hover:to-cyan-700 transition-all shadow-lg">
               View All Posts
             </button>
           </div>
@@ -359,14 +359,14 @@ const Home: React.FC = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-orange-600 to-red-600 text-white relative overflow-hidden">
+      <section className="py-20 bg-gradient-to-r from-teal-600 to-cyan-600 text-white relative overflow-hidden">
         {/* African Pattern Background */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 left-0 w-full h-full">
-            <div className="absolute top-10 left-10 w-20 h-20 border-2 border-yellow-400 rounded-full"></div>
-            <div className="absolute top-20 right-20 w-16 h-16 bg-yellow-400 transform rotate-45"></div>
-            <div className="absolute bottom-20 left-20 w-24 h-24 border-2 border-yellow-400 transform rotate-12"></div>
-            <div className="absolute bottom-10 right-10 w-18 h-18 bg-yellow-400 rounded-full"></div>
+            <div className="absolute top-10 left-10 w-20 h-20 border-2 border-cyan-300 rounded-full"></div>
+            <div className="absolute top-20 right-20 w-16 h-16 bg-cyan-300 transform rotate-45"></div>
+            <div className="absolute bottom-20 left-20 w-24 h-24 border-2 border-cyan-300 transform rotate-12"></div>
+            <div className="absolute bottom-10 right-10 w-18 h-18 bg-cyan-300 rounded-full"></div>
           </div>
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -379,14 +379,14 @@ const Home: React.FC = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/onboarding"
-              className="bg-gradient-to-r from-yellow-500 to-orange-500 text-white px-8 py-4 rounded-lg font-semibold hover:from-yellow-600 hover:to-orange-600 transition-all transform hover:scale-105 inline-block shadow-xl"
+              className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-8 py-4 rounded-lg font-semibold hover:from-cyan-600 hover:to-teal-600 transition-all transform hover:scale-105 inline-block shadow-xl"
             >
               Jiunge Sasa (Apply Now)
             </Link>
-            <button className="bg-white text-orange-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all transform hover:scale-105 shadow-lg">
+            <button className="bg-white text-teal-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all transform hover:scale-105 shadow-lg">
               Take Campus Tour
             </button>
-            <Link to="/contact" className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-orange-600 transition-all transform hover:scale-105 inline-block">
+            <Link to="/contact" className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-teal-600 transition-all transform hover:scale-105 inline-block">
               Contact Us
             </Link>
           </div>
