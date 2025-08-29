@@ -125,7 +125,7 @@ const WelcomeHero: React.FC<WelcomeHeroProps> = ({ studentData }) => {
           <Calendar className="w-5 h-5" />
           <span>Join Live Class</span>
         </button>
-        <button className="bg-yellow-500 text-gray-900 px-6 py-3 rounded-xl font-semibold hover:bg-yellow-400 transition-all transform hover:scale-105 flex items-center space-x-2">
+        <button className="bg-seaformBlue-500 text-white px-6 py-3 rounded-xl font-semibold hover:bg-seaformBlue-600 transition-all transform hover:scale-105 flex items-center space-x-2">
           <Award className="w-5 h-5" />
           <span>View Achievements</span>
         </button>

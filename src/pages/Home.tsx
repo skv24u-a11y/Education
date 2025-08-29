@@ -77,35 +77,36 @@ const Home: React.FC = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-orange-600 via-red-600 to-yellow-600 text-white overflow-hidden">
+      <section className="relative bg-gradient-to-br from-seaformBlue-600 via-seaformBlue-700 to-seaformBlue-800 text-white overflow-hidden">
         <div className="absolute inset-0 bg-black opacity-20"></div>
         {/* African Pattern Overlay */}
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-10 left-10 w-32 h-32 border-4 border-yellow-400 rounded-full"></div>
-          <div className="absolute top-20 right-20 w-24 h-24 bg-orange-400 transform rotate-45"></div>
-          <div className="absolute bottom-20 left-20 w-20 h-20 bg-red-400 rounded-full"></div>
-          <div className="absolute bottom-10 right-10 w-28 h-28 border-4 border-yellow-400 transform rotate-12"></div>
+          <div className="absolute top-10 left-10 w-32 h-32 border-4 border-seaformBlue-300 rounded-full"></div>
+          <div className="absolute top-20 right-20 w-24 h-24 bg-seaformBlue-400 transform rotate-45"></div>
+          <div className="absolute bottom-20 left-20 w-20 h-20 bg-seaformBlue-500 rounded-full"></div>
+          <div className="absolute bottom-10 right-10 w-28 h-28 border-4 border-seaformBlue-300 transform rotate-12"></div>
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left">
               <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
                 Unlock Your Potential with 
-                <span className="text-yellow-300 drop-shadow-lg"> Matipa College of Nursing</span>
+                <span className="text-seaformBlue-300 drop-shadow-lg"> Matipa College of Nursing</span>
               </h1>
               <p className="text-xl md:text-2xl mb-8 text-orange-100 leading-relaxed">
+              <p className="text-xl md:text-2xl mb-8 text-seaformBlue-100 leading-relaxed">
                 Join thousands of African nursing students at Matipa College of Nursing in our innovative healthcare learning environment. 
                 Get access to world-class nursing education, clinical training, and healthcare career opportunities designed for African excellence.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Link
                   to="/onboarding"
-                  className="bg-gradient-to-r from-yellow-500 to-orange-500 text-white px-8 py-4 rounded-lg font-semibold hover:from-yellow-600 hover:to-orange-600 transition-all transform hover:scale-105 shadow-xl flex items-center justify-center"
+                  className="bg-gradient-to-r from-seaformBlue-500 to-seaformBlue-600 text-white px-8 py-4 rounded-lg font-semibold hover:from-seaformBlue-600 hover:to-seaformBlue-700 transition-all transform hover:scale-105 shadow-xl flex items-center justify-center"
                 >
                   <UserPlus className="w-5 h-5 mr-2" />
                   Jiunge Sasa (Join Now)
                 </Link>
-                <button className="bg-white text-orange-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all transform hover:scale-105 shadow-lg">
+                <button className="bg-white text-seaformBlue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all transform hover:scale-105 shadow-lg">
                   Start Free Quiz
                 </button>
                 <button className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-orange-600 transition-all transform hover:scale-105">

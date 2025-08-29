@@ -58,20 +58,20 @@ const Header: React.FC = () => {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
          <Link to="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
-  <img
-    src="https://i.ibb.co/pv1FfsPt/log-removebg-preview.png"
-    alt="Matipa College of Nursing Logo"
-    className="w-16 h-16 object-contain rounded-lg shadow-lg"
-  />
+            <img
+              src="https://i.ibb.co/pv1FfsPt/log-removebg-preview.png"
+              alt="Matipa College of Nursing Logo"
+              className="w-16 h-16 object-contain rounded-lg"
+            />
   <div>
-    <h1 className="text-2xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">
+              <h1 className="text-2xl font-bold bg-gradient-to-r from-seaformBlue-600 to-seaformBlue-800 bg-clip-text text-transparent">
       Matipa College of Nursing
     </h1>
     <p className="text-sm text-orange-600 font-medium">
       Empowering African Excellence
     </p>
   </div>
-</Link>
+          </Link>
 
 
           {/* Desktop Navigation */}
@@ -141,7 +141,7 @@ const Header: React.FC = () => {
                   className="w-full bg-gradient-to-r from-orange-500 to-red-600 text-white px-4 py-2 rounded font-medium hover:from-orange-600 hover:to-red-700 transition-all block text-center shadow-lg"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  Enroll Now
+              <p className="text-sm text-seaformBlue-600 font-medium">
                 </Link>
               </div>
             </div>
