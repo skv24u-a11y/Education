@@ -129,20 +129,20 @@ const Donation: React.FC = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-cyan-500 via-teal-600 to-cyan-600 text-white py-20">
+      <section className="relative bg-gradient-to-br from-orange-600 via-red-600 to-yellow-600 text-white py-20">
         <div className="absolute inset-0 bg-black opacity-20"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <Heart className="w-16 h-16 text-cyan-200 mx-auto mb-6" />
+            <Heart className="w-16 h-16 text-yellow-300 mx-auto mb-6" />
             <h1 className="text-4xl md:text-6xl font-bold mb-6">Fanya Mabadiliko (Make a Difference)</h1>
-            <p className="text-xl md:text-2xl text-cyan-100 max-w-4xl mx-auto mb-8">
+            <p className="text-xl md:text-2xl text-orange-100 max-w-4xl mx-auto mb-8">
               Your generous donation helps us provide world-class education and opportunities to African students
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-8 py-4 rounded-lg font-semibold hover:from-cyan-600 hover:to-teal-600 transition-all transform hover:scale-105">
+              <button className="bg-gradient-to-r from-red-500 to-red-600 text-white px-8 py-4 rounded-lg font-semibold hover:from-red-600 hover:to-red-700 transition-all transform hover:scale-105">
                 Donate Now
               </button>
-              <button className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-cyan-600 transition-all">
+              <button className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-all">
                 Learn More
               </button>
             </div>
@@ -155,19 +155,19 @@ const Donation: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="text-4xl font-bold text-cyan-600 mb-2">15,000+</div>
+              <div className="text-4xl font-bold text-orange-600 mb-2">15,000+</div>
               <div className="text-gray-600">African Students Supported</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-teal-600 mb-2">$5.2M</div>
+              <div className="text-4xl font-bold text-green-600 mb-2">$5.2M</div>
               <div className="text-gray-600">Scholarships Awarded</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-cyan-600 mb-2">97%</div>
+              <div className="text-4xl font-bold text-red-600 mb-2">97%</div>
               <div className="text-gray-600">Graduate Success Rate</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-teal-600 mb-2">54</div>
+              <div className="text-4xl font-bold text-yellow-600 mb-2">54</div>
               <div className="text-gray-600">African Countries Reached</div>
             </div>
           </div>
@@ -402,7 +402,7 @@ const Donation: React.FC = () => {
                 <button
                   type="submit"
                   disabled={!selectedAmount && !customAmount}
-                  className="w-full bg-gradient-to-r from-cyan-600 to-teal-600 text-white py-4 px-6 rounded-lg font-semibold hover:from-cyan-700 hover:to-teal-700 transition-all transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-full bg-gradient-to-r from-orange-600 to-red-600 text-white py-4 px-6 rounded-lg font-semibold hover:from-orange-700 hover:to-red-700 transition-all transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   <div className="flex items-center justify-center">
                     <Heart className="w-5 h-5 mr-2" />
@@ -458,21 +458,21 @@ const Donation: React.FC = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="py-20 bg-gradient-to-r from-cyan-600 to-teal-600 text-white">
+      <section className="py-20 bg-gradient-to-r from-orange-600 to-red-600 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <Award className="w-16 h-16 mx-auto mb-6" />
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Jiunge Nasi Katika Safari Hii (Join Us on This Journey)
           </h2>
-          <p className="text-xl text-cyan-100 mb-8 max-w-3xl mx-auto">
+          <p className="text-xl text-orange-100 mb-8 max-w-3xl mx-auto">
             Every donation, no matter the size, contributes to building a stronger healthcare system across Africa. 
             Together, we can empower the next generation of African nursing professionals.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-cyan-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+            <button className="bg-white text-orange-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
               Make a Donation
             </button>
-            <button className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-cyan-600 transition-colors">
+            <button className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-orange-600 transition-colors">
               Learn More About Our Impact
             </button>
           </div>

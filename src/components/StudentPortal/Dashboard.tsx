@@ -203,9 +203,9 @@ const Dashboard: React.FC = () => {
             </div>
 
             {/* Motivational Quote */}
-            <div className="bg-gradient-to-r from-cyan-600 to-teal-600 rounded-2xl p-8 text-white text-center">
+            <div className="bg-gradient-to-r from-orange-600 to-red-600 rounded-2xl p-8 text-white text-center">
               <div className="flex items-center justify-center mb-4">
-                <Heart className="w-8 h-8 text-cyan-200 mr-3" />
+                <Heart className="w-8 h-8 text-yellow-300 mr-3" />
                 <h3 className="text-xl font-bold">Daily Inspiration</h3>
               </div>
               <p className="text-lg italic leading-relaxed max-w-4xl mx-auto">
@@ -235,13 +235,8 @@ const Dashboard: React.FC = () => {
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <div className="flex items-center space-x-3">
-              <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-teal-500 rounded-lg blur-sm opacity-40"></div>
-                <img
-                  src="https://i.ibb.co/393rK7nD/generated-image.png"
-                  alt="Matipa College of Nursing Logo"
-                  className="relative w-12 h-12 object-contain rounded-lg shadow-lg border border-white/20"
-                />
+              <div className="bg-gradient-to-r from-orange-600 to-red-600 p-3 rounded-lg">
+                <span className="text-white font-bold text-xl">MA</span>
               </div>
               <div>
                 <h1 className={`text-xl font-bold ${darkMode ? 'text-white' : 'text-gray-900'}`}>Nursing Student Portal</h1>
@@ -306,7 +301,7 @@ const Dashboard: React.FC = () => {
                     onClick={() => setActiveSection(item.id)}
                     className={`w-full flex items-center space-x-3 px-4 py-3 rounded-xl transition-all duration-200 ${
                       activeSection === item.id
-                        ? 'bg-gradient-to-r from-cyan-600 to-teal-600 text-white shadow-lg transform scale-105'
+                        ? 'bg-gradient-to-r from-orange-600 to-red-600 text-white shadow-lg transform scale-105'
                         : `${darkMode ? 'text-gray-300 hover:bg-gray-700' : 'text-gray-700 hover:bg-gray-100'}`
                     }`}
                   >
@@ -322,15 +317,15 @@ const Dashboard: React.FC = () => {
                   Quick Actions
                 </h4>
                 <div className="space-y-2">
-                  <button className="w-full flex items-center space-x-2 px-3 py-2 text-sm text-cyan-600 hover:bg-cyan-50 dark:hover:bg-cyan-900/20 rounded-lg transition-colors">
+                  <button className="w-full flex items-center space-x-2 px-3 py-2 text-sm text-orange-600 hover:bg-orange-50 dark:hover:bg-orange-900/20 rounded-lg transition-colors">
                     <Upload className="w-4 h-4" />
                     <span>Upload Assignment</span>
                   </button>
-                  <button className="w-full flex items-center space-x-2 px-3 py-2 text-sm text-teal-600 hover:bg-teal-50 dark:hover:bg-teal-900/20 rounded-lg transition-colors">
+                  <button className="w-full flex items-center space-x-2 px-3 py-2 text-sm text-green-600 hover:bg-green-50 dark:hover:bg-green-900/20 rounded-lg transition-colors">
                     <MessageSquare className="w-4 h-4" />
                     <span>Submit Feedback</span>
                   </button>
-                  <button className="w-full flex items-center space-x-2 px-3 py-2 text-sm text-cyan-600 hover:bg-cyan-50 dark:hover:bg-cyan-900/20 rounded-lg transition-colors">
+                  <button className="w-full flex items-center space-x-2 px-3 py-2 text-sm text-yellow-600 hover:bg-yellow-50 dark:hover:bg-yellow-900/20 rounded-lg transition-colors">
                     <HelpCircle className="w-4 h-4" />
                     <span>Get Help</span>
                   </button>

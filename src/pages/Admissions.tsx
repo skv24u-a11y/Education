@@ -139,11 +139,11 @@ const Admissions: React.FC = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-cyan-400 via-teal-500 to-cyan-600 text-white py-20">
+      <section className="relative bg-gradient-to-br from-orange-600 via-red-600 to-yellow-600 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">Admissions</h1>
-            <p className="text-xl md:text-2xl text-cyan-100 max-w-4xl mx-auto">
+            <p className="text-xl md:text-2xl text-orange-100 max-w-4xl mx-auto">
               Your journey to becoming a healthcare professional starts here
             </p>
           </div>
@@ -284,8 +284,8 @@ const Admissions: React.FC = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-gradient-to-br from-cyan-50 to-teal-100 p-6 rounded-xl">
-              <DollarSign className="w-12 h-12 text-cyan-600 mb-4" />
+            <div className="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-xl">
+              <DollarSign className="w-12 h-12 text-green-600 mb-4" />
               <h3 className="text-xl font-semibold text-gray-900 mb-3">Merit Scholarships</h3>
               <p className="text-gray-600 mb-4">Academic excellence scholarships up to $5,000 per year</p>
               <ul className="text-sm text-gray-600 space-y-1">
@@ -306,8 +306,8 @@ const Admissions: React.FC = () => {
               </ul>
             </div>
 
-            <div className="bg-gradient-to-br from-cyan-50 to-blue-100 p-6 rounded-xl">
-              <BookOpen className="w-12 h-12 text-cyan-600 mb-4" />
+            <div className="bg-gradient-to-br from-orange-50 to-orange-100 p-6 rounded-xl">
+              <BookOpen className="w-12 h-12 text-orange-600 mb-4" />
               <h3 className="text-xl font-semibold text-gray-900 mb-3">Work-Study Programs</h3>
               <p className="text-gray-600 mb-4">Earn money while gaining valuable experience</p>
               <ul className="text-sm text-gray-600 space-y-1">
@@ -332,13 +332,13 @@ const Admissions: React.FC = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
             <div className="bg-white p-6 rounded-xl shadow-lg">
-              <Phone className="w-8 h-8 text-cyan-600 mx-auto mb-4" />
+              <Phone className="w-8 h-8 text-orange-600 mx-auto mb-4" />
               <h3 className="font-semibold text-gray-900 mb-2">Call Us</h3>
               <p className="text-gray-600">+254 700 123 456</p>
               <p className="text-sm text-gray-500">Monday - Friday, 8 AM - 6 PM</p>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-lg">
-              <Mail className="w-8 h-8 text-cyan-600 mx-auto mb-4" />
+              <Mail className="w-8 h-8 text-orange-600 mx-auto mb-4" />
               <h3 className="font-semibold text-gray-900 mb-2">Email Us</h3>
               <p className="text-gray-600">admissions@matipaacademy.online</p>
               <p className="text-sm text-gray-500">Response within 24 hours</p>
@@ -347,7 +347,7 @@ const Admissions: React.FC = () => {
 
           <Link
             to="/onboarding"
-            className="bg-gradient-to-r from-cyan-600 to-teal-600 text-white px-8 py-4 rounded-lg font-semibold hover:from-cyan-700 hover:to-teal-700 transition-all transform hover:scale-105 inline-block"
+            className="bg-gradient-to-r from-orange-600 to-red-600 text-white px-8 py-4 rounded-lg font-semibold hover:from-orange-700 hover:to-red-700 transition-all transform hover:scale-105 inline-block"
           >
             Start Your Application
           </Link>

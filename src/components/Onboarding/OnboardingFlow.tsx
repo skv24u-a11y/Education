@@ -126,6 +126,7 @@ const OnboardingFlow: React.FC = () => {
     const subjectInput = document.createElement('input');
     subjectInput.type = 'hidden';
     subjectInput.name = '_subject';
+    subjectInput.value = 'New Student Application - Matipa Academy';
     subjectInput.value = 'New Student Application - Matipa College of Nursing';
     form.appendChild(subjectInput);
     
@@ -236,19 +237,19 @@ const OnboardingFlow: React.FC = () => {
               <div key={step.id} className="flex flex-col items-center">
                 <div className={`w-12 h-12 rounded-full flex items-center justify-center border-2 transition-colors ${
                   currentStep >= step.id 
-                    ? 'bg-cyan-600 border-cyan-600 text-white' 
+                    ? 'bg-orange-600 border-orange-600 text-white' 
                     : 'bg-white border-gray-300 text-gray-400'
                 }`}>
                   <step.icon className="w-6 h-6" />
                 </div>
                 <span className={`mt-2 text-sm font-medium ${
-                  currentStep >= step.id ? 'text-cyan-600' : 'text-gray-400'
+                  currentStep >= step.id ? 'text-orange-600' : 'text-gray-400'
                 }`}>
                   {step.title}
                 </span>
                 {index < steps.length - 1 && (
                   <div className={`hidden md:block absolute w-24 h-0.5 mt-6 ml-24 ${
-                    currentStep > step.id ? 'bg-cyan-600' : 'bg-gray-300'
+                    currentStep > step.id ? 'bg-orange-600' : 'bg-gray-300'
                   }`} />
                 )}
               </div>
@@ -272,7 +273,7 @@ const OnboardingFlow: React.FC = () => {
                     name="firstName"
                     value={formData.firstName}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                     required
                   />
                 </div>
@@ -285,7 +286,7 @@ const OnboardingFlow: React.FC = () => {
                     name="lastName"
                     value={formData.lastName}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                     required
                   />
                 </div>
@@ -610,7 +611,7 @@ const OnboardingFlow: React.FC = () => {
             {currentStep < 5 ? (
               <button
                 onClick={nextStep}
-                className="flex items-center px-6 py-3 bg-cyan-600 text-white rounded-lg hover:bg-cyan-700 transition-colors"
+                className="flex items-center px-6 py-3 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition-colors"
               >
                 Next
                 <ArrowRight className="w-5 h-5 ml-2" />
@@ -618,7 +619,7 @@ const OnboardingFlow: React.FC = () => {
             ) : (
               <button
                 onClick={handleSubmit}
-                className="flex items-center px-8 py-3 bg-gradient-to-r from-cyan-600 to-teal-600 text-white rounded-lg hover:from-cyan-700 hover:to-teal-700 transition-colors"
+                className="flex items-center px-8 py-3 bg-gradient-to-r from-green-600 to-orange-600 text-white rounded-lg hover:from-green-700 hover:to-orange-700 transition-colors"
               >
                 Wasilisha Ombi (Submit Application)
                 <CheckCircle className="w-5 h-5 ml-2" />

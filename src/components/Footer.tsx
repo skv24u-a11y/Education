@@ -10,13 +10,8 @@ const Footer: React.FC = () => {
           {/* Brand */}
           <div className="col-span-1 lg:col-span-1">
             <div className="flex items-center space-x-3 mb-4">
-              <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-teal-500 rounded-lg blur-sm opacity-50"></div>
-                <img
-                  src="https://i.ibb.co/393rK7nD/generated-image.png"
-                  alt="Matipa College of Nursing Logo"
-                  className="relative w-12 h-12 object-contain rounded-lg shadow-lg border border-white/20"
-                />
+              <div className="bg-gradient-to-r from-orange-500 to-red-600 p-2 rounded-lg">
+                <span className="text-white font-bold text-lg">MA</span>
               </div>
               <div>
                 <h3 className="text-xl font-bold">Matipa College of Nursing</h3>
