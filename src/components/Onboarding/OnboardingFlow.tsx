@@ -126,7 +126,6 @@ const OnboardingFlow: React.FC = () => {
     const subjectInput = document.createElement('input');
     subjectInput.type = 'hidden';
     subjectInput.name = '_subject';
-    subjectInput.value = 'New Student Application - Matipa Academy';
     subjectInput.value = 'New Student Application - Matipa College of Nursing';
     form.appendChild(subjectInput);
     
@@ -273,7 +272,7 @@ const OnboardingFlow: React.FC = () => {
                     name="firstName"
                     value={formData.firstName}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-seafoamBlue-500 focus:border-transparent"
                     required
                   />
                 </div>
@@ -286,7 +285,7 @@ const OnboardingFlow: React.FC = () => {
                     name="lastName"
                     value={formData.lastName}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-seafoamBlue-500 focus:border-transparent"
                     required
                   />
                 </div>
@@ -299,7 +298,7 @@ const OnboardingFlow: React.FC = () => {
                     name="email"
                     value={formData.email}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-seafoamBlue-500 focus:border-transparent"
                     required
                   />
                 </div>
@@ -312,7 +311,7 @@ const OnboardingFlow: React.FC = () => {
                     name="phone"
                     value={formData.phone}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-seafoamBlue-500 focus:border-transparent"
                     required
                   />
                 </div>
@@ -325,7 +324,7 @@ const OnboardingFlow: React.FC = () => {
                     name="dateOfBirth"
                     value={formData.dateOfBirth}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-seafoamBlue-500 focus:border-transparent"
                     required
                   />
                 </div>
@@ -337,7 +336,7 @@ const OnboardingFlow: React.FC = () => {
                     name="gender"
                     value={formData.gender}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-seafoamBlue-500 focus:border-transparent"
                     required
                   >
                     <option value="">Select Gender</option>
@@ -356,7 +355,7 @@ const OnboardingFlow: React.FC = () => {
                     name="nationality"
                     value={formData.nationality}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-seafoamBlue-500 focus:border-transparent"
                     required
                   />
                 </div>
@@ -369,7 +368,7 @@ const OnboardingFlow: React.FC = () => {
                     name="city"
                     value={formData.city}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-seafoamBlue-500 focus:border-transparent"
                     required
                   />
                 </div>
@@ -383,7 +382,7 @@ const OnboardingFlow: React.FC = () => {
                   value={formData.address}
                   onChange={handleInputChange}
                   rows={3}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-seafoamBlue-500 focus:border-transparent"
                   required
                 />
               </div>
@@ -403,7 +402,7 @@ const OnboardingFlow: React.FC = () => {
                     name="program"
                     value={formData.program}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-seafoamBlue-500 focus:border-transparent"
                     required
                   >
                     <option value="">Select Program</option>
@@ -420,7 +419,7 @@ const OnboardingFlow: React.FC = () => {
                     name="previousEducation"
                     value={formData.previousEducation}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-seafoamBlue-500 focus:border-transparent"
                     required
                   >
                     <option value="">Select Education Level</option>
@@ -440,7 +439,7 @@ const OnboardingFlow: React.FC = () => {
                     name="institution"
                     value={formData.institution}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-seafoamBlue-500 focus:border-transparent"
                     required
                   />
                 </div>
@@ -455,7 +454,7 @@ const OnboardingFlow: React.FC = () => {
                     onChange={handleInputChange}
                     min="1990"
                     max="2030"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-seafoamBlue-500 focus:border-transparent"
                     required
                   />
                 </div>
@@ -469,7 +468,7 @@ const OnboardingFlow: React.FC = () => {
                     value={formData.gpa}
                     onChange={handleInputChange}
                     placeholder="e.g., 3.8/4.0 or A Grade"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-seafoamBlue-500 focus:border-transparent"
                   />
                 </div>
               </div>
@@ -490,7 +489,7 @@ const OnboardingFlow: React.FC = () => {
                     name="emergencyName"
                     value={formData.emergencyName}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-seafoamBlue-500 focus:border-transparent"
                     required
                   />
                 </div>
@@ -502,7 +501,7 @@ const OnboardingFlow: React.FC = () => {
                     name="emergencyRelation"
                     value={formData.emergencyRelation}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-seafoamBlue-500 focus:border-transparent"
                     required
                   >
                     <option value="">Select Relationship</option>
@@ -523,7 +522,7 @@ const OnboardingFlow: React.FC = () => {
                     name="emergencyPhone"
                     value={formData.emergencyPhone}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-seafoamBlue-500 focus:border-transparent"
                     required
                   />
                 </div>
@@ -602,7 +601,7 @@ const OnboardingFlow: React.FC = () => {
             <button
               onClick={prevStep}
               disabled={currentStep === 1}
-              className="flex items-center px-6 py-3 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+              className="flex items-center px-6 py-3 border border-seafoamBlue-300 text-seafoamBlue-700 rounded-lg hover:bg-seafoamBlue-50 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
             >
               <ArrowLeft className="w-5 h-5 mr-2" />
               Previous
@@ -611,7 +610,7 @@ const OnboardingFlow: React.FC = () => {
             {currentStep < 5 ? (
               <button
                 onClick={nextStep}
-                className="flex items-center px-6 py-3 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition-colors"
+                className="flex items-center px-6 py-3 bg-seafoamBlue-600 text-white rounded-lg hover:bg-seafoamBlue-700 transition-colors"
               >
                 Next
                 <ArrowRight className="w-5 h-5 ml-2" />
@@ -619,7 +618,7 @@ const OnboardingFlow: React.FC = () => {
             ) : (
               <button
                 onClick={handleSubmit}
-                className="flex items-center px-8 py-3 bg-gradient-to-r from-green-600 to-orange-600 text-white rounded-lg hover:from-green-700 hover:to-orange-700 transition-colors"
+                className="flex items-center px-8 py-3 bg-gradient-to-r from-seafoamBlue-600 to-vibrantCoral-600 text-white rounded-lg hover:from-seafoamBlue-700 hover:to-vibrantCoral-700 transition-colors"
               >
                 Wasilisha Ombi (Submit Application)
                 <CheckCircle className="w-5 h-5 ml-2" />

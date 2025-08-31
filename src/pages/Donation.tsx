@@ -129,20 +129,20 @@ const Donation: React.FC = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-orange-600 via-red-600 to-yellow-600 text-white py-20">
+      <section className="relative bg-gradient-to-br from-seafoamBlue-600 via-vibrantCoral-500 to-seafoamBlue-700 text-white py-20">
         <div className="absolute inset-0 bg-black opacity-20"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <Heart className="w-16 h-16 text-yellow-300 mx-auto mb-6" />
             <h1 className="text-4xl md:text-6xl font-bold mb-6">Fanya Mabadiliko (Make a Difference)</h1> // Changed from 'Fanya Mabadiliko (Make a Difference)\' to \'Fanya Mabadiliko (Make a Difference)'
             <p className="text-xl md:text-2xl text-orange-100 max-w-4xl mx-auto mb-8">
-              Your generous donation helps us provide world-class education and opportunities to African students
+              Your generous donation helps us provide world-class education and opportunities to students
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-gradient-to-r from-red-500 to-red-600 text-white px-8 py-4 rounded-lg font-semibold hover:from-red-600 hover:to-red-700 transition-all transform hover:scale-105">
+              <button className="bg-gradient-to-r from-vibrantCoral-500 to-vibrantCoral-600 text-white px-8 py-4 rounded-lg font-semibold hover:from-vibrantCoral-600 hover:to-vibrantCoral-700 transition-all transform hover:scale-105">
                 Donate Now
               </button>
-              <button className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-all">
+              <button className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-seafoamBlue-600 transition-all">
                 Learn More
               </button>
             </div>
@@ -156,7 +156,7 @@ const Donation: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="text-4xl font-bold text-seafoamBlue-600 mb-2">15,000+</div>
-              <div className="text-gray-600">Students Supported</div>
+              <div className="text-gray-600">Nursing Students Supported</div>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold text-seafoamBlue-600 mb-2">$5.2M</div>
@@ -402,7 +402,7 @@ const Donation: React.FC = () => {
                 <button
                   type="submit"
                   disabled={!selectedAmount && !customAmount}
-                  className="w-full bg-gradient-to-r from-orange-600 to-red-600 text-white py-4 px-6 rounded-lg font-semibold hover:from-orange-700 hover:to-red-700 transition-all transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-full bg-gradient-to-r from-seafoamBlue-600 to-vibrantCoral-600 text-white py-4 px-6 rounded-lg font-semibold hover:from-seafoamBlue-700 hover:to-vibrantCoral-700 transition-all transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   <div className="flex items-center justify-center">
                     <Heart className="w-5 h-5 mr-2" />
@@ -465,14 +465,14 @@ const Donation: React.FC = () => {
             Jiunge Nasi Katika Safari Hii (Join Us on This Journey)
           </h2> // Changed from 'Jiunge Nasi Katika Safari Hii (Join Us on This Journey)\' to \'Jiunge Nasi Katika Safari Hii (Join Us on This Journey)'
           <p className="text-xl text-orange-100 mb-8 max-w-3xl mx-auto">
-            Every donation, no matter the size, contributes to building a stronger healthcare system across Africa. 
-            Together, we can empower the next generation of African nursing professionals.
+            Every donation, no matter the size, contributes to building a stronger healthcare system. 
+            Together, we can empower the next generation of nursing professionals.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-orange-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+            <button className="bg-white text-seafoamBlue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
               Make a Donation
             </button>
-            <button className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-orange-600 transition-colors">
+            <button className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-vibrantCoral-600 transition-colors">
               Learn More About Our Impact
             </button>
           </div>
