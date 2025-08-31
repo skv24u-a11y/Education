@@ -74,20 +74,20 @@ const Donation: React.FC = () => {
     {
       name: 'Amara Diallo', // Changed from 'Amara Diallo' to 'Amara Diallo'
       image: 'https://images.pexels.com/photos/3823204/pexels-photo-3823204.jpeg?auto=compress&cs=tinysrgb&w=300',
-      story: 'Thanks to Matipa Academy nursing scholarship, I graduated with honors and now lead healthcare innovation in Senegal.',
-      achievement: 'BSN Graduate, 2023 - Chief Nurse at Dakar General Hospital'
+      story: 'Thanks to Matipa Academy nursing scholarship, I graduated with honors and now lead healthcare innovation.',
+      achievement: 'BSc Nursing Graduate, 2023 - Chief Nurse'
     },
     {
       name: 'Kwame Osei', // Changed from 'Kwame Osei' to 'Kwame Osei'
       image: 'https://images.pexels.com/photos/3985163/pexels-photo-3985163.jpeg?auto=compress&cs=tinysrgb&w=300',
       story: 'The nursing scholarship program changed my life. I went from struggling community health worker to successful nurse practitioner.',
-      achievement: 'Nurse Practitioner Graduate, 2022 - Ghana'
+      achievement: 'SRN Graduate, 2022'
     },
     {
       name: 'Fatou Kone', // Changed from 'Fatou Kone' to 'Fatou Kone'
       image: 'https://images.pexels.com/photos/3823204/pexels-photo-3823204.jpeg?auto=compress&cs=tinysrgb&w=300',
-      story: 'Your support helped me pursue nursing research. Now I\'m developing community health programs for maternal care in Mali.',
-      achievement: 'MSN in Public Health Nursing, 2024 - Mali'
+      story: 'Your support helped me pursue nursing research. Now I\'m developing community health programs for maternal care.',
+      achievement: 'BSc in Public Health Nursing, 2024'
     }
   ];
 
@@ -465,8 +465,8 @@ const Donation: React.FC = () => {
             Jiunge Nasi Katika Safari Hii (Join Us on This Journey)
           </h2> // Changed from 'Jiunge Nasi Katika Safari Hii (Join Us on This Journey)\' to 'Jiunge Nasi Katika Safari Hii (Join Us on This Journey)'
           <p className="text-xl text-orange-100 mb-8 max-w-3xl mx-auto">
-            Every donation, no matter the size, contributes to building a stronger healthcare system across Africa. 
-            Together, we can empower the next generation of African nursing professionals.
+            Every donation, no matter the size, contributes to building a stronger healthcare system. 
+            Together, we can empower the next generation of nursing professionals.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="bg-white text-orange-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors">

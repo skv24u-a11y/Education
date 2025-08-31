@@ -47,7 +47,7 @@ const Contact: React.FC = () => {
     {
       icon: MapPin,
       title: 'Visit Us',
-      details: ['Uhuru Highway', 'Nairobi, Kenya', 'East Africa'],
+      details: ['Freetown', 'Sierra Leone', 'West Africa'],
       color: 'text-orange-600'
     },
     {
@@ -247,7 +247,7 @@ const Contact: React.FC = () => {
                   <div className="text-center">
                     <MapPin className="w-16 h-16 text-orange-600 mx-auto mb-4" />
                     <p className="text-gray-700 font-medium">Interactive Map</p>
-                    <p className="text-gray-600 text-sm">Uhuru Highway, Nairobi, Kenya</p>
+                    <p className="text-gray-600 text-sm">Freetown, Sierra Leone</p>
                   </div>
                 </div>
               </div>

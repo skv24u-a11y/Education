@@ -22,7 +22,7 @@ const FAQ: React.FC = () => {
     document.title = 'FAQ & Testimonials - Matipa College of Nursing | Student Success Stories';
     const metaDescription = document.querySelector('meta[name="description"]'); // Changed from 'meta[name="description"]' to 'meta[name="description"]'
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Find answers to frequently asked questions about Matipa College of Nursing\'s nursing programs and read inspiring testimonials from our successful African nursing graduates.');
+      metaDescription.setAttribute('content', 'Find answers to frequently asked questions about Matipa College of Nursing\'s nursing programs and read inspiring testimonials from our successful nursing graduates.');
     }
   }, []);
 
@@ -112,52 +112,52 @@ const FAQ: React.FC = () => {
     {
       name: 'Amina Hassan',
       program: 'Bachelor of Science in Nursing, Class of 2023', // Changed from 'Bachelor of Science in Nursing, Class of 2023' to 'Bachelor of Science in Nursing, Class of 2023'
-      location: 'Nairobi, Kenya',
+      location: 'Freetown, Sierra Leone',
       image: 'https://images.pexels.com/photos/3823204/pexels-photo-3823204.jpeg?auto=compress&cs=tinysrgb&w=300',
       rating: 5,
       date: 'March 2024',
-      testimonial: 'Matipa College of Nursing transformed my life. The nursing professors understand global healthcare challenges, the online clinical simulations work even with limited internet, and the career support helped me secure a position at Kenyatta National Hospital.',
-      highlight: 'Senior Nurse at Kenyatta National Hospital'
+      testimonial: 'Matipa College of Nursing transformed my life. The nursing professors understand global healthcare challenges, the online clinical simulations work even with limited internet, and the career support helped me secure a position at Connaught Hospital.',
+      highlight: 'Senior Nurse at Connaught Hospital'
     },
     {
       name: 'Kofi Mensah',
       program: 'Registered Nurse Program, Class of 2022', // Changed from 'Registered Nurse Program, Class of 2022' to 'Registered Nurse Program, Class of 2022'
-      location: 'Accra, Ghana',
+      location: 'Bo, Sierra Leone',
       image: 'https://images.pexels.com/photos/3985163/pexels-photo-3985163.jpeg?auto=compress&cs=tinysrgb&w=300',
       rating: 5,
       date: 'February 2024',
-      testimonial: 'The flexibility of online learning allowed me to balance my work at the local clinic with studies. The nursing program taught me advanced clinical skills. Now I lead the emergency department at Ridge Hospital.',
-      highlight: 'Emergency Department Head at Ridge Hospital'
+      testimonial: 'The flexibility of online learning allowed me to balance my work at the local clinic with studies. The nursing program taught me advanced clinical skills. Now I lead the emergency department at our regional hospital.',
+      highlight: 'Emergency Department Head'
     },
     {
       name: 'Fatima Al-Rashid',
       program: 'Nurse Midwifery, Class of 2024', // Changed from 'Nurse Midwifery, Class of 2024' to 'Nurse Midwifery, Class of 2024'
-      location: 'Cairo, Egypt',
+      location: 'Kenema, Sierra Leone',
       image: 'https://images.pexels.com/photos/3823204/pexels-photo-3823204.jpeg?auto=compress&cs=tinysrgb&w=300',
       rating: 5,
       date: 'January 2024',
-      testimonial: 'As a working mother in Cairo, the online format was perfect. The professors understood my cultural context, and the clinical simulations helped me build confidence. I now run the leading maternal health clinic in North Africa!',
-      highlight: 'Leading Maternal Health Clinic in North Africa'
+      testimonial: 'As a working mother, the online format was perfect. The professors understood my cultural context, and the clinical simulations helped me build confidence. I now run a leading maternal health clinic!',
+      highlight: 'Leading Maternal Health Clinic'
     },
     {
       name: 'Thabo Mthembu',
       program: 'Clinical Nurse Specialist, Class of 2023', // Changed from 'Clinical Nurse Specialist, Class of 2023' to 'Clinical Nurse Specialist, Class of 2023'
-      location: 'Cape Town, South Africa',
+      location: 'Makeni, Sierra Leone',
       image: 'https://images.pexels.com/photos/3985163/pexels-photo-3985163.jpeg?auto=compress&cs=tinysrgb&w=300',
       rating: 5,
       date: 'March 2024',
       testimonial: 'The hands-on approach to clinical nursing was exceptional. Real-world global healthcare scenarios, clinical mentors, and cutting-edge curriculum prepared me to address global healthcare challenges.',
-      highlight: 'Leading Clinical Nursing at Groote Schuur Hospital'
+      highlight: 'Leading Clinical Nursing Specialist'
     },
     {
       name: 'Aisha Traore',
       program: 'Public Health Nursing, Class of 2022', // Changed from 'Public Health Nursing, Class of 2022' to 'Public Health Nursing, Class of 2022'
-      location: 'Bamako, Mali',
+      location: 'Port Loko, Sierra Leone',
       image: 'https://images.pexels.com/photos/3823204/pexels-photo-3823204.jpeg?auto=compress&cs=tinysrgb&w=300',
       rating: 5,
       date: 'February 2024',
-      testimonial: 'The public health nursing program focused on African health challenges. The networking with African nursing leaders and alumni connections helped me establish community health programs across rural Mali.',
-      highlight: 'Community Health Director in Rural Mali'
+      testimonial: 'The public health nursing program focused on global health challenges. The networking with nursing leaders and alumni connections helped me establish community health programs in rural areas.',
+      highlight: 'Community Health Director'
     }
   ];
 
@@ -376,7 +376,7 @@ const FAQ: React.FC = () => {
               </div>
               <div>
                 <div className="text-3xl font-bold text-green-600 mb-2">15,000+</div>
-                <div className="text-gray-600">Happy African Students</div>
+                <div className="text-gray-600">Happy Students</div>
               </div>
               <div>
                 <div className="text-3xl font-bold text-red-600 mb-2">97%</div>

@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
               </div>
             </div>
             <p className="text-gray-400 mb-4"> // Changed from 'Empowering African nursing students with world-class nursing education and innovative clinical learning experiences since 2020.' to 'Empowering nursing students with world-class nursing education and innovative clinical learning experiences since 2020.'
-              Empowering nursing students with world-class nursing education and innovative clinical learning experiences since 2020.
+              Empowering nursing students with world-class nursing education and innovative clinical learning experiences since 2018.
             </p>
           </div>
 
@@ -46,7 +46,7 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Programs</h4>
             <ul className="space-y-2 text-gray-400">
-              <li>Bachelor of Science in Nursing (BSc Nursing)</li>
+              <li>BSc Nursing</li>
               <li>State Registered Nurse (SRN)</li>
               <li>Community Health Nursing</li>
               <li>Midwifery Nursing</li>
@@ -60,7 +60,7 @@ const Footer: React.FC = () => {
             <div className="space-y-3">
               <div className="flex items-center">
                 <MapPin className="w-5 h-5 text-gray-400 mr-3" />
-                <span className="text-gray-400">Uhuru Highway, Nairobi, Kenya</span>
+                <span className="text-gray-400">Freetown, Sierra Leone</span>
               </div>
               <div className="flex items-center">
                 <Phone className="w-5 h-5 text-gray-400 mr-3" />

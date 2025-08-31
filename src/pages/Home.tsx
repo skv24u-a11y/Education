@@ -34,7 +34,7 @@ const Home: React.FC = () => {
     {
       icon: Globe,
       title: 'Sierra Leone  Healthcare Network',
-      description: 'Connect with nursing students from diverse countries'
+      description: 'Connect with nursing students from diverse backgrounds'
     },
     {
       icon: Award,
@@ -47,27 +47,27 @@ const Home: React.FC = () => {
     { number: '8,500+', label: 'Nursing Students' },
     { number: '96%', label: 'Healthcare Job Placement' },
     { number: '150+', label: 'Clinical Instructors' },
-    { number: '50+', label: 'Countries Represented' }
+    { number: '25+', label: 'Countries Represented' }
   ];
 
   const blogPosts = [
     {
-      title: 'The Future of Nursing Education in Africa',
-      excerpt: 'Discover how technology is reshaping nursing education and creating new opportunities for healthcare professionals globally.',
+      title: 'The Future of Nursing Education',
+      excerpt: 'Discover how technology is reshaping nursing education and creating new opportunities for healthcare professionals.',
       date: 'March 15, 2024',
       readTime: '5 min read',
       image: 'https://images.pexels.com/photos/3823204/pexels-photo-3823204.jpeg?auto=compress&cs=tinysrgb&w=400'
     },
     {
-      title: 'Clinical Skills for African Nurses',
+      title: 'Essential Clinical Skills for Nurses',
       excerpt: 'Essential clinical skills and techniques to help you excel in nursing practice and provide quality healthcare.',
       date: 'March 12, 2024',
       readTime: '7 min read',
       image: 'https://images.pexels.com/photos/3985163/pexels-photo-3985163.jpeg?auto=compress&cs=tinysrgb&w=400'
     },
     {
-      title: 'Healthcare Career Opportunities in Africa',
-      excerpt: 'Explore the growing healthcare career opportunities across Africa and how our nursing programs prepare you for success.',
+      title: 'Global Healthcare Career Opportunities',
+      excerpt: 'Explore the growing healthcare career opportunities globally and how our nursing programs prepare you for success.',
       date: 'March 10, 2024',
       readTime: '6 min read',
       image: 'https://images.pexels.com/photos/3823204/pexels-photo-3823204.jpeg?auto=compress&cs=tinysrgb&w=400'
@@ -95,7 +95,7 @@ const Home: React.FC = () => {
               </h1> // Changed from 'Unlock Your Potential with Matipa College of Nursing\' to 'Unlock Your Potential with Matipa College of Nursing'
               <p className="text-xl md:text-2xl mb-8 text-seafoamBlue-100 leading-relaxed">
                 Join thousands of nursing students at Matipa College of Nursing in our innovative healthcare learning environment. 
-                Get access to world-class nursing education, clinical training, and healthcare career opportunities designed for African excellence.
+                Get access to world-class nursing education, clinical training, and healthcare career opportunities designed for excellence.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Link
@@ -115,8 +115,8 @@ const Home: React.FC = () => {
             </div>
             <div className="relative">
               <img 
-                src="https://images.pexels.com/photos/3823204/pexels-photo-3823204.jpeg?auto=compress&cs=tinysrgb&w=600" 
-                alt="African nursing students in clinical training"
+                src="https://images.pexels.com/photos/5327585/pexels-photo-5327585.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                alt="Nursing students in clinical training"
                 className="rounded-lg shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500 border-4 border-yellow-400"
               />
               <div className="absolute -bottom-6 -left-6 bg-white text-seafoamBlue-500 p-4 rounded-lg shadow-xl">

@@ -34,7 +34,7 @@ const WhatsAppChat: React.FC = () => {
                 <MessageCircle className="w-5 h-5" />
               </div>
               <div>
-                <h3 className="font-semibold">Matipa College of Nursing</h3>
+                  <p className="text-gray-400 text-sm">Nursing Excellence</p>
                 <p className="text-sm text-green-100">Nursing Admissions Support</p>
               </div>
             </div>
@@ -50,7 +50,7 @@ const WhatsAppChat: React.FC = () => {
           <div className="p-4 bg-gray-50 max-h-64 overflow-y-auto">
             <div className="bg-white p-3 rounded-lg shadow-sm mb-3">
               <p className="text-sm text-gray-700">
-                👋 Hello! Welcome to Matipa College of Nursing - A leading online nursing college!
+                👋 Hello! Welcome to Matipa College of Nursing - Leading online nursing education!
               </p>
             </div>
             <div className="bg-white p-3 rounded-lg shadow-sm mb-3">
