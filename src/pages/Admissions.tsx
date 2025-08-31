@@ -139,11 +139,11 @@ const Admissions: React.FC = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-orange-600 via-red-600 to-yellow-600 text-white py-20">
+      <section className="relative bg-gradient-to-br from-seafoamBlue-600 via-vibrantCoral-500 to-seafoamBlue-700 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">Admissions</h1>
-            <p className="text-xl md:text-2xl text-orange-100 max-w-4xl mx-auto">
+            <p className="text-xl md:text-2xl text-seafoamBlue-100 max-w-4xl mx-auto">
               Your journey to becoming a healthcare professional starts here
             </p>
           </div>
@@ -167,15 +167,15 @@ const Admissions: React.FC = () => {
               <div key={step.step} className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
                 <div className="flex items-center mb-4">
                   <div className="bg-orange-100 p-3 rounded-full mr-4">
-                    <step.icon className="w-6 h-6 text-orange-600" />
+                    <step.icon className="w-6 h-6 text-seafoamBlue-600" />
                   </div>
-                  <div className="bg-orange-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">
+                  <div className="bg-seafoamBlue-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">
                     {step.step}
                   </div>
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">{step.title}</h3>
                 <p className="text-gray-600 mb-3">{step.description}</p>
-                <div className="flex items-center text-sm text-orange-600">
+                <div className="flex items-center text-sm text-seafoamBlue-600">
                   <Clock className="w-4 h-4 mr-1" />
                   {step.timeline}
                 </div>
@@ -239,11 +239,11 @@ const Admissions: React.FC = () => {
                 <div className="space-y-4">
                   <div className="flex justify-between items-center p-3 bg-green-50 rounded-lg">
                     <span className="font-medium text-green-800">Priority Deadline</span>
-                    <span className="text-green-600 font-bold">{deadline.priority}</span>
+                    <span className="text-seafoamBlue-600 font-bold">{deadline.priority}</span>
                   </div>
                   <div className="flex justify-between items-center p-3 bg-yellow-50 rounded-lg">
                     <span className="font-medium text-yellow-800">Regular Deadline</span>
-                    <span className="text-yellow-600 font-bold">{deadline.regular}</span>
+                    <span className="text-vibrantCoral-600 font-bold">{deadline.regular}</span>
                   </div>
                   <div className="flex justify-between items-center p-3 bg-red-50 rounded-lg">
                     <span className="font-medium text-red-800">Late Deadline</span>
@@ -347,7 +347,7 @@ const Admissions: React.FC = () => {
 
           <Link
             to="/onboarding"
-            className="bg-gradient-to-r from-orange-600 to-red-600 text-white px-8 py-4 rounded-lg font-semibold hover:from-orange-700 hover:to-red-700 transition-all transform hover:scale-105 inline-block"
+            className="bg-gradient-to-r from-seafoamBlue-600 to-vibrantCoral-600 text-white px-8 py-4 rounded-lg font-semibold hover:from-seafoamBlue-700 hover:to-vibrantCoral-700 transition-all transform hover:scale-105 inline-block"
           >
             Start Your Application
           </Link>

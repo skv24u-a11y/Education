@@ -84,12 +84,12 @@ const Contact: React.FC = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-orange-600 via-red-600 to-yellow-600 text-white py-20">
+      <section className="relative bg-gradient-to-br from-seafoamBlue-600 via-vibrantCoral-500 to-seafoamBlue-700 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">Contact Us</h1>
             <p className="text-xl md:text-2xl text-seafoamBlue-100 max-w-4xl mx-auto">
-              We're here to help you on your African excellence journey. Get in touch with us today!
+              We're here to help you on your excellence journey. Get in touch with us today!
             </p>
           </div>
         </div>
@@ -102,7 +102,7 @@ const Contact: React.FC = () => {
             {contactInfo.map((info, index) => (
               <div key={index} className="bg-white p-8 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow duration-300">
                 <div className={`w-16 h-16 ${info.color.replace('text-', 'bg-').replace('-600', '-100')} rounded-full flex items-center justify-center mx-auto mb-6`}>
-                  <info.icon className={`w-8 h-8 ${info.color}`} />
+                  <info.icon className={`w-8 h-8 ${info.color === 'text-orange-600' ? 'text-seafoamBlue-600' : info.color}`} />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">{info.title}</h3>
                 <div className="space-y-2">
@@ -124,7 +124,7 @@ const Contact: React.FC = () => {
             <div>
               <div className="bg-white p-8 rounded-xl shadow-lg">
                 <div className="flex items-center mb-6">
-                  <MessageSquare className="w-8 h-8 text-orange-600 mr-3" />
+                  <MessageSquare className="w-8 h-8 text-seafoamBlue-600 mr-3" />
                   <h2 className="text-3xl font-bold text-gray-900">Send us a Message</h2>
                 </div>
                 
@@ -151,7 +151,7 @@ const Contact: React.FC = () => {
                             id="name"
                             name="name"
                             required
-                            className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                            className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-seafoamBlue-500 focus:border-transparent"
                             placeholder="Enter your full name"
                           />
                         </div>
@@ -168,7 +168,7 @@ const Contact: React.FC = () => {
                             id="email"
                             name="email"
                             required
-                            className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                            className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-seafoamBlue-500 focus:border-transparent"
                             placeholder="Enter your email"
                           />
                         </div>
@@ -186,7 +186,7 @@ const Contact: React.FC = () => {
                             type="tel"
                             id="phone"
                             name="phone"
-                            className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                            className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-seafoamBlue-500 focus:border-transparent"
                             placeholder="Enter your phone number"
                           />
                         </div>
@@ -200,7 +200,7 @@ const Contact: React.FC = () => {
                           id="subject"
                           name="subject"
                           required
-                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-seafoamBlue-500 focus:border-transparent"
                         >
                           <option value="">Select a subject</option>
                           {departments.map((dept, index) => (
@@ -221,7 +221,7 @@ const Contact: React.FC = () => {
                           name="message"
                           required
                           rows={6}
-                          className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent resize-none"
+                          className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-seafoamBlue-500 focus:border-transparent resize-none"
                           placeholder="Tell us how we can help you..."
                         />
                       </div>
@@ -229,7 +229,7 @@ const Contact: React.FC = () => {
                     
                     <button
                       type="submit"
-                      className="w-full bg-gradient-to-r from-orange-600 to-red-600 text-white py-4 px-6 rounded-lg font-semibold hover:from-orange-700 hover:to-red-700 transition-all transform hover:scale-105 flex items-center justify-center"
+                      className="w-full bg-gradient-to-r from-seafoamBlue-600 to-vibrantCoral-600 text-white py-4 px-6 rounded-lg font-semibold hover:from-seafoamBlue-700 hover:to-vibrantCoral-700 transition-all transform hover:scale-105 flex items-center justify-center"
                     >
                       <Send className="w-5 h-5 mr-2" />
                       Send Message
@@ -264,14 +264,14 @@ const Contact: React.FC = () => {
                     </div>
                   </div>
                   <div className="flex items-center p-4 bg-white rounded-lg shadow-sm">
-                    <MessageSquare className="w-6 h-6 text-orange-600 mr-3" />
+                    <MessageSquare className="w-6 h-6 text-seafoamBlue-600 mr-3" />
                     <div>
                       <p className="font-semibold text-gray-900">Live Chat</p>
                       <p className="text-gray-600">Available 24/7</p>
                     </div>
                   </div>
                   <div className="flex items-center p-4 bg-white rounded-lg shadow-sm">
-                    <Mail className="w-6 h-6 text-orange-600 mr-3" />
+                    <Mail className="w-6 h-6 text-seafoamBlue-600 mr-3" />
                     <div>
                       <p className="font-semibold text-gray-900">Quick Response</p>
                       <p className="text-gray-600">urgent@matipaacademy.online</p>

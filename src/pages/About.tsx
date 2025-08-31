@@ -320,19 +320,19 @@ const About: React.FC = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-orange-600 to-red-600 text-white">
+      <section className="py-20 bg-gradient-to-r from-seafoamBlue-600 to-vibrantCoral-600 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6"> // Changed from 'h2 className="text-3xl md:text-4xl font-bold mb-6"' to 'h2 className="text-3xl md:text-4xl font-bold mb-6"'
-            Jiunge na Uongozi wa Matipa College of Nursing (Join Our Legacy of Excellence)
+            Join Our Legacy of Excellence
           </h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto">
             Become part of a nursing community that values innovation, integrity, and clinical excellence
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="bg-gradient-to-r from-yellow-500 to-orange-500 text-white px-8 py-4 rounded-lg font-semibold hover:from-yellow-600 hover:to-orange-600 transition-all transform hover:scale-105">
-              Jiunge Sasa (Apply Now)
+              Apply Now
             </button>
-            <button className="bg-white text-orange-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all transform hover:scale-105">
+            <button className="bg-white text-seafoamBlue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all transform hover:scale-105">
               Schedule Campus Visit
             </button>
           </div>

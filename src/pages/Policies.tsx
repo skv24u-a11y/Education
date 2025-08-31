@@ -258,11 +258,11 @@ const Policies: React.FC = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-orange-600 via-red-600 to-yellow-600 text-white py-20">
+      <section className="relative bg-gradient-to-br from-seafoamBlue-600 via-vibrantCoral-500 to-seafoamBlue-700 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">Academic Policies</h1>
-            <p className="text-xl md:text-2xl text-orange-100 max-w-4xl mx-auto">
+            <p className="text-xl md:text-2xl text-seafoamBlue-100 max-w-4xl mx-auto">
               Clear, fair, and student-friendly policies designed to support your nursing education success
             </p>
           </div>
@@ -388,18 +388,18 @@ const Policies: React.FC = () => {
               </button>
             </div>
             <div className="bg-gray-50 p-6 rounded-xl">
-              <Users className="w-8 h-8 text-orange-600 mx-auto mb-4" />
+              <Users className="w-8 h-8 text-seafoamBlue-600 mx-auto mb-4" />
               <h3 className="font-semibold text-gray-900 mb-2">Student Services</h3>
               <p className="text-gray-600 mb-4">Speak with a counselor about policy questions</p>
-              <button className="bg-orange-600 text-white px-6 py-2 rounded-lg hover:bg-orange-700 transition-colors">
+              <button className="bg-seafoamBlue-600 text-white px-6 py-2 rounded-lg hover:bg-seafoamBlue-700 transition-colors">
                 Schedule Meeting
               </button>
             </div>
           </div>
 
-          <div className="bg-gradient-to-r from-orange-600 to-red-600 text-white p-6 rounded-xl">
+          <div className="bg-gradient-to-r from-seafoamBlue-600 to-vibrantCoral-600 text-white p-6 rounded-xl">
             <h3 className="text-xl font-bold mb-2">Policy Commitment</h3>
-            <p className="text-orange-100">
+            <p className="text-seafoamBlue-100">
               We are committed to maintaining fair, transparent, and student-centered policies that support 
               your success in our nursing programs. Your feedback helps us improve our policies continuously.
             </p>

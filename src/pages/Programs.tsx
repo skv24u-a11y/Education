@@ -118,12 +118,12 @@ const Programs: React.FC = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-orange-600 via-red-600 to-yellow-600 text-white py-20">
+      <section className="relative bg-gradient-to-br from-seafoamBlue-600 via-vibrantCoral-500 to-seafoamBlue-700 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">Nursing Programs</h1>
             <p className="text-xl md:text-2xl text-seafoamBlue-100 max-w-4xl mx-auto">
-              Comprehensive nursing education programs designed to prepare African healthcare professionals for excellence
+              Comprehensive nursing education programs designed to prepare healthcare professionals for excellence
             </p>
           </div>
         </div>
@@ -254,7 +254,7 @@ const Programs: React.FC = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-orange-600 to-red-600 text-white">
+      <section className="py-20 bg-gradient-to-r from-seafoamBlue-600 to-vibrantCoral-600 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Ready to Start Your Nursing Career?
@@ -265,13 +265,13 @@ const Programs: React.FC = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/onboarding"
-              className="bg-white text-orange-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all transform hover:scale-105 inline-block"
+              className="bg-white text-seafoamBlue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all transform hover:scale-105 inline-block"
             >
               Apply Now
             </Link>
             <Link
               to="/contact"
-              className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-orange-600 transition-all transform hover:scale-105 inline-block"
+              className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-vibrantCoral-600 transition-all transform hover:scale-105 inline-block"
             >
               Contact Admissions
             </Link>
