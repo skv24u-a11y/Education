@@ -41,11 +41,11 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Programs</h4>
             <ul className="space-y-2 text-gray-400">
-              <li>Bachelor of Science in Nursing (BSN)</li>
-              <li>Associate Degree in Nursing (ADN)</li>
-              <li>Licensed Practical Nurse (LPN)</li>
-              <li>Registered Nurse (RN)</li>
-              <li>Nurse Practitioner (NP)</li>
+              <li>Bachelor of Science in Nursing (BSc Nursing)</li>
+              <li>State Registered Nurse (SRN)</li>
+              <li>Community Health Nursing</li>
+              <li>Midwifery Nursing</li>
+              <li>Psychiatric Nursing</li>
             </ul>
           </div>
 

@@ -72,11 +72,11 @@ const Policies: React.FC = () => {
         {
           title: 'Tuition and Fees (Per Academic Year)',
           content: [
-            'BSN Program: $8,500 tuition + $1,200 fees = $9,700 total',
-            'ADN Program: $6,500 tuition + $1,000 fees = $7,500 total',
-            'LPN Program: $4,500 tuition + $800 fees = $5,300 total',
-            'RN Bridge Program: $7,000 tuition + $1,100 fees = $8,100 total',
-            'NP Program: $12,000 tuition + $1,500 fees = $13,500 total'
+            'BSc Nursing Program: $8,500 tuition + $1,200 fees = $9,700 total',
+            'SRN Program: $7,000 tuition + $1,100 fees = $8,100 total',
+            'Community Health Nursing: $5,500 tuition + $900 fees = $6,400 total',
+            'Midwifery Nursing: $6,800 tuition + $1,000 fees = $7,800 total',
+            'Psychiatric Nursing: $8,200 tuition + $1,300 fees = $9,500 total'
           ]
         },
         {

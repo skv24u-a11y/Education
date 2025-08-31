@@ -25,7 +25,7 @@ const Programs: React.FC = () => {
   const programs = [
     {
       id: 1,
-      title: 'Bachelor of Science in Nursing (BSN)',
+      title: 'Bachelor of Science in Nursing (BSc Nursing)',
       duration: '4 Years',
       credits: '120 Credits',
       tuition: '$8,500/year',
@@ -38,17 +38,17 @@ const Programs: React.FC = () => {
         'Community health nursing',
         'Advanced patient care techniques'
       ],
-      careers: ['Registered Nurse', 'Charge Nurse', 'Clinical Coordinator', 'Nurse Manager'],
+      careers: ['State Registered Nurse', 'Charge Nurse', 'Clinical Coordinator', 'Nurse Manager'],
       color: 'from-blue-500 to-blue-600'
     },
     {
       id: 2,
-      title: 'Associate Degree in Nursing (ADN)',
-      duration: '2 Years',
-      credits: '60 Credits',
-      tuition: '$6,500/year',
+      title: 'State Registered Nurse (SRN)',
+      duration: '3 Years',
+      credits: '90 Credits',
+      tuition: '$7,000/year',
       icon: Heart,
-      description: 'Accelerated 2-year program focusing on essential nursing skills and patient care.',
+      description: 'Comprehensive 3-year program focusing on essential nursing skills and patient care for Sierra Leone healthcare system.',
       features: [
         'Hands-on clinical experience',
         'Fundamental nursing skills',
@@ -56,61 +56,61 @@ const Programs: React.FC = () => {
         'Medication administration',
         'Basic life support training'
       ],
-      careers: ['Staff Nurse', 'Clinical Nurse', 'Home Health Nurse', 'Long-term Care Nurse'],
+      careers: ['State Registered Nurse', 'Clinical Nurse', 'Community Health Nurse', 'Hospital Staff Nurse'],
       color: 'from-green-500 to-green-600'
     },
     {
       id: 3,
-      title: 'Licensed Practical Nurse (LPN)',
-      duration: '12 Months',
-      credits: '30 Credits',
-      tuition: '$4,500/year',
+      title: 'Community Health Nursing',
+      duration: '18 Months',
+      credits: '45 Credits',
+      tuition: '$5,500/year',
       icon: Stethoscope,
-      description: 'Fast-track program to become a licensed practical nurse with essential healthcare skills.',
+      description: 'Specialized program focusing on community health and preventive care in local communities.',
       features: [
-        'Basic nursing procedures',
-        'Patient monitoring',
-        'Wound care techniques',
-        'Vital signs assessment',
-        'Medical terminology'
+        'Community health assessment',
+        'Health promotion strategies',
+        'Disease prevention programs',
+        'Public health nursing',
+        'Health education techniques'
       ],
-      careers: ['Licensed Practical Nurse', 'Clinic Assistant', 'Nursing Home Aide', 'Home Care Provider'],
+      careers: ['Community Health Nurse', 'Public Health Officer', 'Health Educator', 'Clinic Coordinator'],
       color: 'from-orange-500 to-orange-600'
     },
     {
       id: 4,
-      title: 'Registered Nurse (RN) Bridge',
-      duration: '18 Months',
-      credits: '45 Credits',
-      tuition: '$7,000/year',
+      title: 'Midwifery Nursing',
+      duration: '2 Years',
+      credits: '60 Credits',
+      tuition: '$6,800/year',
       icon: Users,
-      description: 'Bridge program for LPNs to advance to Registered Nurse status.',
+      description: 'Specialized program in maternal and child health nursing care.',
       features: [
-        'Advanced clinical skills',
-        'Critical thinking development',
-        'Pharmacology specialization',
-        'Patient advocacy training',
-        'Healthcare technology integration'
+        'Prenatal care techniques',
+        'Labor and delivery support',
+        'Postnatal care management',
+        'Family planning education',
+        'Maternal health advocacy'
       ],
-      careers: ['Registered Nurse', 'ICU Nurse', 'Emergency Room Nurse', 'Surgical Nurse'],
+      careers: ['Certified Midwife', 'Maternal Health Nurse', 'Birth Center Coordinator', 'Women\'s Health Specialist'],
       color: 'from-purple-500 to-purple-600'
     },
     {
       id: 5,
-      title: 'Nurse Practitioner (NP)',
+      title: 'Psychiatric Nursing',
       duration: '2.5 Years',
       credits: '75 Credits',
-      tuition: '$12,000/year',
+      tuition: '$8,200/year',
       icon: Award,
-      description: 'Advanced practice nursing program for experienced RNs seeking specialized expertise.',
+      description: 'Specialized program in mental health nursing and psychiatric care.',
       features: [
-        'Advanced pathophysiology',
-        'Diagnostic procedures',
-        'Prescriptive authority',
-        'Independent practice preparation',
-        'Specialized clinical rotations'
+        'Mental health assessment',
+        'Therapeutic communication',
+        'Psychiatric medication management',
+        'Crisis intervention techniques',
+        'Community mental health programs'
       ],
-      careers: ['Family Nurse Practitioner', 'Pediatric NP', 'Adult-Gerontology NP', 'Psychiatric NP'],
+      careers: ['Psychiatric Nurse', 'Mental Health Coordinator', 'Crisis Intervention Specialist', 'Community Mental Health Nurse'],
       color: 'from-red-500 to-red-600'
     }
   ];
