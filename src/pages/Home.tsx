@@ -115,8 +115,8 @@ const Home: React.FC = () => {
             </div>
             <div className="relative">
               <img 
-                src="https://images.pexels.com/photos/5327585/pexels-photo-5327585.jpeg?auto=compress&cs=tinysrgb&w=600" 
-                alt="Nursing students in clinical training"
+                src="https://i.ibb.co/Y4XGxSL2/11.jpg" 
+                alt="Graduated nursing student from Matipa College"
                 className="rounded-lg shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500 border-4 border-yellow-400"
               />
               <div className="absolute -bottom-6 -left-6 bg-white text-seafoamBlue-500 p-4 rounded-lg shadow-xl">
@@ -211,8 +211,8 @@ const Home: React.FC = () => {
             </div>
             <div className="relative">
               <img 
-                src="https://images.pexels.com/photos/3823204/pexels-photo-3823204.jpeg?auto=compress&cs=tinysrgb&w=600" 
-                alt="African nursing students in virtual clinical training"
+                src="https://i.ibb.co/CpSNv2zt/33.jpg" 
+                alt="Successful nursing graduate from our programs"
                 className="rounded-lg shadow-lg"
               />
               <div className="absolute inset-0 bg-seafoamBlue-500 bg-opacity-20 rounded-lg flex items-center justify-center">
