@@ -77,7 +77,7 @@ const Home: React.FC = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-seafoamBlue-500 to-seafoamBlue-600 text-white overflow-hidden">
+      <section className="relative bg-gradient-to-br from-seafoamBlue-500 via-vibrantCoral-500 to-seafoamBlue-600 text-white overflow-hidden">
         <div className="absolute inset-0 bg-black opacity-20"></div>
         {/* African Pattern Overlay */}
         <div className="absolute inset-0 opacity-10">
@@ -92,7 +92,7 @@ const Home: React.FC = () => {
               <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
                 Unlock Your Potential with 
                 <span className="text-white drop-shadow-lg"> Matipa College of Nursing</span>
-              </h1> // Changed from 'Unlock Your Potential with Matipa College of Nursing\' to \'Unlock Your Potential with Matipa College of Nursing'
+              </h1>
               <p className="text-xl md:text-2xl mb-8 text-seafoamBlue-100 leading-relaxed">
                 Join thousands of nursing students at Matipa College of Nursing in our innovative healthcare learning environment. 
                 Get access to world-class nursing education, clinical training, and healthcare career opportunities designed for excellence.
@@ -100,7 +100,7 @@ const Home: React.FC = () => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Link
                   to="/onboarding"
-                  className="bg-white text-seafoamBlue-500 px-8 py-4 rounded-lg font-semibold hover:bg-warmGray-50 transition-all transform hover:scale-105 shadow-xl flex items-center justify-center"
+                  className="bg-vibrantCoral-500 text-white px-8 py-4 rounded-lg font-semibold hover:bg-vibrantCoral-600 transition-all transform hover:scale-105 shadow-xl flex items-center justify-center"
                 >
                   <UserPlus className="w-5 h-5 mr-2" />
                   Jiunge Sasa (Join Now)
@@ -108,7 +108,7 @@ const Home: React.FC = () => {
                 <button className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-seafoamBlue-500 transition-all transform hover:scale-105">
                   Start Free Quiz
                 </button>
-                <button className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-seafoamBlue-500 transition-all transform hover:scale-105">
+                <button className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-vibrantCoral-500 transition-all transform hover:scale-105">
                   Explore Our Blog
                 </button>
               </div>
@@ -121,7 +121,7 @@ const Home: React.FC = () => {
               />
               <div className="absolute -bottom-6 -left-6 bg-white text-seafoamBlue-500 p-4 rounded-lg shadow-xl">
                 <div className="flex items-center">
-                  <Star className="w-5 h-5 mr-2" />
+                  <Star className="w-5 h-5 mr-2 text-vibrantCoral-500" />
                   <span className="font-semibold">4.9/5 Student Rating</span>
                 </div>
               </div>
@@ -155,7 +155,7 @@ const Home: React.FC = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               Why Choose Matipa College of Nursing?
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto"> // Changed from 'We provide an exceptional nursing education experience tailored for African students with cutting-edge clinical resources and dedicated support' to 'We provide an exceptional nursing education experience tailored for students with cutting-edge clinical resources and dedicated support'
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               We provide an exceptional nursing education experience tailored for students with cutting-edge clinical resources and dedicated support
             </p>
           </div>
@@ -164,7 +164,7 @@ const Home: React.FC = () => {
             {features.map((feature, index) => (
               <div key={index} className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 text-center group hover:transform hover:scale-105">
                 <div className="bg-seafoamBlue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-seafoamBlue-500 transition-all">
-                  <feature.icon className="w-8 h-8 text-seafoamBlue-500 group-hover:text-white transition-colors" />
+                  <feature.icon className="w-8 h-8 text-vibrantCoral-500 group-hover:text-white transition-colors" />
                 </div>
                 <h3 className="text-xl font-semibold text-navyBlue-800 mb-4">{feature.title}</h3>
                 <p className="text-gray-600">{feature.description}</p>
@@ -200,7 +200,7 @@ const Home: React.FC = () => {
                 </li>
               </ul>
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="bg-seafoamBlue-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-seafoamBlue-600 transition-colors flex items-center">
+                <button className="bg-vibrantCoral-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-vibrantCoral-600 transition-colors flex items-center">
                   <Play className="w-5 h-5 mr-2" />
                   Watch Demo
                 </button>
@@ -347,7 +347,7 @@ const Home: React.FC = () => {
           </div>
           
           <div className="text-center mt-12">
-            <button className="bg-seafoamBlue-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-seafoamBlue-600 transition-all shadow-lg">
+            <button className="bg-vibrantCoral-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-vibrantCoral-600 transition-all shadow-lg">
               View All Posts
             </button>
           </div>
@@ -355,7 +355,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-seafoamBlue-500 to-seafoamBlue-600 text-white relative overflow-hidden">
+      <section className="py-20 bg-gradient-to-r from-seafoamBlue-500 via-vibrantCoral-400 to-seafoamBlue-600 text-white relative overflow-hidden">
         {/* African Pattern Background */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 left-0 w-full h-full">
@@ -367,22 +367,22 @@ const Home: React.FC = () => {
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Ready to Start Your African Excellence Journey?
-            </h2> // Changed from 'Ready to Start Your African Excellence Journey?\' to \'Ready to Start Your Journey?'
+            Ready to Start Your Excellence Journey?
+          </h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto">
             Join thousands of successful nursing graduates who have transformed their careers with Matipa College of Nursing
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/onboarding"
-              className="bg-white text-seafoamBlue-500 px-8 py-4 rounded-lg font-semibold hover:bg-warmGray-50 transition-all transform hover:scale-105 inline-block shadow-xl"
+              className="bg-vibrantCoral-500 text-white px-8 py-4 rounded-lg font-semibold hover:bg-vibrantCoral-600 transition-all transform hover:scale-105 inline-block shadow-xl"
             >
               Jiunge Sasa (Apply Now)
             </Link>
-            <button className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-seafoamBlue-500 transition-all transform hover:scale-105 shadow-lg">
+            <button className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-vibrantCoral-500 transition-all transform hover:scale-105 shadow-lg">
               Take Campus Tour
             </button>
-            <Link to="/contact" className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-seafoamBlue-500 transition-all transform hover:scale-105 inline-block">
+            <Link to="/contact" className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-vibrantCoral-500 transition-all transform hover:scale-105 inline-block">
               Contact Us
             </Link>
           </div>
