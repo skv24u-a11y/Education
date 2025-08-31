@@ -134,15 +134,15 @@ const Donation: React.FC = () => {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <Heart className="w-16 h-16 text-yellow-300 mx-auto mb-6" />
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">Fanya Mabadiliko (Make a Difference)</h1> // Changed from 'Fanya Mabadiliko (Make a Difference)\' to \'Fanya Mabadiliko (Make a Difference)'
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">Fanya Mabadiliko (Make a Difference)</h1>
             <p className="text-xl md:text-2xl text-orange-100 max-w-4xl mx-auto mb-8">
-              Your generous donation helps us provide world-class education and opportunities to students
+              Your generous donation helps us provide world-class nursing education and opportunities to students
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-gradient-to-r from-vibrantCoral-500 to-vibrantCoral-600 text-white px-8 py-4 rounded-lg font-semibold hover:from-vibrantCoral-600 hover:to-vibrantCoral-700 transition-all transform hover:scale-105">
+              <button className="bg-gradient-to-r from-seafoamBlue-500 to-seafoamBlue-600 text-white px-8 py-4 rounded-lg font-semibold hover:from-seafoamBlue-600 hover:to-seafoamBlue-700 transition-all transform hover:scale-105">
                 Donate Now
               </button>
-              <button className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-seafoamBlue-600 transition-all">
+              <button className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-vibrantCoral-600 transition-all">
                 Learn More
               </button>
             </div>
@@ -179,10 +179,10 @@ const Donation: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Mahali Mchango Wako Unapoenda (Where Your Donation Goes) // Changed from 'Mahali Mchango Wako Unapoenda (Where Your Donation Goes)' to 'Mahali Mchango Wako Unapoenda (Where Your Donation Goes)'
+              Mahali Mchango Wako Unapoenda (Where Your Donation Goes)
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Choose the area where you'd like to make the biggest impact for African students
+              Choose the area where you'd like to make the biggest impact for students
             </p>
           </div>
           
@@ -190,7 +190,7 @@ const Donation: React.FC = () => {
             {donationCategories.map((category, index) => (
               <div key={index} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
                 <div className={`bg-gradient-to-r ${category.color} p-6`}>
-                  <div className="flex items-center text-white"> // Changed from 'flex items-center text-white' to 'flex items-center text-white'
+                  <div className="flex items-center text-white">
                     <category.icon className="w-8 h-8 mr-3" />
                     <h3 className="text-2xl font-bold">{category.title}</h3>
                   </div>
@@ -240,8 +240,8 @@ const Donation: React.FC = () => {
           <div className="bg-white rounded-xl shadow-2xl overflow-hidden">
             <div className="bg-gradient-to-r from-orange-600 to-red-600 p-8 text-white text-center">
               <DollarSign className="w-12 h-12 mx-auto mb-4" />
-              <h2 className="text-3xl font-bold mb-2">Toa Mchango Wako (Make Your Donation)</h2> // Changed from 'Toa Mchango Wako (Make Your Donation)\' to \'Toa Mchango Wako (Make Your Donation)'
-              <p className="text-orange-100">Every contribution makes a difference in an African student's life</p>
+              <h2 className="text-3xl font-bold mb-2">Toa Mchango Wako (Make Your Donation)</h2>
+              <p className="text-orange-100">Every contribution makes a difference in a student's life</p>
             </div>
             
             {isSubmitted ? (
@@ -250,10 +250,10 @@ const Donation: React.FC = () => {
                 <h3 className="text-3xl font-bold text-gray-900 mb-4">Thank You!</h3>
                 <p className="text-xl text-gray-600 mb-6">
                   Asante sana! Your generous donation to Matipa College of Nursing has been processed successfully. You will receive a confirmation email shortly.
-                </p> // Changed from 'Asante sana! Your generous donation to Matipa College of Nursing has been processed successfully. You will receive a confirmation email shortly.\' to \'Asante sana! Your generous donation to Matipa College of Nursing has been processed successfully. You will receive a confirmation email shortly.'
+                </p>
                 <div className="bg-green-50 p-6 rounded-lg">
                   <p className="text-green-800 font-medium">
-                    Your donation will directly impact African nursing students' lives and help us continue our mission of nursing educational excellence.
+                    Your donation will directly impact nursing students' lives and help us continue our mission of nursing educational excellence.
                   </p>
                 </div>
               </div>
@@ -420,10 +420,10 @@ const Donation: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Hadithi za Mafanikio (Success Stories) // Changed from 'Hadithi za Mafanikio (Success Stories)' to 'Hadithi za Mafanikio (Success Stories)'
+              Hadithi za Mafanikio (Success Stories)
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              See how your donations have transformed lives and communities across Africa
+              See how your donations have transformed lives and communities
             </p>
           </div>
           
@@ -458,13 +458,13 @@ const Donation: React.FC = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="py-20 bg-gradient-to-r from-orange-600 to-red-600 text-white">
+      <section className="py-20 bg-gradient-to-r from-seafoamBlue-600 to-vibrantCoral-600 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <Award className="w-16 h-16 mx-auto mb-6" />
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Jiunge Nasi Katika Safari Hii (Join Us on This Journey)
-          </h2> // Changed from 'Jiunge Nasi Katika Safari Hii (Join Us on This Journey)\' to \'Jiunge Nasi Katika Safari Hii (Join Us on This Journey)'
-          <p className="text-xl text-orange-100 mb-8 max-w-3xl mx-auto">
+          </h2>
+          <p className="text-xl text-seafoamBlue-100 mb-8 max-w-3xl mx-auto">
             Every donation, no matter the size, contributes to building a stronger healthcare system. 
             Together, we can empower the next generation of nursing professionals.
           </p>
