@@ -92,7 +92,7 @@ const Home: React.FC = () => {
               <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
                 Unlock Your Potential with 
                 <span className="text-white drop-shadow-lg"> Matipa College of Nursing</span>
-              </h1> // Changed from 'Unlock Your Potential with Matipa College of Nursing' to 'Unlock Your Potential with Matipa College of Nursing'
+              </h1> // Changed from 'Unlock Your Potential with Matipa College of Nursing\' to 'Unlock Your Potential with Matipa College of Nursing'
               <p className="text-xl md:text-2xl mb-8 text-seafoamBlue-100 leading-relaxed">
                 Join thousands of nursing students at Matipa College of Nursing in our innovative healthcare learning environment. 
                 Get access to world-class nursing education, clinical training, and healthcare career opportunities designed for African excellence.
@@ -368,7 +368,7 @@ const Home: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Ready to Start Your African Excellence Journey?
-            </h2> // Changed from 'Ready to Start Your African Excellence Journey?' to 'Ready to Start Your Journey?'
+            </h2> // Changed from 'Ready to Start Your African Excellence Journey?\' to 'Ready to Start Your Journey?'
           <p className="text-xl mb-8 max-w-3xl mx-auto">
             Join thousands of successful nursing graduates who have transformed their careers with Matipa College of Nursing
           </p>
