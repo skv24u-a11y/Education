@@ -56,14 +56,14 @@ const About: React.FC = () => {
       name: 'Dr. Amina Kone',
       position: 'Dean of Nursing', // Changed from 'Dean of Nursing' to 'Dean of Nursing'
       education: 'PhD in Nursing Science, University of Cape Town',
-      image: 'https://images.pexels.com/photos/3823204/pexels-photo-3823204.jpeg?auto=compress&cs=tinysrgb&w=300',
+      image: 'https://i.ibb.co/Y4XGxSL2/11.jpg',
       expertise: 'Critical Care Nursing, Healthcare Leadership'
     },
     {
       name: 'Prof. Kwame Asante',
       position: 'Head of Clinical Training', // Changed from 'Head of Clinical Training' to 'Head of Clinical Training'
       education: 'MSN Clinical Leadership, University of Ghana Medical School',
-      image: 'https://images.pexels.com/photos/3985163/pexels-photo-3985163.jpeg?auto=compress&cs=tinysrgb&w=300',
+      image: 'https://i.ibb.co/CpSNv2zt/33.jpg',
       expertise: 'Clinical Simulation, Emergency Nursing'
     },
     {

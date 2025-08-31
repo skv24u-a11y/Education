@@ -73,13 +73,13 @@ const Donation: React.FC = () => {
   const successStories = [
     {
       name: 'Amara Diallo', // Changed from 'Amara Diallo' to 'Amara Diallo'
-      image: 'https://images.pexels.com/photos/3823204/pexels-photo-3823204.jpeg?auto=compress&cs=tinysrgb&w=300',
+      image: 'https://i.ibb.co/Y4XGxSL2/11.jpg',
       story: 'Thanks to Matipa Academy nursing scholarship, I graduated with honors and now lead healthcare innovation in Senegal.',
       achievement: 'BSN Graduate, 2023 - Chief Nurse at Dakar General Hospital'
     },
     {
       name: 'Kwame Osei', // Changed from 'Kwame Osei' to 'Kwame Osei'
-      image: 'https://images.pexels.com/photos/3985163/pexels-photo-3985163.jpeg?auto=compress&cs=tinysrgb&w=300',
+      image: 'https://i.ibb.co/CpSNv2zt/33.jpg',
       story: 'The nursing scholarship program changed my life. I went from struggling community health worker to successful nurse practitioner.',
       achievement: 'Nurse Practitioner Graduate, 2022 - Ghana'
     },

@@ -113,7 +113,7 @@ const FAQ: React.FC = () => {
       name: 'Amina Hassan',
       program: 'Bachelor of Science in Nursing, Class of 2023', // Changed from 'Bachelor of Science in Nursing, Class of 2023' to 'Bachelor of Science in Nursing, Class of 2023'
       location: 'Freetown, Sierra Leone',
-      image: 'https://images.pexels.com/photos/3823204/pexels-photo-3823204.jpeg?auto=compress&cs=tinysrgb&w=300',
+      image: 'https://i.ibb.co/Y4XGxSL2/11.jpg',
       rating: 5,
       date: 'March 2024',
       testimonial: 'Matipa College of Nursing transformed my life. The nursing professors understand global healthcare challenges, the online clinical simulations work even with limited internet, and the career support helped me secure a position at Connaught Hospital.',
@@ -123,7 +123,7 @@ const FAQ: React.FC = () => {
       name: 'Kofi Mensah',
       program: 'Registered Nurse Program, Class of 2022', // Changed from 'Registered Nurse Program, Class of 2022' to 'Registered Nurse Program, Class of 2022'
       location: 'Bo, Sierra Leone',
-      image: 'https://images.pexels.com/photos/3985163/pexels-photo-3985163.jpeg?auto=compress&cs=tinysrgb&w=300',
+      image: 'https://i.ibb.co/CpSNv2zt/33.jpg',
       rating: 5,
       date: 'February 2024',
       testimonial: 'The flexibility of online learning allowed me to balance my work at the local clinic with studies. The nursing program taught me advanced clinical skills. Now I lead the emergency department at our regional hospital.',
