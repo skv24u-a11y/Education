@@ -23,6 +23,7 @@ const Footer: React.FC = () => {
                 <p className="text-gray-400 text-sm">Empowering Nursing Excellence</p>
               </div>
             </div>
+            <p className="text-gray-400">
               Empowering nursing students with world-class nursing education and innovative clinical learning experiences since 2018.
             </p>
           </div>
