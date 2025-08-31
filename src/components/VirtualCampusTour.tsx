@@ -77,9 +77,16 @@ const VirtualCampusTour: React.FC = () => {
       {/* Header */}
       <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-6">
         <div className="flex items-center justify-between">
-          <div>
+          <div className="flex items-center space-x-3">
+            <img
+              src="https://i.ibb.co/pv1FfsPt/log-removebg-preview.png"
+              alt="Matipa College of Nursing Logo"
+              className="w-10 h-10 object-contain"
+            />
+            <div>
             <h2 className="text-2xl font-bold mb-2">Virtual Campus Tour</h2>
             <p className="text-blue-100">Explore our world-class online nursing facilities</p>
+            </div>
           </div>
           <div className="flex items-center space-x-2">
             <MapPin className="w-6 h-6" />

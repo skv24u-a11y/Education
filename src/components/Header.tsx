@@ -57,20 +57,20 @@ const Header: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
-         <Link to="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
+          <Link to="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
             <img
               src="https://i.ibb.co/pv1FfsPt/log-removebg-preview.png"
               alt="Matipa College of Nursing Logo"
               className="w-16 h-16 object-contain"
             />
-  <div>
+            <div>
               <h1 className="text-2xl font-bold text-seafoamBlue-500">
-      Matipa College of Nursing
-    </h1>
-    <p className="text-sm text-navyBlue-800 font-medium">
-      Empowering African Excellence
-    </p>
-  </div>
+                Matipa College of Nursing
+              </h1>
+              <p className="text-sm text-navyBlue-800 font-medium">
+                Empowering Excellence
+              </p>
+            </div>
           </Link>
 
 

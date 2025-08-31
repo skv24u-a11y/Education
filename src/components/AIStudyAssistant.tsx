@@ -74,13 +74,20 @@ const AIStudyAssistant: React.FC = () => {
     <div className="bg-white rounded-2xl shadow-xl overflow-hidden max-w-4xl mx-auto">
       {/* Header */}
       <div className="bg-gradient-to-r from-purple-600 to-blue-600 text-white p-6">
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center justify-between">
+          <div className="flex items-center space-x-4">
+            <img
+              src="https://i.ibb.co/pv1FfsPt/log-removebg-preview.png"
+              alt="Matipa College of Nursing Logo"
+              className="w-10 h-10 object-contain"
+            />
           <div className="bg-white/20 p-3 rounded-full">
             <Bot className="w-8 h-8" />
           </div>
           <div>
             <h2 className="text-2xl font-bold mb-1">AI Nursing Study Assistant</h2>
             <p className="text-purple-100">Your 24/7 personalized nursing education companion</p>
+          </div>
           </div>
           <div className="ml-auto flex items-center space-x-2">
             <Sparkles className="w-5 h-5 text-yellow-300" />

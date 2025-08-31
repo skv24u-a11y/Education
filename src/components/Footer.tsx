@@ -10,16 +10,21 @@ const Footer: React.FC = () => {
           {/* Brand */}
           <div className="col-span-1 lg:col-span-1">
             <div className="flex items-center space-x-3 mb-4">
-              <div className="bg-gradient-to-r from-orange-500 to-red-600 p-2 rounded-lg">
+              <img
+                src="https://i.ibb.co/pv1FfsPt/log-removebg-preview.png"
+                alt="MA Logo"
+                className="w-12 h-12 object-contain"
+              />
+              <div className="bg-gradient-to-r from-seafoamBlue-500 to-seafoamBlue-600 p-2 rounded-lg hidden">
                 <span className="text-white font-bold text-lg">MA</span>
               </div>
               <div>
                 <h3 className="text-xl font-bold">Matipa College of Nursing</h3>
-                <p className="text-gray-400 text-sm">Empowering African Nursing Excellence</p>
+                <p className="text-gray-400 text-sm">Empowering Nursing Excellence</p>
               </div>
             </div>
             <p className="text-gray-400 mb-4"> // Changed from 'Empowering African nursing students with world-class nursing education and innovative clinical learning experiences since 2020.' to 'Empowering nursing students with world-class nursing education and innovative clinical learning experiences since 2020.'
-              Empowering African nursing students with world-class nursing education and innovative clinical learning experiences since 2020.
+              Empowering nursing students with world-class nursing education and innovative clinical learning experiences since 2020.
             </p>
           </div>
 

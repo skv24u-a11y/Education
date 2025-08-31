@@ -235,9 +235,11 @@ const Dashboard: React.FC = () => {
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <div className="flex items-center space-x-3">
-              <div className="bg-gradient-to-r from-orange-600 to-red-600 p-3 rounded-lg">
-                <span className="text-white font-bold text-xl">MA</span>
-              </div>
+              <img
+                src="https://i.ibb.co/pv1FfsPt/log-removebg-preview.png"
+                alt="Matipa College of Nursing Logo"
+                className="w-12 h-12 object-contain"
+              />
               <div>
                 <h1 className={`text-xl font-bold ${darkMode ? 'text-white' : 'text-gray-900'}`}>Nursing Student Portal</h1>
                 <p className={`text-sm ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>Matipa College of Nursing</p>
