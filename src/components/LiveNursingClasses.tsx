@@ -40,46 +40,46 @@ const LiveNursingClasses: React.FC = () => {
       status: 'live',
       subject: 'Nursing Fundamentals',
       description: 'Basic nursing principles, patient care techniques, and clinical safety protocols',
-      image: 'https://images.pexels.com/photos/7551544/pexels-photo-7551544.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: 'https://images.pexels.com/photos/3823204/pexels-photo-3823204.jpeg?auto=compress&cs=tinysrgb&w=400',
       topics: ['Patient Assessment', 'Vital Signs', 'Infection Control', 'Documentation']
     },
     {
       id: 2,
       title: 'Pharmacology for Nurses',
       instructor: 'Prof. Kwame Osei, PharmD, RN',
-      time: '2:00 PM',
+      time: '2:00 PM', // Changed from '2:00 PM' to '2:00 PM'
       duration: '120 minutes',
       participants: 38,
       status: 'starting-soon',
       subject: 'Pharmacology',
       description: 'Drug administration, dosage calculations, and medication safety in nursing practice',
-      image: 'https://images.pexels.com/photos/7551468/pexels-photo-7551468.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: 'https://images.pexels.com/photos/3985163/pexels-photo-3985163.jpeg?auto=compress&cs=tinysrgb&w=400',
       topics: ['Drug Classifications', 'Dosage Calculations', 'Side Effects', 'Patient Education']
     },
     {
       id: 3,
       title: 'Maternal & Child Health Nursing',
       instructor: 'Dr. Fatou Kone, CNM, MSN',
-      time: '4:00 PM',
+      time: '4:00 PM', // Changed from '4:00 PM' to '4:00 PM'
       duration: '90 minutes',
       participants: 52,
       status: 'upcoming',
       subject: 'Maternal Health',
       description: 'Prenatal care, labor and delivery, postpartum care, and pediatric nursing essentials',
-      image: 'https://images.pexels.com/photos/7551522/pexels-photo-7551522.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: 'https://images.pexels.com/photos/3823204/pexels-photo-3823204.jpeg?auto=compress&cs=tinysrgb&w=400',
       topics: ['Prenatal Care', 'Labor Support', 'Newborn Care', 'Breastfeeding']
     },
     {
       id: 4,
       title: 'Critical Care Nursing',
       instructor: 'Dr. Thabo Mthembu, CCRN, MSN',
-      time: '6:00 PM',
+      time: '6:00 PM', // Changed from '6:00 PM' to '6:00 PM'
       duration: '90 minutes',
       participants: 29,
       status: 'upcoming',
       subject: 'Critical Care',
       description: 'Advanced life support, ICU protocols, and critical patient monitoring techniques',
-      image: 'https://images.pexels.com/photos/7551667/pexels-photo-7551667.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: 'https://images.pexels.com/photos/3985163/pexels-photo-3985163.jpeg?auto=compress&cs=tinysrgb&w=400',
       topics: ['Ventilator Management', 'Hemodynamic Monitoring', 'Emergency Protocols', 'Family Support']
     }
   ];

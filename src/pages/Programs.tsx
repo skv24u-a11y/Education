@@ -17,7 +17,7 @@ const Programs: React.FC = () => {
   React.useEffect(() => {
     document.title = 'Nursing Programs - Matipa College of Nursing | BSN, RN, ADN Programs';
     const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
+    if (metaDescription) { // Changed from 'if (metaDescription)' to 'if (metaDescription)'
       metaDescription.setAttribute('content', 'Explore Matipa College of Nursing\'s comprehensive nursing programs including BSN, RN, ADN, LPN, and NP degrees. World-class nursing education designed for African healthcare professionals.');
     }
   }, []);
@@ -122,7 +122,7 @@ const Programs: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">Nursing Programs</h1>
-            <p className="text-xl md:text-2xl text-orange-100 max-w-4xl mx-auto">
+            <p className="text-xl md:text-2xl text-seafoamBlue-100 max-w-4xl mx-auto">
               Comprehensive nursing education programs designed to prepare African healthcare professionals for excellence
             </p>
           </div>

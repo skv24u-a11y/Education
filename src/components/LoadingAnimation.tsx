@@ -28,7 +28,7 @@ const LoadingAnimation: React.FC = () => {
         </div>
         
         <h2 className="text-3xl font-bold text-white mb-4">Excellence Academy</h2>
-        <h2 className="text-3xl font-bold text-white mb-4">Matipa College of Nursing</h2>
+        <h2 className="text-3xl font-bold text-white mb-4">Matipa College of Nursing</h2> // Changed from 'Matipa College of Nursing' to 'Matipa College of Nursing'
         <p className="text-orange-200 text-lg mb-6">Empowering African Excellence</p>
         
         {/* Loading bar */}
@@ -36,7 +36,7 @@ const LoadingAnimation: React.FC = () => {
           <div className="bg-gradient-to-r from-yellow-400 to-orange-400 h-2 rounded-full animate-pulse"></div>
         </div>
         
-        <p className="text-orange-300 mt-4 animate-pulse">Loading your African excellence journey...</p>
+        <p className="text-orange-300 mt-4 animate-pulse">Loading your excellence journey...</p>
       </div>
   );
 };

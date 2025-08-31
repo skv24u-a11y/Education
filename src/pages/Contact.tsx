@@ -16,7 +16,7 @@ const Contact: React.FC = () => {
   React.useEffect(() => {
     document.title = 'Contact Us - Matipa College of Nursing | Get in Touch';
     const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
+    if (metaDescription) { // Changed from 'if (metaDescription)' to 'if (metaDescription)'
       metaDescription.setAttribute('content', 'Contact Matipa College of Nursing for nursing program inquiries, admissions support, and student services. Reach out via phone, email, or our contact form for immediate assistance.');
     }
   }, []);
@@ -88,7 +88,7 @@ const Contact: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">Contact Us</h1>
-            <p className="text-xl md:text-2xl text-orange-100 max-w-4xl mx-auto">
+            <p className="text-xl md:text-2xl text-seafoamBlue-100 max-w-4xl mx-auto">
               We're here to help you on your African excellence journey. Get in touch with us today!
             </p>
           </div>

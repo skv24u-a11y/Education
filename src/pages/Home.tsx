@@ -29,17 +29,17 @@ const Home: React.FC = () => {
     {
       icon: Users,
       title: 'Expert Nursing Faculty',
-      description: 'Learn from experienced nurses and healthcare professionals'
+      description: 'Learn from experienced nurses and healthcare professionals' // Changed from 'Learn from experienced nurses and healthcare professionals' to 'Learn from experienced nurses and healthcare professionals'
     },
     {
       icon: Globe,
       title: 'Sierra Leone  Healthcare Network',
-      description: 'Connect with nursing students from all 54 African countries'
+      description: 'Connect with nursing students from diverse countries'
     },
     {
       icon: Award,
       title: 'Accredited Nursing Programs',
-      description: 'Internationally recognized nursing degrees and certifications'
+      description: 'Internationally recognized nursing degrees and certifications' // Changed from 'Internationally recognized nursing degrees and certifications' to 'Internationally recognized nursing degrees and certifications'
     }
   ];
 
@@ -53,24 +53,24 @@ const Home: React.FC = () => {
   const blogPosts = [
     {
       title: 'The Future of Nursing Education in Africa',
-      excerpt: 'Discover how technology is reshaping nursing education and creating new opportunities for healthcare professionals across Africa.',
+      excerpt: 'Discover how technology is reshaping nursing education and creating new opportunities for healthcare professionals globally.',
       date: 'March 15, 2024',
       readTime: '5 min read',
-      image: 'https://images.pexels.com/photos/7551544/pexels-photo-7551544.jpeg?auto=compress&cs=tinysrgb&w=400'
+      image: 'https://images.pexels.com/photos/3823204/pexels-photo-3823204.jpeg?auto=compress&cs=tinysrgb&w=400'
     },
     {
       title: 'Clinical Skills for African Nurses',
       excerpt: 'Essential clinical skills and techniques to help you excel in nursing practice and provide quality healthcare.',
       date: 'March 12, 2024',
       readTime: '7 min read',
-      image: 'https://images.pexels.com/photos/7551468/pexels-photo-7551468.jpeg?auto=compress&cs=tinysrgb&w=400'
+      image: 'https://images.pexels.com/photos/3985163/pexels-photo-3985163.jpeg?auto=compress&cs=tinysrgb&w=400'
     },
     {
       title: 'Healthcare Career Opportunities in Africa',
       excerpt: 'Explore the growing healthcare career opportunities across Africa and how our nursing programs prepare you for success.',
       date: 'March 10, 2024',
       readTime: '6 min read',
-      image: 'https://images.pexels.com/photos/7551522/pexels-photo-7551522.jpeg?auto=compress&cs=tinysrgb&w=400'
+      image: 'https://images.pexels.com/photos/3823204/pexels-photo-3823204.jpeg?auto=compress&cs=tinysrgb&w=400'
     }
   ];
 
@@ -92,9 +92,9 @@ const Home: React.FC = () => {
               <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
                 Unlock Your Potential with 
                 <span className="text-white drop-shadow-lg"> Matipa College of Nursing</span>
-              </h1>
+              </h1> // Changed from 'Unlock Your Potential with Matipa College of Nursing' to 'Unlock Your Potential with Matipa College of Nursing'
               <p className="text-xl md:text-2xl mb-8 text-seafoamBlue-100 leading-relaxed">
-                Join thousands of African nursing students at Matipa College of Nursing in our innovative healthcare learning environment. 
+                Join thousands of nursing students at Matipa College of Nursing in our innovative healthcare learning environment. 
                 Get access to world-class nursing education, clinical training, and healthcare career opportunities designed for African excellence.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -115,7 +115,7 @@ const Home: React.FC = () => {
             </div>
             <div className="relative">
               <img 
-                src="https://images.pexels.com/photos/7551667/pexels-photo-7551667.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                src="https://images.pexels.com/photos/3823204/pexels-photo-3823204.jpeg?auto=compress&cs=tinysrgb&w=600" 
                 alt="African nursing students in clinical training"
                 className="rounded-lg shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500 border-4 border-yellow-400"
               />
@@ -155,8 +155,8 @@ const Home: React.FC = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               Why Choose Matipa College of Nursing?
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We provide an exceptional nursing education experience tailored for African students with cutting-edge clinical resources and dedicated support
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto"> // Changed from 'We provide an exceptional nursing education experience tailored for African students with cutting-edge clinical resources and dedicated support' to 'We provide an exceptional nursing education experience tailored for students with cutting-edge clinical resources and dedicated support'
+              We provide an exceptional nursing education experience tailored for students with cutting-edge clinical resources and dedicated support
             </p>
           </div>
           
@@ -211,7 +211,7 @@ const Home: React.FC = () => {
             </div>
             <div className="relative">
               <img 
-                src="https://images.pexels.com/photos/7551421/pexels-photo-7551421.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                src="https://images.pexels.com/photos/3823204/pexels-photo-3823204.jpeg?auto=compress&cs=tinysrgb&w=600" 
                 alt="African nursing students in virtual clinical training"
                 className="rounded-lg shadow-lg"
               />
@@ -368,7 +368,7 @@ const Home: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Ready to Start Your African Excellence Journey?
-          </h2>
+            </h2> // Changed from 'Ready to Start Your African Excellence Journey?' to 'Ready to Start Your Journey?'
           <p className="text-xl mb-8 max-w-3xl mx-auto">
             Join thousands of successful nursing graduates who have transformed their careers with Matipa College of Nursing
           </p>

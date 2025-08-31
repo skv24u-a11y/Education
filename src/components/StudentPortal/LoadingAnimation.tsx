@@ -33,7 +33,7 @@ const LoadingAnimation: React.FC = () => {
         </div>
         
         <h2 className="text-4xl font-bold text-white mb-4">Student Portal</h2>
-        <p className="text-orange-200 text-xl mb-8">Preparing your African digital campus experience...</p>
+        <p className="text-orange-200 text-xl mb-8">Preparing your digital campus experience...</p>
         
         {/* Animated Progress Bar */}
         <div className="w-80 bg-white/20 rounded-full h-3 mx-auto mb-6">

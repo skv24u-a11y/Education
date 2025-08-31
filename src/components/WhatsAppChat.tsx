@@ -50,7 +50,7 @@ const WhatsAppChat: React.FC = () => {
           <div className="p-4 bg-gray-50 max-h-64 overflow-y-auto">
             <div className="bg-white p-3 rounded-lg shadow-sm mb-3">
               <p className="text-sm text-gray-700">
-                👋 Hello! Welcome to Matipa College of Nursing - Africa's leading online nursing college!
+                👋 Hello! Welcome to Matipa College of Nursing - A leading online nursing college!
               </p>
             </div>
             <div className="bg-white p-3 rounded-lg shadow-sm mb-3">

@@ -23,40 +23,40 @@ const VirtualCampusTour: React.FC = () => {
     {
       id: 1,
       name: 'Virtual Nursing Simulation Lab',
-      description: 'State-of-the-art virtual reality nursing simulation lab where students practice clinical procedures in a safe, controlled environment.',
-      image: 'https://images.pexels.com/photos/7551544/pexels-photo-7551544.jpeg?auto=compress&cs=tinysrgb&w=800',
+      description: 'State-of-the-art virtual reality nursing simulation lab where students practice clinical procedures in a safe, controlled environment.', // Changed from 'State-of-the-art virtual reality nursing simulation lab where students practice clinical procedures in a safe, controlled environment.' to 'State-of-the-art virtual reality nursing simulation lab where students practice clinical procedures in a safe, controlled environment.'
+      image: 'https://images.pexels.com/photos/3823204/pexels-photo-3823204.jpeg?auto=compress&cs=tinysrgb&w=800',
       icon: Microscope,
       features: ['VR Patient Simulators', '3D Anatomy Models', 'Clinical Scenario Training', 'Real-time Feedback']
     },
     {
       id: 2,
       name: 'Digital Learning Commons',
-      description: 'Interactive online learning spaces where nursing students collaborate, study, and access digital resources 24/7.',
-      image: 'https://images.pexels.com/photos/7551468/pexels-photo-7551468.jpeg?auto=compress&cs=tinysrgb&w=800',
+      description: 'Interactive online learning spaces where nursing students collaborate, study, and access digital resources 24/7.', // Changed from 'Interactive online learning spaces where nursing students collaborate, study, and access digital resources 24/7.' to 'Interactive online learning spaces where nursing students collaborate, study, and access digital resources 24/7.'
+      image: 'https://images.pexels.com/photos/3985163/pexels-photo-3985163.jpeg?auto=compress&cs=tinysrgb&w=800',
       icon: BookOpen,
       features: ['Digital Library', 'Study Groups', 'Peer Tutoring', 'Research Resources']
     },
     {
       id: 3,
       name: 'Virtual Clinical Training Center',
-      description: 'Advanced clinical training facility with virtual patients and real-world healthcare scenarios for hands-on nursing practice.',
-      image: 'https://images.pexels.com/photos/7551522/pexels-photo-7551522.jpeg?auto=compress&cs=tinysrgb&w=800',
+      description: 'Advanced clinical training facility with virtual patients and real-world healthcare scenarios for hands-on nursing practice.', // Changed from 'Advanced clinical training facility with virtual patients and real-world healthcare scenarios for hands-on nursing practice.' to 'Advanced clinical training facility with virtual patients and real-world healthcare scenarios for hands-on nursing practice.'
+      image: 'https://images.pexels.com/photos/3823204/pexels-photo-3823204.jpeg?auto=compress&cs=tinysrgb&w=800',
       icon: Heart,
       features: ['Patient Care Simulations', 'Emergency Scenarios', 'Medication Administration', 'Clinical Assessment']
     },
     {
       id: 4,
       name: 'Student Success Center',
-      description: 'Comprehensive support hub providing academic advising, career counseling, and wellness resources for nursing students.',
-      image: 'https://images.pexels.com/photos/7551667/pexels-photo-7551667.jpeg?auto=compress&cs=tinysrgb&w=800',
+      description: 'Comprehensive support hub providing academic advising, career counseling, and wellness resources for nursing students.', // Changed from 'Comprehensive support hub providing academic advising, career counseling, and wellness resources for nursing students.' to 'Comprehensive support hub providing academic advising, career counseling, and wellness resources for nursing students.'
+      image: 'https://images.pexels.com/photos/3985163/pexels-photo-3985163.jpeg?auto=compress&cs=tinysrgb&w=800',
       icon: Users,
       features: ['Academic Advising', 'Career Services', 'Mental Health Support', 'Financial Aid Guidance']
     },
     {
       id: 5,
       name: 'Virtual Graduation Hall',
-      description: 'Celebrate your nursing achievements in our beautiful virtual graduation ceremony space, connecting African nursing graduates worldwide.',
-      image: 'https://images.pexels.com/photos/7551421/pexels-photo-7551421.jpeg?auto=compress&cs=tinysrgb&w=800',
+      description: 'Celebrate your nursing achievements in our beautiful virtual graduation ceremony space, connecting nursing graduates worldwide.',
+      image: 'https://images.pexels.com/photos/3823204/pexels-photo-3823204.jpeg?auto=compress&cs=tinysrgb&w=800',
       icon: GraduationCap,
       features: ['Live Ceremonies', 'Family Viewing', 'Digital Diplomas', 'Alumni Network']
     }

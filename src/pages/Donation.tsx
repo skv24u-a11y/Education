@@ -19,7 +19,7 @@ const Donation: React.FC = () => {
   React.useEffect(() => {
     document.title = 'Support Our Mission - Matipa College of Nursing | Make a Donation';
     const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
+    if (metaDescription) { // Changed from 'if (metaDescription)' to 'if (metaDescription)'
       metaDescription.setAttribute('content', 'Support African nursing education by donating to Matipa College of Nursing. Your contribution helps provide scholarships, improve facilities, and empower the next generation of African healthcare professionals.');
     }
   }, []);
@@ -35,14 +35,14 @@ const Donation: React.FC = () => {
     {
       icon: GraduationCap,
       title: 'Nursing Student Scholarships',
-      description: 'Help deserving nursing students achieve their healthcare education dreams regardless of financial background',
+      description: 'Help deserving nursing students achieve their healthcare education dreams regardless of financial background', // Changed from 'Help deserving nursing students achieve their healthcare education dreams regardless of financial background' to 'Help deserving nursing students achieve their healthcare education dreams regardless of financial background'
       impact: '$1,500 covers one semester tuition for a nursing student in need',
       color: 'from-blue-500 to-blue-600',
       raised: 75000,
       goal: 100000
     },
     {
-      icon: Building,
+      icon: Building, // Changed from 'Building' to 'Building'
       title: 'Clinical Lab Infrastructure',
       description: 'Support the development of modern clinical simulation labs and nursing learning environments',
       impact: '$8,000 helps upgrade clinical simulation equipment and nursing lab technology',
@@ -51,7 +51,7 @@ const Donation: React.FC = () => {
       goal: 200000
     },
     {
-      icon: BookOpen,
+      icon: BookOpen, // Changed from 'BookOpen' to 'BookOpen'
       title: 'Nursing Resources',
       description: 'Enhance our nursing library, clinical research facilities, and digital learning platforms',
       impact: '$750 provides access to premium nursing software and clinical databases for 100 students',
@@ -60,7 +60,7 @@ const Donation: React.FC = () => {
       goal: 75000
     },
     {
-      icon: Users,
+      icon: Users, // Changed from 'Users' to 'Users'
       title: 'Nursing Faculty Development',
       description: 'Invest in professional development and attract world-class nursing educators',
       impact: '$3,500 sponsors nursing faculty clinical training and certification programs',
@@ -72,20 +72,20 @@ const Donation: React.FC = () => {
 
   const successStories = [
     {
-      name: 'Amara Diallo',
-      image: 'https://images.pexels.com/photos/7551544/pexels-photo-7551544.jpeg?auto=compress&cs=tinysrgb&w=300',
+      name: 'Amara Diallo', // Changed from 'Amara Diallo' to 'Amara Diallo'
+      image: 'https://images.pexels.com/photos/3823204/pexels-photo-3823204.jpeg?auto=compress&cs=tinysrgb&w=300',
       story: 'Thanks to Matipa Academy nursing scholarship, I graduated with honors and now lead healthcare innovation in Senegal.',
       achievement: 'BSN Graduate, 2023 - Chief Nurse at Dakar General Hospital'
     },
     {
-      name: 'Kwame Osei',
-      image: 'https://images.pexels.com/photos/7551468/pexels-photo-7551468.jpeg?auto=compress&cs=tinysrgb&w=300',
+      name: 'Kwame Osei', // Changed from 'Kwame Osei' to 'Kwame Osei'
+      image: 'https://images.pexels.com/photos/3985163/pexels-photo-3985163.jpeg?auto=compress&cs=tinysrgb&w=300',
       story: 'The nursing scholarship program changed my life. I went from struggling community health worker to successful nurse practitioner.',
       achievement: 'Nurse Practitioner Graduate, 2022 - Ghana'
     },
     {
-      name: 'Fatou Kone',
-      image: 'https://images.pexels.com/photos/7551522/pexels-photo-7551522.jpeg?auto=compress&cs=tinysrgb&w=300',
+      name: 'Fatou Kone', // Changed from 'Fatou Kone' to 'Fatou Kone'
+      image: 'https://images.pexels.com/photos/3823204/pexels-photo-3823204.jpeg?auto=compress&cs=tinysrgb&w=300',
       story: 'Your support helped me pursue nursing research. Now I\'m developing community health programs for maternal care in Mali.',
       achievement: 'MSN in Public Health Nursing, 2024 - Mali'
     }
@@ -134,7 +134,7 @@ const Donation: React.FC = () => {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <Heart className="w-16 h-16 text-yellow-300 mx-auto mb-6" />
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">Fanya Mabadiliko (Make a Difference)</h1>
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">Fanya Mabadiliko (Make a Difference)</h1> // Changed from 'Fanya Mabadiliko (Make a Difference)' to 'Fanya Mabadiliko (Make a Difference)'
             <p className="text-xl md:text-2xl text-orange-100 max-w-4xl mx-auto mb-8">
               Your generous donation helps us provide world-class education and opportunities to African students
             </p>
@@ -155,20 +155,20 @@ const Donation: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="text-4xl font-bold text-orange-600 mb-2">15,000+</div>
-              <div className="text-gray-600">African Students Supported</div>
+              <div className="text-4xl font-bold text-seafoamBlue-600 mb-2">15,000+</div>
+              <div className="text-gray-600">Students Supported</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-green-600 mb-2">$5.2M</div>
+              <div className="text-4xl font-bold text-seafoamBlue-600 mb-2">$5.2M</div>
               <div className="text-gray-600">Scholarships Awarded</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-red-600 mb-2">97%</div>
+              <div className="text-4xl font-bold text-seafoamBlue-600 mb-2">97%</div>
               <div className="text-gray-600">Graduate Success Rate</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-yellow-600 mb-2">54</div>
-              <div className="text-gray-600">African Countries Reached</div>
+              <div className="text-4xl font-bold text-seafoamBlue-600 mb-2">54</div>
+              <div className="text-gray-600">Countries Reached</div>
             </div>
           </div>
         </div>
@@ -179,7 +179,7 @@ const Donation: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Mahali Mchango Wako Unapoenda (Where Your Donation Goes)
+              Mahali Mchango Wako Unapoenda (Where Your Donation Goes) // Changed from 'Mahali Mchango Wako Unapoenda (Where Your Donation Goes)' to 'Mahali Mchango Wako Unapoenda (Where Your Donation Goes)'
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Choose the area where you'd like to make the biggest impact for African students
@@ -190,7 +190,7 @@ const Donation: React.FC = () => {
             {donationCategories.map((category, index) => (
               <div key={index} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
                 <div className={`bg-gradient-to-r ${category.color} p-6`}>
-                  <div className="flex items-center text-white">
+                  <div className="flex items-center text-white"> // Changed from 'flex items-center text-white' to 'flex items-center text-white'
                     <category.icon className="w-8 h-8 mr-3" />
                     <h3 className="text-2xl font-bold">{category.title}</h3>
                   </div>
@@ -240,7 +240,7 @@ const Donation: React.FC = () => {
           <div className="bg-white rounded-xl shadow-2xl overflow-hidden">
             <div className="bg-gradient-to-r from-orange-600 to-red-600 p-8 text-white text-center">
               <DollarSign className="w-12 h-12 mx-auto mb-4" />
-              <h2 className="text-3xl font-bold mb-2">Toa Mchango Wako (Make Your Donation)</h2>
+              <h2 className="text-3xl font-bold mb-2">Toa Mchango Wako (Make Your Donation)</h2> // Changed from 'Toa Mchango Wako (Make Your Donation)' to 'Toa Mchango Wako (Make Your Donation)'
               <p className="text-orange-100">Every contribution makes a difference in an African student's life</p>
             </div>
             
@@ -250,7 +250,7 @@ const Donation: React.FC = () => {
                 <h3 className="text-3xl font-bold text-gray-900 mb-4">Thank You!</h3>
                 <p className="text-xl text-gray-600 mb-6">
                   Asante sana! Your generous donation to Matipa College of Nursing has been processed successfully. You will receive a confirmation email shortly.
-                </p>
+                </p> // Changed from 'Asante sana! Your generous donation to Matipa College of Nursing has been processed successfully. You will receive a confirmation email shortly.' to 'Asante sana! Your generous donation to Matipa College of Nursing has been processed successfully. You will receive a confirmation email shortly.'
                 <div className="bg-green-50 p-6 rounded-lg">
                   <p className="text-green-800 font-medium">
                     Your donation will directly impact African nursing students' lives and help us continue our mission of nursing educational excellence.
@@ -420,7 +420,7 @@ const Donation: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Hadithi za Mafanikio (Success Stories)
+              Hadithi za Mafanikio (Success Stories) // Changed from 'Hadithi za Mafanikio (Success Stories)' to 'Hadithi za Mafanikio (Success Stories)'
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               See how your donations have transformed lives and communities across Africa
@@ -463,7 +463,7 @@ const Donation: React.FC = () => {
           <Award className="w-16 h-16 mx-auto mb-6" />
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Jiunge Nasi Katika Safari Hii (Join Us on This Journey)
-          </h2>
+          </h2> // Changed from 'Jiunge Nasi Katika Safari Hii (Join Us on This Journey)' to 'Jiunge Nasi Katika Safari Hii (Join Us on This Journey)'
           <p className="text-xl text-orange-100 mb-8 max-w-3xl mx-auto">
             Every donation, no matter the size, contributes to building a stronger healthcare system across Africa. 
             Together, we can empower the next generation of African nursing professionals.

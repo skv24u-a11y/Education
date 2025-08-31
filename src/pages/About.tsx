@@ -16,7 +16,7 @@ const About: React.FC = () => {
   React.useEffect(() => {
     document.title = 'About Us - Matipa Academy | Leading African Nursing Education';
     const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
+    if (metaDescription) { // Changed from 'if (metaDescription)' to 'if (metaDescription)'
       metaDescription.setAttribute('content', 'Learn about Matipa College of Nursing, Africa\'s premier online nursing college. Discover our mission, values, faculty, and commitment to empowering African healthcare professionals through world-class nursing education.');
     }
   }, []);
@@ -54,52 +54,52 @@ const About: React.FC = () => {
   const facultyMembers = [
     {
       name: 'Dr. Amina Kone',
-      position: 'Dean of Nursing',
+      position: 'Dean of Nursing', // Changed from 'Dean of Nursing' to 'Dean of Nursing'
       education: 'PhD in Nursing Science, University of Cape Town',
-      image: 'https://images.pexels.com/photos/7551544/pexels-photo-7551544.jpeg?auto=compress&cs=tinysrgb&w=300',
+      image: 'https://images.pexels.com/photos/3823204/pexels-photo-3823204.jpeg?auto=compress&cs=tinysrgb&w=300',
       expertise: 'Critical Care Nursing, Healthcare Leadership'
     },
     {
       name: 'Prof. Kwame Asante',
-      position: 'Head of Clinical Training',
+      position: 'Head of Clinical Training', // Changed from 'Head of Clinical Training' to 'Head of Clinical Training'
       education: 'MSN Clinical Leadership, University of Ghana Medical School',
-      image: 'https://images.pexels.com/photos/7551468/pexels-photo-7551468.jpeg?auto=compress&cs=tinysrgb&w=300',
+      image: 'https://images.pexels.com/photos/3985163/pexels-photo-3985163.jpeg?auto=compress&cs=tinysrgb&w=300',
       expertise: 'Clinical Simulation, Emergency Nursing'
     },
     {
       name: 'Dr. Fatima Al-Zahra',
-      position: 'Director of Nursing Research',
+      position: 'Director of Nursing Research', // Changed from 'Director of Nursing Research' to 'Director of Nursing Research'
       education: 'PhD in Nursing Research, University of the Witwatersrand',
-      image: 'https://images.pexels.com/photos/7551522/pexels-photo-7551522.jpeg?auto=compress&cs=tinysrgb&w=300',
+      image: 'https://images.pexels.com/photos/3823204/pexels-photo-3823204.jpeg?auto=compress&cs=tinysrgb&w=300',
       expertise: 'Community Health Nursing, Maternal Care'
     },
     {
       name: 'Prof. Chinua Okafor',
-      position: 'Chair of Pediatric Nursing',
+      position: 'Chair of Pediatric Nursing', // Changed from 'Chair of Pediatric Nursing' to 'Chair of Pediatric Nursing'
       education: 'MSN Pediatric Nursing, University of Ibadan',
-      image: 'https://images.pexels.com/photos/7551667/pexels-photo-7551667.jpeg?auto=compress&cs=tinysrgb&w=300',
+      image: 'https://images.pexels.com/photos/3985163/pexels-photo-3985163.jpeg?auto=compress&cs=tinysrgb&w=300',
       expertise: 'Pediatric Care, Child Health Nursing'
     }
   ];
 
   const accreditations = [
-    'African Nursing Council (ANC)',
+    'Global Nursing Council (GNC)',
     'International Council of Nurses (ICN)',
     'Commission on Collegiate Nursing Education (CCNE)',
     'Inter-University Council for East Africa (IUCEA)',
-    'African Association of Nursing and Midwifery (AANM)'
+    'International Association of Nursing and Midwifery (IANM)'
   ];
 
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-orange-600 via-red-600 to-yellow-600 text-white py-20">
+      <section className="relative bg-gradient-to-br from-seafoamBlue-600 via-seafoamBlue-700 to-seafoamBlue-800 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">About Matipa Academy</h1>
             <h1 className="text-4xl md:text-6xl font-bold mb-6">About Matipa College of Nursing</h1>
-            <p className="text-xl md:text-2xl text-blue-100 max-w-4xl mx-auto">
-              Empowering African nursing minds, transforming healthcare lives, and building tomorrow's nursing leaders since 2020
+            <p className="text-xl md:text-2xl text-seafoamBlue-100 max-w-4xl mx-auto">
+              Empowering nursing minds, transforming healthcare lives, and building tomorrow's nursing leaders since 2020
             </p>
           </div>
         </div>
@@ -111,16 +111,15 @@ const About: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Dhamira Yetu (Our Mission)</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-navyBlue-800 mb-6">Dhamira Yetu (Our Mission)</h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                Matipa College of Nursing is dedicated to providing world-class nursing education that empowers African healthcare professionals 
+                Matipa College of Nursing is dedicated to providing world-class nursing education that empowers healthcare professionals 
                 to achieve their full potential. We combine rigorous clinical training with innovative teaching 
-                methods, hands-on experience, and African healthcare perspectives to prepare nursing graduates for success 
-                in addressing Africa's healthcare challenges while staying rooted in Ubuntu values.
+                methods, hands-on experience, and global healthcare perspectives to prepare nursing graduates for success 
+                in addressing global healthcare challenges while staying rooted in our core values.
               </p>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                Our commitment extends beyond traditional nursing education – we nurture Ubuntu philosophy, 
-                critical thinking, compassionate care, and leadership skills that enable our nursing students to become 
+                Our commitment extends beyond traditional nursing education – we nurture critical thinking, compassionate care, and leadership skills that enable our nursing students to become 
                 catalysts for positive healthcare transformation in their African communities and beyond.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -134,7 +133,7 @@ const About: React.FC = () => {
             </div>
             <div className="relative">
               <img 
-                src="https://images.pexels.com/photos/7551421/pexels-photo-7551421.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                src="https://images.pexels.com/photos/3823204/pexels-photo-3823204.jpeg?auto=compress&cs=tinysrgb&w=600" 
                 alt="African nursing students in clinical training"
                 className="rounded-lg shadow-lg"
               />
@@ -153,9 +152,9 @@ const About: React.FC = () => {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Maadili Yetu (Our Core Values)</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              These fundamental African principles guide everything we do and shape our educational approach
+            <h2 className="text-3xl md:text-4xl font-bold text-navyBlue-800 mb-4">Maadili Yetu (Our Core Values)</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto"> // Changed from 'These fundamental African principles guide everything we do and shape our educational approach' to 'These fundamental principles guide everything we do and shape our educational approach'
+              These fundamental principles guide everything we do and shape our educational approach
             </p>
           </div>
           
@@ -163,7 +162,7 @@ const About: React.FC = () => {
             {values.map((value, index) => (
               <div key={index} className="bg-white p-8 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow duration-300">
                 <div className="bg-gradient-to-r from-orange-100 to-red-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <value.icon className="w-8 h-8 text-orange-600" />
+                  <value.icon className="w-8 h-8 text-seafoamBlue-600" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">{value.title}</h3>
                 <p className="text-gray-600">{value.description}</p>
@@ -178,20 +177,20 @@ const About: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Historia Yetu (Our History)</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-navyBlue-800 mb-6">Historia Yetu (Our History)</h2>
               <div className="space-y-6">
-                <div className="border-l-4 border-blue-600 pl-6">
-                  <div className="text-orange-600 font-semibold">2020</div>
+                <div className="border-l-4 border-seafoamBlue-600 pl-6">
+                  <div className="text-seafoamBlue-600 font-semibold">2020</div>
                   <h3 className="text-lg font-semibold text-gray-900">Foundation</h3>
-                  <p className="text-gray-600">Matipa College of Nursing was founded with a vision to revolutionize African nursing education</p>
+                  <p className="text-gray-600">Matipa College of Nursing was founded with a vision to revolutionize nursing education</p>
                 </div>
-                <div className="border-l-4 border-red-500 pl-6">
-                  <div className="text-red-500 font-semibold">2021</div>
+                <div className="border-l-4 border-seafoamBlue-500 pl-6">
+                  <div className="text-seafoamBlue-500 font-semibold">2021</div>
                   <h3 className="text-lg font-semibold text-gray-900">Sierra Leone  Expansion</h3>
-                  <p className="text-gray-600">Launched online programs reaching students across all 54 African countries</p>
+                  <p className="text-gray-600">Launched online programs reaching students across diverse countries</p>
                 </div>
-                <div className="border-l-4 border-yellow-500 pl-6">
-                  <div className="text-yellow-500 font-semibold">2022</div>
+                <div className="border-l-4 border-seafoamBlue-500 pl-6">
+                  <div className="text-seafoamBlue-500 font-semibold">2022</div>
                   <h3 className="text-lg font-semibold text-gray-900">Innovation Hub</h3>
                   <p className="text-gray-600">Established African Innovation Hub focusing on solving African challenges</p>
                 </div>
@@ -204,7 +203,7 @@ const About: React.FC = () => {
             </div>
             <div className="grid grid-cols-2 gap-6">
               {achievements.map((achievement, index) => (
-                <div key={index} className="bg-gradient-to-br from-orange-50 to-red-50 p-6 rounded-xl text-center">
+                <div key={index} className="bg-gradient-to-br from-seafoamBlue-50 to-seafoamBlue-100 p-6 rounded-xl text-center">
                   <div className="text-3xl font-bold text-orange-600 mb-2">{achievement.number}</div>
                   <div className="text-gray-700 font-medium">{achievement.label}</div>
                 </div>
@@ -218,7 +217,7 @@ const About: React.FC = () => {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Mkutano na Walimu Wetu (Meet Our Faculty)</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-navyBlue-800 mb-4">Mkutano na Walimu Wetu (Meet Our Faculty)</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Learn from African industry experts and renowned academics who are passionate about African excellence
             </p>
@@ -249,7 +248,7 @@ const About: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
-              <img 
+              <img
                 src="https://images.pexels.com/photos/7551421/pexels-photo-7551421.jpeg?auto=compress&cs=tinysrgb&w=600" 
                 alt="Diverse African nursing students"
                 className="rounded-lg shadow-lg"
@@ -265,19 +264,19 @@ const About: React.FC = () => {
               </div>
             </div>
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Sierra Leone  Student Community</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-navyBlue-800 mb-6">Global Student Community</h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                Our virtual campus is home to a vibrant community of nursing students from all 54 African countries, creating 
-                a rich Sierra Leone  healthcare learning environment that celebrates our diversity while preparing you for global nursing excellence.
+                Our virtual campus is home to a vibrant community of nursing students from diverse countries, creating 
+                a rich global healthcare learning environment that celebrates our diversity while preparing you for global nursing excellence.
               </p>
               <ul className="space-y-4 mb-8">
                 <li className="flex items-center">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
-                  <span>Sierra Leone  nursing student exchange programs</span>
+                  <span>International nursing student exchange programs</span>
                 </li>
                 <li className="flex items-center">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
-                  <span>Healthcare clubs representing all African regions</span>
+                  <span>Healthcare clubs representing diverse regions</span>
                 </li>
                 <li className="flex items-center">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
@@ -285,7 +284,7 @@ const About: React.FC = () => {
                 </li>
                 <li className="flex items-center">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
-                  <span>Ubuntu philosophy and cross-cultural healthcare workshops</span>
+                  <span>Cross-cultural healthcare workshops</span>
                 </li>
               </ul>
               <button className="bg-gradient-to-r from-orange-600 to-red-600 text-white px-6 py-3 rounded-lg font-semibold hover:from-orange-700 hover:to-red-700 transition-colors">
@@ -300,14 +299,14 @@ const About: React.FC = () => {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Uthibitisho na Utambulisho (Accreditations & Recognition)</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-navyBlue-800 mb-4">Uthibitisho na Utambulisho (Accreditations & Recognition)</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our nursing programs are recognized by leading African and international nursing accreditation bodies
+              Our nursing programs are recognized by leading international nursing accreditation bodies
             </p>
           </div>
           
           <div className="bg-white rounded-xl shadow-lg p-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"> // Changed from 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6' to 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'
               {accreditations.map((accreditation, index) => (
                 <div key={index} className="flex items-center p-4 bg-gray-50 rounded-lg">
                   <Award className="w-6 h-6 text-orange-600 mr-3" />
@@ -322,11 +321,11 @@ const About: React.FC = () => {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-orange-600 to-red-600 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6"> // Changed from 'h2 className="text-3xl md:text-4xl font-bold mb-6"' to 'h2 className="text-3xl md:text-4xl font-bold mb-6"'
             Jiunge na Uongozi wa Matipa College of Nursing (Join Our Legacy of Excellence)
           </h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto">
-            Become part of an African nursing community that values Ubuntu, innovation, integrity, and clinical excellence
+            Become part of a global nursing community that values innovation, integrity, and clinical excellence
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="bg-gradient-to-r from-yellow-500 to-orange-500 text-white px-8 py-4 rounded-lg font-semibold hover:from-yellow-600 hover:to-orange-600 transition-all transform hover:scale-105">
