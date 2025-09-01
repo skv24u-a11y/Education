@@ -115,7 +115,7 @@ const Home: React.FC = () => {
             </div>
             <div className="relative">
               <img 
-                src="https://i.ibb.co/Y4XGxSL2/11.jpg" 
+                src="https://i.ibb.co/Z1S6p8H2/Graduation-Portrait.png" 
                 alt="Graduated nursing student from Matipa College"
                 className="rounded-lg shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500 border-4 border-yellow-400"
               />
