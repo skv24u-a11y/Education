@@ -217,7 +217,7 @@ const Home: React.FC = () => {
               />
               <div className="absolute inset-0 bg-seafoamBlue-500 bg-opacity-20 rounded-lg flex items-center justify-center">
                 <div className="bg-white bg-opacity-90 p-4 rounded-full">
-                  < className="w-12 h-12 text-seafoamBlue-500" />
+                  <Play className="w-12 h-12 text-seafoamBlue-500" />
                 </div>
               </div>
             </div>
