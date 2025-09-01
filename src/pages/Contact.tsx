@@ -260,7 +260,7 @@ const Contact: React.FC = () => {
                     <Phone className="w-6 h-6 text-green-600 mr-3" />
                     <div>
                       <p className="font-semibold text-gray-900">Emergency Hotline</p>
-                      <p className="text-gray-600">+254 700 911 HELP</p>
+                      <p className="text-gray-600">033762485</p>
                     </div>
                   </div>
                   <div className="flex items-center p-4 bg-white rounded-lg shadow-sm">
