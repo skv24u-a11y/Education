@@ -322,9 +322,9 @@ const About: React.FC = () => {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-seafoamBlue-600 to-vibrantCoral-600 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6"> // Changed from 'h2 className="text-3xl md:text-4xl font-bold mb-6"' to 'h2 className="text-3xl md:text-4xl font-bold mb-6"'
-            Join Our Legacy of Excellence
-          </h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+  Join Our Legacy of Excellence
+</h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto">
             Become part of a nursing community that values innovation, integrity, and clinical excellence
           </p>
