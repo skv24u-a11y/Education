@@ -307,7 +307,7 @@ const About: React.FC = () => {
           </div>
           
           <div className="bg-white rounded-xl shadow-lg p-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"> // Changed from 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6' to 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"> 
               {accreditations.map((accreditation, index) => (
                 <div key={index} className="flex items-center p-4 bg-gray-50 rounded-lg">
                   <Award className="w-6 h-6 text-orange-600 mr-3" />
