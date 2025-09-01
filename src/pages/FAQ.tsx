@@ -199,7 +199,7 @@ const FAQ: React.FC = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               Maswali Yanayoulizwa Mara Kwa Mara (Frequently Asked Questions)
-            </h2> // Changed from 'Bado Una Maswali kuhusu Matipa College of Nursing? (Still Have Questions?)\' to \'Bado Una Maswali kuhusu Matipa College of Nursing? (Still Have Questions?)'
+            </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Find quick answers to the most common questions about our programs and services
             </p>
