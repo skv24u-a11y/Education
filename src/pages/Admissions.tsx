@@ -334,7 +334,7 @@ const Admissions: React.FC = () => {
             <div className="bg-white p-6 rounded-xl shadow-lg">
               <Phone className="w-8 h-8 text-orange-600 mx-auto mb-4" />
               <h3 className="font-semibold text-gray-900 mb-2">Call Us</h3>
-              <p className="text-gray-600">+254 700 123 456</p>
+              <p className="text-gray-600">034485514</p>
               <p className="text-sm text-gray-500">Monday - Friday, 8 AM - 6 PM</p>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-lg">
