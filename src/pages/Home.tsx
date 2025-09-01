@@ -211,7 +211,7 @@ const Home: React.FC = () => {
             </div>
             <div className="relative">
               <img 
-                src="https://i.ibb.co/CpSNv2zt/33.jpg" 
+                src="https://i.ibb.co/29M05Hg/Graduation-Portrait-1.png" 
                 alt="Successful nursing graduate from our programs"
                 className="rounded-lg shadow-lg"
               />
